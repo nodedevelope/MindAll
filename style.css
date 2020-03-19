@@ -41,7 +41,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #333; }
 
 a {
   text-decoration: none; }
@@ -129,3 +130,237 @@ nav#gnb {
           background-color: #3cdbed; }
       .carousel-content .carousel-buttons a:hover {
         text-decoration: none; }
+
+#sectors {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  #sectors #sectors-header {
+    text-align: center;
+    margin-bottom: 50px; }
+    #sectors #sectors-header h3 {
+      font-weight: bolder;
+      margin-bottom: 30px; }
+    #sectors #sectors-header p {
+      line-height: 150%;
+      font-size: 1.2rem; }
+  #sectors #sectors-content .container .row .col-4 {
+    padding: 10px; }
+    #sectors #sectors-content .container .row .col-4 .sector-item {
+      border: 1px solid #333;
+      padding: 30px;
+      text-align: center; }
+      #sectors #sectors-content .container .row .col-4 .sector-item i {
+        font-size: 4rem;
+        margin-bottom: 20px; }
+      #sectors #sectors-content .container .row .col-4 .sector-item h3 {
+        font-weight: bolder;
+        margin-bottom: 20px; }
+      #sectors #sectors-content .container .row .col-4 .sector-item p {
+        line-height: 150%;
+        margin-bottom: 30px;
+        font-size: 1.2rem; }
+      #sectors #sectors-content .container .row .col-4 .sector-item a {
+        color: #333;
+        display: inline-block;
+        font-size: 1.2rem;
+        padding: 8px 30px;
+        border: 1px solid #333;
+        transition: all .3s; }
+        #sectors #sectors-content .container .row .col-4 .sector-item a:hover {
+          text-decoration: none;
+          background-color: #333;
+          color: white; }
+    #sectors #sectors-content .container .row .col-4:nth-of-type(4) {
+      text-align: center; }
+    #sectors #sectors-content .container .row .col-4:nth-of-type(5) {
+      text-align: center; }
+
+#technologies {
+  margin-bottom: 100px; }
+  #technologies #technologies-header {
+    text-align: center; }
+    #technologies #technologies-header h3 {
+      font-weight: bolder;
+      margin-bottom: 30px; }
+  #technologies #technologies-content .container ul {
+    display: flex;
+    flex-direction: row; }
+    #technologies #technologies-content .container ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 176px;
+      height: 176px;
+      border-radius: 50%;
+      border: 1px solid #333; }
+      #technologies #technologies-content .container ul li:not(:last-child) {
+        margin-right: 10px; }
+      #technologies #technologies-content .container ul li i {
+        font-size: 4rem;
+        margin-bottom: 15px; }
+      #technologies #technologies-content .container ul li img {
+        height: 64px;
+        width: auto;
+        margin-bottom: 15px; }
+      #technologies #technologies-content .container ul li p {
+        font-size: 1.2rem;
+        font-weight: bold; }
+
+#portfolios {
+  margin-bottom: 100px; }
+  #portfolios #portfolios-header {
+    margin-bottom: 30px;
+    text-align: center; }
+    #portfolios #portfolios-header h3 {
+      font-weight: bolder;
+      margin-bottom: 30px; }
+    #portfolios #portfolios-header h4 {
+      font-weight: bold; }
+  #portfolios #portfolios-filters {
+    margin-bottom: 30px; }
+    #portfolios #portfolios-filters ul {
+      text-align: center; }
+      #portfolios #portfolios-filters ul li {
+        display: inline-block; }
+        #portfolios #portfolios-filters ul li:not(:last-child) {
+          margin-right: 15px; }
+        #portfolios #portfolios-filters ul li a {
+          line-height: 160%;
+          color: #333;
+          font-weight: bold;
+          font-size: 1.2rem;
+          border-bottom: 2px solid transparent;
+          transition: all .3s; }
+          #portfolios #portfolios-filters ul li a:hover {
+            text-decoration: none;
+            border-bottom: 1px solid #333; }
+        #portfolios #portfolios-filters ul li.active a {
+          border-bottom: 2px solid #333; }
+  #portfolios #portfolios-items .container .row .col-4 {
+    padding: 30px; }
+    #portfolios #portfolios-items .container .row .col-4 .portfolio {
+      position: relative;
+      width: 320px;
+      height: 320px; }
+      #portfolios #portfolios-items .container .row .col-4 .portfolio img {
+        width: 320px;
+        height: 320px;
+        position: absolute;
+        width: 100%;
+        height: auto; }
+      #portfolios #portfolios-items .container .row .col-4 .portfolio .hovered {
+        padding: 20px;
+        opacity: 0;
+        width: 320px;
+        height: 320px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center; }
+        #portfolios #portfolios-items .container .row .col-4 .portfolio .hovered p.portfolio-title {
+          color: white;
+          font-size: 1.5rem;
+          margin-bottom: 10px; }
+        #portfolios #portfolios-items .container .row .col-4 .portfolio .hovered p.portfolio-description {
+          font-size: 1.2rem;
+          color: white; }
+
+#clients {
+  margin-bottom: 100px; }
+  #clients #clients-header {
+    text-align: center;
+    margin-bottom: 30px; }
+    #clients #clients-header h3 {
+      font-weight: bolder; }
+  #clients #clients-list ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 15px; }
+    #clients #clients-list ul li:not(:last-child) {
+      margin-right: 15px; }
+
+#contact {
+  margin-bottom: 100px; }
+  #contact #contact-header {
+    text-align: center;
+    margin-bottom: 50px; }
+    #contact #contact-header h3 {
+      font-weight: bolder;
+      margin-bottom: 30px; }
+    #contact #contact-header p {
+      font-size: 1.2rem; }
+  #contact #contact-content {
+    text-align: center; }
+    #contact #contact-content #contact-email {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 150px;
+      text-align: center; }
+      #contact #contact-content #contact-email i {
+        font-size: 5rem;
+        margin-bottom: 20px; }
+      #contact #contact-content #contact-email p {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.5rem; }
+      #contact #contact-content #contact-email a {
+        color: inherit;
+        font-size: 1.2rem; }
+    #contact #contact-content #contact-phone {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center; }
+      #contact #contact-content #contact-phone i {
+        font-size: 5rem;
+        margin-bottom: 20px; }
+      #contact #contact-content #contact-phone p#contact-phone-title {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 10px; }
+      #contact #contact-content #contact-phone p#contact-phone-number {
+        font-size: 1.2rem;
+        font-weight: normal; }
+
+#footer {
+  background-color: lightgray; }
+  #footer .container {
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 30px; }
+    #footer .container #footer-sitemap {
+      float: left; }
+      #footer .container #footer-sitemap > ul > li {
+        display: inline-block;
+        vertical-align: top;
+        width: 120px; }
+        #footer .container #footer-sitemap > ul > li:not(:last-child) {
+          margin-right: 15px; }
+        #footer .container #footer-sitemap > ul > li > a {
+          display: inline-block;
+          margin-bottom: 10px;
+          color: inherit;
+          font-size: 1.2rem;
+          font-weight: bold; }
+          #footer .container #footer-sitemap > ul > li > a:hover {
+            text-decoration: none; }
+        #footer .container #footer-sitemap > ul > li > ul > li {
+          margin-bottom: 3px; }
+          #footer .container #footer-sitemap > ul > li > ul > li > a {
+            color: inherit; }
+            #footer .container #footer-sitemap > ul > li > ul > li > a:hover {
+              text-decoration: none; }
+    #footer .container #footer-brand {
+      float: right; }
+      #footer .container #footer-brand #footer-brand-logo {
+        overflow: hidden;
+        margin-bottom: 10px; }
+        #footer .container #footer-brand #footer-brand-logo img {
+          float: right; }
+      #footer .container #footer-brand #footer-brand-address p {
+        line-height: 150%;
+        text-align: right;
+        margin-bottom: 0; }

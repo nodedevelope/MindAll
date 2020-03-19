@@ -46,6 +46,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #333;
 }
 a {
     text-decoration: none;
@@ -160,6 +161,348 @@ nav#gnb {
             }
             &:hover {
                 text-decoration: none;
+            }
+        }
+    }
+}
+
+// Primary business sectors
+#sectors {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    #sectors-header {
+        text-align: center;
+        margin-bottom: 50px;
+        h3 {
+            font-weight: bolder;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 150%;
+            font-size: 1.2rem;
+        }
+    }
+    #sectors-content {
+        .container {
+            .row {
+                .col-4 {
+                    padding: 10px;
+                    .sector-item {
+                        border: 1px solid #333;
+                        padding: 30px;
+                        text-align: center;
+                        i {
+                            font-size: 4rem;
+                            margin-bottom: 20px;
+                        }
+                        h3 {
+                            font-weight: bolder;
+                            margin-bottom: 20px;
+                        }
+                        p {
+                            line-height: 150%;
+                            margin-bottom: 30px;
+                            font-size: 1.2rem;
+                        }
+                        a {
+                            color: #333;
+                            display: inline-block;
+                            font-size: 1.2rem;
+                            padding: 8px 30px;
+                            border: 1px solid #333;
+                            transition: all .3s;
+                            &:hover {
+                                text-decoration: none;
+                                background-color: #333;
+                                color: white;
+                            }
+                        }
+                    }
+                    &:nth-of-type(4) {
+                        text-align: center;
+                    }
+                    &:nth-of-type(5) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Current technologies
+#technologies {
+    margin-bottom: 100px;
+    #technologies-header {
+        text-align: center;
+        h3 {
+            font-weight: bolder;
+            margin-bottom: 30px;
+        }
+    }
+    #technologies-content {
+        .container {
+            ul {
+                display: flex;
+                flex-direction: row;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 176px;
+                    height: 176px;
+                    border-radius: 50%;
+                    border: 1px solid #333;
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                    i {
+                        font-size: 4rem;
+                        margin-bottom: 15px;
+                    }
+                    img {
+                        height: 64px;
+                        width: auto;
+                        margin-bottom: 15px;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Portfolios
+#portfolios {
+    margin-bottom: 100px;
+    #portfolios-header {
+        margin-bottom: 30px;
+        text-align: center;
+        h3 {
+            font-weight: bolder;
+            margin-bottom: 30px;
+        }
+        h4 {
+            font-weight: bold;
+        }
+    }
+    #portfolios-filters {
+        margin-bottom: 30px;
+        ul {
+            text-align: center;
+            li {
+                display: inline-block;
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+                a {
+                    line-height: 160%;
+                    color: #333;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    border-bottom: 2px solid transparent;
+                    transition: all .3s;
+                    &:hover {
+                        text-decoration: none;
+                        border-bottom: 1px solid #333;
+                    }
+                }
+                &.active {
+                    a {
+                        border-bottom: 2px solid #333;
+                    }
+                }
+            }
+        }
+    }
+    #portfolios-items {
+        .container {
+            .row {
+                .col-4 {
+                    padding: 30px;
+                    .portfolio {
+                        position: relative;
+                        width: 320px;
+                        height: 320px;
+                        img {
+                            width: 320px;
+                            height: 320px;
+                            position: absolute;
+                            width: 100%;
+                            height: auto;
+                        }
+                        .hovered {
+                            padding: 20px;
+                            opacity: 0;
+                            width: 320px;
+                            height: 320px;
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            background: rgba(0, 0, 0, .5);
+                            text-align: center;
+                            p.portfolio-title {
+                                color: white;
+                                font-size: 1.5rem;
+                                margin-bottom: 10px;
+                            }
+                            p.portfolio-description {
+                                font-size: 1.2rem;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Clients
+#clients {
+    margin-bottom: 100px;
+    #clients-header {
+        text-align: center;
+        margin-bottom: 30px;
+        h3 {
+            font-weight: bolder;
+        }
+    }
+    #clients-list {
+        ul {
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                margin-bottom: 15px;
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+                img {
+
+                }
+            }
+        }
+    }
+}
+
+// Contact
+#contact {
+    margin-bottom: 100px;
+    #contact-header {
+        text-align: center;
+        margin-bottom: 50px;
+        h3 {
+            font-weight: bolder;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    #contact-content {
+        text-align: center;
+        #contact-email {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 150px;
+            text-align: center;
+            i {
+                font-size: 5rem;
+                margin-bottom: 20px;
+            }
+            p {
+                font-weight: bold;
+                margin-bottom: 10px;
+                font-size: 1.5rem
+            }
+            a {
+                color: inherit;
+                font-size: 1.2rem;
+            }
+        }
+        #contact-phone {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            i {
+                font-size: 5rem;
+                margin-bottom: 20px;
+            }
+            p#contact-phone-title {
+                font-weight: bold;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            p#contact-phone-number {
+                font-size: 1.2rem;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+// Footer
+#footer {
+    background-color: lightgray;
+    .container {
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        #footer-sitemap {
+            float: left;
+            & > ul {
+                & > li {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 120px;
+                    &:not(:last-child) {
+                        margin-right: 15px;
+                    }
+                    & > a {
+                        display: inline-block;
+                        margin-bottom: 10px;
+                        color: inherit;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    & > ul {
+                        & > li {
+                            margin-bottom: 3px;
+                            & > a {
+                                color: inherit;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #footer-brand {
+            float: right;
+            #footer-brand-logo {
+                overflow: hidden;
+                margin-bottom: 10px;
+                img {
+                    float: right;
+                }
+            }
+            #footer-brand-address {
+                p {
+                    line-height: 150%;
+                    text-align: right;
+                    margin-bottom: 0;
+                }
             }
         }
     }
