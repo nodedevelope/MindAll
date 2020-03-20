@@ -59,6 +59,7 @@ img {
 }
 body {
     font-family: "NanumSquare";
+    overflow-x: hidden;
 }
 
 // GNB (Global Navigation Bar)
@@ -66,7 +67,7 @@ nav#gnb {
     width: 100%;
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     height: 80px;
     .container {
         #gnb-brand {
@@ -101,21 +102,31 @@ nav#gnb {
                 }
             }
         }
+        #gnb-hamburger {
+            display: none;
+        }
     }
 }
 
 // Bootstrap Carousel
 .carousel-inner {
-    height: 800px;
+    height: 50%;
+    .carousel-item {
+        position: relative;
+        .dark-filter {
+            position: absolute;
+            background-color: rgba(0, 0, 0, .5);
+            height: 100%;
+        }
+    }
 }
 .carousel-content {
-    background-color: rgba(0, 0, 0, .5);
     padding: 50px;
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1400px;
+    width: 80vw;
     height: 500px;
     h2 {
         font-size: 2.5rem;
@@ -185,7 +196,7 @@ nav#gnb {
     #sectors-content {
         .container {
             .row {
-                .col-4 {
+                div {
                     padding: 10px;
                     .sector-item {
                         border: 1px solid #333;
@@ -242,6 +253,45 @@ nav#gnb {
     }
     #technologies-content {
         .container {
+            position: relative;
+            #technologies-left-arrow {
+                cursor: pointer;
+                left: -10px;
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                z-index: 1;
+                display: none;
+                vertical-align: middle;
+                i {
+                    font-size: 2rem;
+                    transition: all .3s;
+                }
+                &:hover {
+                    i {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            #technologies-right-arrow {
+                cursor: pointer;
+                right: -10px;
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                z-index: 1;
+                display: none;
+                vertical-align: middle;
+                i {
+                    font-size: 2rem;
+                    transition: all .3s;
+                }
+                &:hover {
+                    i {
+                        transform: scale(1.2);
+                    }
+                }
+            }
             ul {
                 display: flex;
                 flex-direction: row;
@@ -322,7 +372,7 @@ nav#gnb {
     #portfolios-items {
         .container {
             .row {
-                .col-4 {
+                div {
                     padding: 30px;
                     .portfolio {
                         position: relative;
@@ -376,6 +426,7 @@ nav#gnb {
     }
     #clients-list {
         ul {
+            text-align: center;
             li {
                 display: inline-block;
                 vertical-align: middle;
@@ -502,6 +553,294 @@ nav#gnb {
                     line-height: 150%;
                     text-align: right;
                     margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// Media query (max-width: 1200px)
+@media only screen and (max-width: 1200px) {
+    #technologies {
+        #technologies-content {
+            .container {
+                #technologies-left-arrow {
+                    display: inline-block;
+                }
+                #technologies-right-arrow {
+                    display: inline-block;
+                }
+                #technologies-items {
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    ul {
+                        position: relative;
+                        width: 1110px;
+                    }
+                }
+            }
+        }
+    }
+    #sectors {
+        #sectors-header {
+            p {
+                font-size: 1.5rem;
+                width: 800px;
+                margin: auto;
+            }
+        }
+    }
+    .carousel-content {
+        top: 65%;
+        .carousel-buttons {
+            bottom: 180px;
+            a {
+                padding: 8px 20px;
+            }
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// Media query (max-width: 992px)
+@media only screen and (max-width: 992px) {
+    nav#gnb {
+        .container {
+            #gnb-nav {
+                display: none;
+            }
+            #gnb-hamburger {
+                display: block;
+                float: right;
+                a {
+                    i {
+                        line-height: 80px;
+                        color: white;
+                        font-size: 2rem;
+                    }
+                }
+                ul {
+                    position: absolute;
+                    top: 80px;
+                    left: 0;
+                    z-index: 1;
+                    width: 100vw;
+                    display: none;
+                    background-color: rgba(0, 0, 0, .5);
+                    li {
+                        text-align: center;
+                        margin-bottom: 15px;
+                        a {
+                            color: white;
+                            font-size: 1.5rem;
+                            border-bottom: 1px solid transparent;
+                            transition: all .3s;
+                            &:hover {
+                                text-decoration: none;
+                                border-bottom: 1px solid white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #sectors {
+        #sectors-header {
+            p {
+                font-size: 1.5rem;
+                width: 600px;
+                margin: auto;
+            }
+        }
+    }
+    .carousel-inner {
+        .carousel-item {
+            height: 550px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .carousel-content {
+        text-align: center;
+        top: 60%;
+        .carousel-buttons {
+            position: static;
+            a {
+                padding: 8px 20px;
+            }
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    #portfolios {
+        #portfolios-items {
+            .container {
+                .row {
+                    div {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Media query (max-width: 768px)
+@media only screen and (max-width: 768px) {
+    #technologies {
+        #technologies-content {
+            .container {
+                #technologies-items {
+                    ul {
+                        width: 3110px;
+                        li {
+                            width: 510px;
+                            height: 510px;
+                            i {
+                                font-size: 10rem;
+                                margin-bottom: 30px;
+                            }
+                            img {
+                                height: 160px;
+                                width: auto;
+                            }
+                            p {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .carousel-inner {
+        .carousel-item {
+            height: 400px;
+        }
+    }
+    .carousel-content {
+        top: 90%;
+        .carousel-buttons {
+            display: none;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        p {
+            display: none;
+        }
+    }
+    #sectors {
+        #sectors-header {
+            p {
+                font-size: 1.5rem;
+                width: 500px;
+                margin: auto;
+            }
+        }
+    }
+    #portfolios {
+        #portfolios-items {
+            .container {
+                .row {
+                    div {
+                        .portfolio {
+                            width: 540px;
+                            height: 540px;
+                            .hovered {
+                                width: 540px;
+                                height: 540px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #contact {
+        #contact-header {
+            width: 80%;
+            margin: auto;
+        }
+        #contact-content {
+            #contact-email {
+                display: block;
+                margin: 0;
+                margin-bottom: 50px;
+                i {
+                    font-size: 8rem;
+                }
+            }
+            #contact-phone {
+                display: block;
+                i {
+                    font-size: 8rem;
+                }
+            }
+        }
+    }
+}
+
+// Media query (max-width: 576px)
+@media only screen and (max-width: 576px) {
+    #technologies {
+        #technologies-content {
+            .container {
+                width: 450px;
+                #technologies-items {
+                    ul {
+                        width: 2570px;
+                        li {
+                            width: 420px;
+                            height: 420px;
+                            i {
+                                font-size: 10rem;
+                                margin-bottom: 30px;
+                            }
+                            p {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #sectors {
+        #sectors-header {
+            p {
+                font-size: 1.5rem;
+                width: 400px;
+                margin: auto;
+            }
+        }
+    }
+    #portfolios {
+        #portfolios-items {
+            .container {
+                .row {
+                    div {
+                        .portfolio {
+                            width: 100vw;
+                            height: 100vw;
+                            .hovered {
+                                width: 100vw;
+                                height: 100vw;
+                            }
+                        }
+                    }
                 }
             }
         }

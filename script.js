@@ -113,7 +113,7 @@ $(document).ready(function() {
 
     // Portfolio helper functions
     function getPortfolio(item) {
-        var cell = $("<div class='col-4'></div>").append();
+        var cell = $("<div class='col-md-6 col-xl-4'></div>").append();
         var title = $("<p class='portfolio-title'>" + item.title + "</p>");
         var description = $("<p class='portfolio-description'>" + item.description + "</p>");
         var hoverPanel = $("<div class='hovered'></div>").append(title).append(description);
@@ -146,4 +146,63 @@ $(document).ready(function() {
     function emptyPortfolios() {
         $("#portfolios-items > .container > .row").empty();
     }
+
+    // Hamburger menu
+    $("#gnb-hamburger > a").click(function(event) {
+        event.preventDefault();
+        $("#gnb-hamburger > ul").slideToggle();
+    });
+
+    // Technologies controllers
+    var scrollPosition = 0;
+    function moveTechnology(direction) {
+        var documentWidth = $(document).width();
+        var amount;
+        var width;
+        var screenWidth;
+        if(documentWidth <= 1200 && documentWidth > 992) {
+            width = 1110;
+            screenWidth = 930;
+            amount = width - screenWidth;
+        }
+        else if(documentWidth <= 992 && documentWidth > 768) {
+            width = 1110;
+            screenWidth = 690;
+            amount = (width - screenWidth) / 2;
+        }
+        else if(documentWidth <= 768 && documentWidth > 576) {
+            width = 3110;
+            screenWidth = 510;
+            amount = screenWidth + 10;
+        }
+        else if(documentWidth <= 576) {
+            width = 2570;
+            screenWidth = 420;
+            amount = screenWidth + 10;
+        }
+        if(direction === "left") {
+            if(scrollPosition > 0) {
+                scrollPosition -= amount;
+                $("#technologies-items > ul").animate({
+                    left: -scrollPosition + "px"
+                });
+            }
+        }
+        else if(direction === "right") {
+            if(scrollPosition + screenWidth + amount <= width) {
+                scrollPosition += amount;
+                $("#technologies-items > ul").animate({
+                    left: -scrollPosition + "px"
+                });
+            }
+        }
+    }
+
+    $("#technologies-left-arrow").click(function() {
+        moveTechnology("left");
+    });
+
+    $("#technologies-right-arrow").click(function() {
+        moveTechnology("right");
+    });
 });

@@ -54,13 +54,14 @@ img {
   border: 0; }
 
 body {
-  font-family: "NanumSquare"; }
+  font-family: "NanumSquare";
+  overflow-x: hidden; }
 
 nav#gnb {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   height: 80px; }
   nav#gnb .container #gnb-brand {
     float: left;
@@ -81,18 +82,25 @@ nav#gnb {
         nav#gnb .container #gnb-nav ul li a:hover {
           text-decoration: none;
           border-bottom: 1px solid white; }
+  nav#gnb .container #gnb-hamburger {
+    display: none; }
 
 .carousel-inner {
-  height: 800px; }
+  height: 50%; }
+  .carousel-inner .carousel-item {
+    position: relative; }
+    .carousel-inner .carousel-item .dark-filter {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%; }
 
 .carousel-content {
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 50px;
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1400px;
+  width: 80vw;
   height: 500px; }
   .carousel-content h2 {
     font-size: 2.5rem;
@@ -143,36 +151,36 @@ nav#gnb {
     #sectors #sectors-header p {
       line-height: 150%;
       font-size: 1.2rem; }
-  #sectors #sectors-content .container .row .col-4 {
+  #sectors #sectors-content .container .row div {
     padding: 10px; }
-    #sectors #sectors-content .container .row .col-4 .sector-item {
+    #sectors #sectors-content .container .row div .sector-item {
       border: 1px solid #333;
       padding: 30px;
       text-align: center; }
-      #sectors #sectors-content .container .row .col-4 .sector-item i {
+      #sectors #sectors-content .container .row div .sector-item i {
         font-size: 4rem;
         margin-bottom: 20px; }
-      #sectors #sectors-content .container .row .col-4 .sector-item h3 {
+      #sectors #sectors-content .container .row div .sector-item h3 {
         font-weight: bolder;
         margin-bottom: 20px; }
-      #sectors #sectors-content .container .row .col-4 .sector-item p {
+      #sectors #sectors-content .container .row div .sector-item p {
         line-height: 150%;
         margin-bottom: 30px;
         font-size: 1.2rem; }
-      #sectors #sectors-content .container .row .col-4 .sector-item a {
+      #sectors #sectors-content .container .row div .sector-item a {
         color: #333;
         display: inline-block;
         font-size: 1.2rem;
         padding: 8px 30px;
         border: 1px solid #333;
         transition: all .3s; }
-        #sectors #sectors-content .container .row .col-4 .sector-item a:hover {
+        #sectors #sectors-content .container .row div .sector-item a:hover {
           text-decoration: none;
           background-color: #333;
           color: white; }
-    #sectors #sectors-content .container .row .col-4:nth-of-type(4) {
+    #sectors #sectors-content .container .row div:nth-of-type(4) {
       text-align: center; }
-    #sectors #sectors-content .container .row .col-4:nth-of-type(5) {
+    #sectors #sectors-content .container .row div:nth-of-type(5) {
       text-align: center; }
 
 #technologies {
@@ -182,30 +190,60 @@ nav#gnb {
     #technologies #technologies-header h3 {
       font-weight: bolder;
       margin-bottom: 30px; }
-  #technologies #technologies-content .container ul {
-    display: flex;
-    flex-direction: row; }
-    #technologies #technologies-content .container ul li {
+  #technologies #technologies-content .container {
+    position: relative; }
+    #technologies #technologies-content .container #technologies-left-arrow {
+      cursor: pointer;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      z-index: 1;
+      display: none;
+      vertical-align: middle; }
+      #technologies #technologies-content .container #technologies-left-arrow i {
+        font-size: 2rem;
+        transition: all .3s; }
+      #technologies #technologies-content .container #technologies-left-arrow:hover i {
+        transform: scale(1.2); }
+    #technologies #technologies-content .container #technologies-right-arrow {
+      cursor: pointer;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      z-index: 1;
+      display: none;
+      vertical-align: middle; }
+      #technologies #technologies-content .container #technologies-right-arrow i {
+        font-size: 2rem;
+        transition: all .3s; }
+      #technologies #technologies-content .container #technologies-right-arrow:hover i {
+        transform: scale(1.2); }
+    #technologies #technologies-content .container ul {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 176px;
-      height: 176px;
-      border-radius: 50%;
-      border: 1px solid #333; }
-      #technologies #technologies-content .container ul li:not(:last-child) {
-        margin-right: 10px; }
-      #technologies #technologies-content .container ul li i {
-        font-size: 4rem;
-        margin-bottom: 15px; }
-      #technologies #technologies-content .container ul li img {
-        height: 64px;
-        width: auto;
-        margin-bottom: 15px; }
-      #technologies #technologies-content .container ul li p {
-        font-size: 1.2rem;
-        font-weight: bold; }
+      flex-direction: row; }
+      #technologies #technologies-content .container ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 176px;
+        height: 176px;
+        border-radius: 50%;
+        border: 1px solid #333; }
+        #technologies #technologies-content .container ul li:not(:last-child) {
+          margin-right: 10px; }
+        #technologies #technologies-content .container ul li i {
+          font-size: 4rem;
+          margin-bottom: 15px; }
+        #technologies #technologies-content .container ul li img {
+          height: 64px;
+          width: auto;
+          margin-bottom: 15px; }
+        #technologies #technologies-content .container ul li p {
+          font-size: 1.2rem;
+          font-weight: bold; }
 
 #portfolios {
   margin-bottom: 100px; }
@@ -237,19 +275,19 @@ nav#gnb {
             border-bottom: 1px solid #333; }
         #portfolios #portfolios-filters ul li.active a {
           border-bottom: 2px solid #333; }
-  #portfolios #portfolios-items .container .row .col-4 {
+  #portfolios #portfolios-items .container .row div {
     padding: 30px; }
-    #portfolios #portfolios-items .container .row .col-4 .portfolio {
+    #portfolios #portfolios-items .container .row div .portfolio {
       position: relative;
       width: 320px;
       height: 320px; }
-      #portfolios #portfolios-items .container .row .col-4 .portfolio img {
+      #portfolios #portfolios-items .container .row div .portfolio img {
         width: 320px;
         height: 320px;
         position: absolute;
         width: 100%;
         height: auto; }
-      #portfolios #portfolios-items .container .row .col-4 .portfolio .hovered {
+      #portfolios #portfolios-items .container .row div .portfolio .hovered {
         padding: 20px;
         opacity: 0;
         width: 320px;
@@ -261,11 +299,11 @@ nav#gnb {
         align-items: center;
         background: rgba(0, 0, 0, 0.5);
         text-align: center; }
-        #portfolios #portfolios-items .container .row .col-4 .portfolio .hovered p.portfolio-title {
+        #portfolios #portfolios-items .container .row div .portfolio .hovered p.portfolio-title {
           color: white;
           font-size: 1.5rem;
           margin-bottom: 10px; }
-        #portfolios #portfolios-items .container .row .col-4 .portfolio .hovered p.portfolio-description {
+        #portfolios #portfolios-items .container .row div .portfolio .hovered p.portfolio-description {
           font-size: 1.2rem;
           color: white; }
 
@@ -276,12 +314,14 @@ nav#gnb {
     margin-bottom: 30px; }
     #clients #clients-header h3 {
       font-weight: bolder; }
-  #clients #clients-list ul li {
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 15px; }
-    #clients #clients-list ul li:not(:last-child) {
-      margin-right: 15px; }
+  #clients #clients-list ul {
+    text-align: center; }
+    #clients #clients-list ul li {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 15px; }
+      #clients #clients-list ul li:not(:last-child) {
+        margin-right: 15px; }
 
 #contact {
   margin-bottom: 100px; }
@@ -364,3 +404,153 @@ nav#gnb {
         line-height: 150%;
         text-align: right;
         margin-bottom: 0; }
+
+@media only screen and (max-width: 1200px) {
+  #technologies #technologies-content .container #technologies-left-arrow {
+    display: inline-block; }
+  #technologies #technologies-content .container #technologies-right-arrow {
+    display: inline-block; }
+  #technologies #technologies-content .container #technologies-items {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden; }
+    #technologies #technologies-content .container #technologies-items ul {
+      position: relative;
+      width: 1110px; }
+  #sectors #sectors-header p {
+    font-size: 1.5rem;
+    width: 800px;
+    margin: auto; }
+  .carousel-content {
+    top: 65%; }
+    .carousel-content .carousel-buttons {
+      bottom: 180px; }
+      .carousel-content .carousel-buttons a {
+        padding: 8px 20px; }
+    .carousel-content h2 {
+      font-size: 2rem; }
+    .carousel-content p {
+      font-size: 1.2rem; } }
+
+@media only screen and (max-width: 992px) {
+  nav#gnb .container #gnb-nav {
+    display: none; }
+  nav#gnb .container #gnb-hamburger {
+    display: block;
+    float: right; }
+    nav#gnb .container #gnb-hamburger a i {
+      line-height: 80px;
+      color: white;
+      font-size: 2rem; }
+    nav#gnb .container #gnb-hamburger ul {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      z-index: 1;
+      width: 100vw;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.5); }
+      nav#gnb .container #gnb-hamburger ul li {
+        text-align: center;
+        margin-bottom: 15px; }
+        nav#gnb .container #gnb-hamburger ul li a {
+          color: white;
+          font-size: 1.5rem;
+          border-bottom: 1px solid transparent;
+          transition: all .3s; }
+          nav#gnb .container #gnb-hamburger ul li a:hover {
+            text-decoration: none;
+            border-bottom: 1px solid white; }
+  #sectors #sectors-header p {
+    font-size: 1.5rem;
+    width: 600px;
+    margin: auto; }
+  .carousel-inner .carousel-item {
+    height: 550px; }
+    .carousel-inner .carousel-item img {
+      height: 100%; }
+  .carousel-content {
+    text-align: center;
+    top: 60%; }
+    .carousel-content .carousel-buttons {
+      position: static; }
+      .carousel-content .carousel-buttons a {
+        padding: 8px 20px; }
+    .carousel-content h2 {
+      font-size: 2rem; }
+    .carousel-content p {
+      font-size: 1.2rem; }
+  #portfolios #portfolios-items .container .row div {
+    padding: 0; } }
+
+@media only screen and (max-width: 768px) {
+  #technologies #technologies-content .container #technologies-items ul {
+    width: 3110px; }
+    #technologies #technologies-content .container #technologies-items ul li {
+      width: 510px;
+      height: 510px; }
+      #technologies #technologies-content .container #technologies-items ul li i {
+        font-size: 10rem;
+        margin-bottom: 30px; }
+      #technologies #technologies-content .container #technologies-items ul li img {
+        height: 160px;
+        width: auto; }
+      #technologies #technologies-content .container #technologies-items ul li p {
+        font-size: 2rem; }
+  .carousel-inner .carousel-item {
+    height: 400px; }
+  .carousel-content {
+    top: 90%; }
+    .carousel-content .carousel-buttons {
+      display: none; }
+    .carousel-content h2 {
+      font-size: 1.5rem; }
+    .carousel-content p {
+      display: none; }
+  #sectors #sectors-header p {
+    font-size: 1.5rem;
+    width: 500px;
+    margin: auto; }
+  #portfolios #portfolios-items .container .row div .portfolio {
+    width: 540px;
+    height: 540px; }
+    #portfolios #portfolios-items .container .row div .portfolio .hovered {
+      width: 540px;
+      height: 540px; }
+  #contact #contact-header {
+    width: 80%;
+    margin: auto; }
+  #contact #contact-content #contact-email {
+    display: block;
+    margin: 0;
+    margin-bottom: 50px; }
+    #contact #contact-content #contact-email i {
+      font-size: 8rem; }
+  #contact #contact-content #contact-phone {
+    display: block; }
+    #contact #contact-content #contact-phone i {
+      font-size: 8rem; } }
+
+@media only screen and (max-width: 576px) {
+  #technologies #technologies-content .container {
+    width: 450px; }
+    #technologies #technologies-content .container #technologies-items ul {
+      width: 2570px; }
+      #technologies #technologies-content .container #technologies-items ul li {
+        width: 420px;
+        height: 420px; }
+        #technologies #technologies-content .container #technologies-items ul li i {
+          font-size: 10rem;
+          margin-bottom: 30px; }
+        #technologies #technologies-content .container #technologies-items ul li p {
+          font-size: 2rem; }
+  #sectors #sectors-header p {
+    font-size: 1.5rem;
+    width: 400px;
+    margin: auto; }
+  #portfolios #portfolios-items .container .row div .portfolio {
+    width: 100vw;
+    height: 100vw; }
+    #portfolios #portfolios-items .container .row div .portfolio .hovered {
+      width: 100vw;
+      height: 100vw; } }
