@@ -606,6 +606,30 @@ nav#gnb {
             font-size: 1.2rem;
         }
     }
+    #footer {
+        .container {
+            #footer-sitemap {
+                float: none;
+                ul {
+                    text-align: center;
+                }
+            }
+            #footer-brand {
+                float: none;
+                #footer-brand-logo {
+                    text-align: center;
+                    img {
+                        float: none;
+                    }
+                }
+                #footer-brand-address {
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Media query (max-width: 992px)
@@ -788,6 +812,13 @@ nav#gnb {
                 i {
                     font-size: 8rem;
                 }
+            }
+        }
+    }
+    #footer {
+        .container {
+            #footer-sitemap {
+                display: none;
             }
         }
     }

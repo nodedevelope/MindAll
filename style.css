@@ -430,7 +430,19 @@ nav#gnb {
     .carousel-content h2 {
       font-size: 2rem; }
     .carousel-content p {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+  #footer .container #footer-sitemap {
+    float: none; }
+    #footer .container #footer-sitemap ul {
+      text-align: center; }
+  #footer .container #footer-brand {
+    float: none; }
+    #footer .container #footer-brand #footer-brand-logo {
+      text-align: center; }
+      #footer .container #footer-brand #footer-brand-logo img {
+        float: none; }
+    #footer .container #footer-brand #footer-brand-address p {
+      text-align: center; } }
 
 @media only screen and (max-width: 992px) {
   nav#gnb .container #gnb-nav {
@@ -529,7 +541,9 @@ nav#gnb {
   #contact #contact-content #contact-phone {
     display: block; }
     #contact #contact-content #contact-phone i {
-      font-size: 8rem; } }
+      font-size: 8rem; }
+  #footer .container #footer-sitemap {
+    display: none; } }
 
 @media only screen and (max-width: 576px) {
   #technologies #technologies-content .container {
