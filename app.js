@@ -2,7 +2,7 @@ var sass = require("node-sass");
 var fs = require("fs");
 
 sass.render({
-    file: "./style.scss"
+    file: "./stylesheets/index.scss"
 }, function(error, result) {
     if(error) {
         return console.log(error);

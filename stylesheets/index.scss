@@ -1,3 +1,6 @@
+// Import other stylesheets...
+@import "./service.scss";
+
 // Importing fonts...
 @font-face {
     font-family: "NanumSquare";
@@ -59,7 +62,14 @@ img {
 }
 body {
     font-family: "NanumSquare";
+}
+html, body {
     overflow-x: hidden;
+}
+
+// Header
+header#header {
+    height: 55vw;
 }
 
 // GNB (Global Navigation Bar)
@@ -179,7 +189,6 @@ nav#gnb {
 
 // Primary business sectors
 #sectors {
-    margin-top: 100px;
     margin-bottom: 100px;
     #sectors-header {
         text-align: center;
@@ -199,7 +208,6 @@ nav#gnb {
                 div {
                     padding: 10px;
                     .sector-item {
-                        border: 1px solid #333;
                         padding: 30px;
                         text-align: center;
                         i {
@@ -244,6 +252,8 @@ nav#gnb {
 // Current technologies
 #technologies {
     margin-bottom: 100px;
+    padding: 50px 0;
+    background-color: #EEE;
     #technologies-header {
         text-align: center;
         h3 {
@@ -254,71 +264,34 @@ nav#gnb {
     #technologies-content {
         .container {
             position: relative;
-            #technologies-left-arrow {
-                cursor: pointer;
-                left: -10px;
-                top: 50%;
-                transform: translateY(-50%);
-                position: absolute;
-                z-index: 1;
-                display: none;
-                vertical-align: middle;
-                i {
-                    font-size: 2rem;
-                    transition: all .3s;
-                }
-                &:hover {
-                    i {
-                        transform: scale(1.2);
-                    }
-                }
-            }
-            #technologies-right-arrow {
-                cursor: pointer;
-                right: -10px;
-                top: 50%;
-                transform: translateY(-50%);
-                position: absolute;
-                z-index: 1;
-                display: none;
-                vertical-align: middle;
-                i {
-                    font-size: 2rem;
-                    transition: all .3s;
-                }
-                &:hover {
-                    i {
-                        transform: scale(1.2);
-                    }
-                }
-            }
             ul {
-                display: flex;
-                flex-direction: row;
                 li {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    width: 176px;
-                    height: 176px;
-                    border-radius: 50%;
-                    border: 1px solid #333;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 15.83%;
+                    height: auto;
                     &:not(:last-child) {
-                        margin-right: 10px;
+                        margin-right: 1%;
                     }
-                    i {
-                        font-size: 4rem;
-                        margin-bottom: 15px;
-                    }
-                    img {
-                        height: 64px;
-                        width: auto;
-                        margin-bottom: 15px;
-                    }
-                    p {
-                        font-size: 1.2rem;
-                        font-weight: bold;
+                    .technologies-item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        text-align: center;
+                        i {
+                            font-size: 4rem;
+                            margin-bottom: 15px;
+                        }
+                        img {
+                            height: 64px;
+                            width: auto;
+                            margin-bottom: 15px;
+                        }
+                        p {
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                        }
                     }
                 }
             }
@@ -372,7 +345,7 @@ nav#gnb {
     #portfolios-items {
         .container {
             .row {
-                div {
+                & > div {
                     padding: 30px;
                     .portfolio {
                         position: relative;
@@ -416,7 +389,9 @@ nav#gnb {
 
 // Clients
 #clients {
-    margin-bottom: 100px;
+    padding: 50px 0;
+    margin-bottom: 30px;
+    background-color: #EEE;
     #clients-header {
         text-align: center;
         margin-bottom: 30px;
@@ -432,10 +407,11 @@ nav#gnb {
                 vertical-align: middle;
                 margin-bottom: 15px;
                 &:not(:last-child) {
-                    margin-right: 15px;
+                    margin-right: 25px;
                 }
                 img {
-
+                    height: 30px;
+                    width: auto;
                 }
             }
         }
@@ -444,6 +420,7 @@ nav#gnb {
 
 // Contact
 #contact {
+    margin-top: 100px;
     margin-bottom: 100px;
     #contact-header {
         text-align: center;
@@ -531,7 +508,7 @@ nav#gnb {
                             & > a {
                                 color: inherit;
                                 &:hover {
-                                    text-decoration: none;
+                                    text-decoration: underline;
                                 }
                             }
                         }
@@ -560,23 +537,23 @@ nav#gnb {
 }
 
 // Media query (max-width: 1200px)
-@media only screen and (max-width: 1200px) {
-    #technologies {
-        #technologies-content {
+@media screen and (max-width: 1200px) {
+    #header {
+        height: 850px;
+    }
+    #portfolios {
+        #portfolios-items {
             .container {
-                #technologies-left-arrow {
-                    display: inline-block;
-                }
-                #technologies-right-arrow {
-                    display: inline-block;
-                }
-                #technologies-items {
-                    width: 100%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    ul {
-                        position: relative;
-                        width: 1110px;
+                .row {
+                    & > div {
+                        .portfolio {
+                            img {
+                                left: 50px;
+                            }
+                            .hovered {
+                                left: 50px;
+                            }
+                        }
                     }
                 }
             }
@@ -588,6 +565,16 @@ nav#gnb {
                 font-size: 1.5rem;
                 width: 800px;
                 margin: auto;
+            }
+        }
+    }
+    #clients {
+        #clients-list {
+            ul {
+                margin: auto;
+                width: 60%;
+                overflow-x: scroll;
+                white-space: nowrap;
             }
         }
     }
@@ -633,7 +620,10 @@ nav#gnb {
 }
 
 // Media query (max-width: 992px)
-@media only screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
+    header#header {
+        height: 650px;
+    }
     nav#gnb {
         .container {
             #gnb-nav {
@@ -712,8 +702,16 @@ nav#gnb {
         #portfolios-items {
             .container {
                 .row {
-                    div {
+                    & > div {
                         padding: 0;
+                        .portfolio {
+                            img {
+                                left: 20px;
+                            }
+                            .hovered {
+                                left: 20px;
+                            }
+                        }
                     }
                 }
             }
@@ -722,32 +720,9 @@ nav#gnb {
 }
 
 // Media query (max-width: 768px)
-@media only screen and (max-width: 768px) {
-    #technologies {
-        #technologies-content {
-            .container {
-                #technologies-items {
-                    ul {
-                        width: 3110px;
-                        li {
-                            width: 510px;
-                            height: 510px;
-                            i {
-                                font-size: 10rem;
-                                margin-bottom: 30px;
-                            }
-                            img {
-                                height: 160px;
-                                width: auto;
-                            }
-                            p {
-                                font-size: 2rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+@media screen and (max-width: 768px) {
+    header#header {
+        height: 500px;
     }
     .carousel-inner {
         .carousel-item {
@@ -779,13 +754,43 @@ nav#gnb {
         #portfolios-items {
             .container {
                 .row {
-                    div {
+                    & > div {
                         .portfolio {
-                            width: 540px;
-                            height: 540px;
+                            width: 360px;
+                            height: 360px;
+                            img {
+                                left: 0;
+                            }
                             .hovered {
+                                left: 0;
                                 width: 540px;
                                 height: 540px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #technologies {
+        #technologies-content {
+            .container {
+                ul {
+                    overflow-x: scroll;
+                    white-space: nowrap;
+                    li {
+                        margin-right: 0;
+                        width: 100%;
+                        .technologies-item {
+                            i {
+                                font-size: 10rem;
+                            }
+                            img {
+                                height: 160px;
+                                width: auto;
+                            }
+                            p {
+                                font-size: 3rem;
                             }
                         }
                     }
@@ -825,40 +830,22 @@ nav#gnb {
 }
 
 // Media query (max-width: 576px)
-@media only screen and (max-width: 576px) {
-    #technologies {
-        #technologies-content {
-            .container {
-                width: 450px;
-                #technologies-items {
-                    ul {
-                        width: 2570px;
-                        li {
-                            width: 420px;
-                            height: 420px;
-                            i {
-                                font-size: 10rem;
-                                margin-bottom: 30px;
-                            }
-                            p {
-                                font-size: 2rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+@media screen and (max-width: 576px) {
     #sectors {
         #sectors-header {
             p {
                 font-size: 1.5rem;
-                width: 400px;
+                width: 90%;
                 margin: auto;
             }
         }
     }
     #portfolios {
+        #portfolios-header {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
         #portfolios-items {
             .container {
                 .row {

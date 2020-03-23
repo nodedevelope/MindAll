@@ -1,3 +1,70 @@
+#header {
+  width: 100%;
+  height: 930px;
+  position: relative; }
+  #header #header-background {
+    width: 100%;
+    height: 930px;
+    position: absolute; }
+    #header #header-background .dark-filter {
+      position: absolute;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 930px; }
+    #header #header-background img {
+      position: absolute; }
+  #header #header-header {
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    #header #header-header h2 {
+      font-weight: bolder;
+      color: white;
+      font-size: 4rem;
+      margin-bottom: 50px; }
+    #header #header-header p {
+      color: white;
+      font-size: 1.8rem; }
+
+#lnb ul {
+  margin: 3rem 0;
+  text-align: center; }
+  #lnb ul li {
+    display: inline-block; }
+    #lnb ul li:not(:last-child) {
+      margin-right: 30px; }
+    #lnb ul li.active a {
+      color: #3CDBED;
+      border-color: #3CDBED;
+      border-width: 3px; }
+    #lnb ul li a {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #333;
+      border-bottom: 3px solid transparent;
+      transition: all .3s;
+      padding-bottom: 5px; }
+      #lnb ul li a:hover {
+        text-decoration: none;
+        border-bottom: 3px solid #333; }
+
+#webapp #webapp-header {
+  margin-bottom: 30px;
+  text-align: center; }
+  #webapp #webapp-header h3 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 30px; }
+  #webapp #webapp-header p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: darkgray; }
+
 @font-face {
   font-family: "NanumSquare";
   src: url("./fonts/NanumSquareB.ttf");
@@ -54,8 +121,13 @@ img {
   border: 0; }
 
 body {
-  font-family: "NanumSquare";
+  font-family: "NanumSquare"; }
+
+html, body {
   overflow-x: hidden; }
+
+header#header {
+  height: 55vw; }
 
 nav#gnb {
   width: 100%;
@@ -140,7 +212,6 @@ nav#gnb {
         text-decoration: none; }
 
 #sectors {
-  margin-top: 100px;
   margin-bottom: 100px; }
   #sectors #sectors-header {
     text-align: center;
@@ -154,7 +225,6 @@ nav#gnb {
   #sectors #sectors-content .container .row div {
     padding: 10px; }
     #sectors #sectors-content .container .row div .sector-item {
-      border: 1px solid #333;
       padding: 30px;
       text-align: center; }
       #sectors #sectors-content .container .row div .sector-item i {
@@ -184,7 +254,9 @@ nav#gnb {
       text-align: center; }
 
 #technologies {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  padding: 50px 0;
+  background-color: #EEE; }
   #technologies #technologies-header {
     text-align: center; }
     #technologies #technologies-header h3 {
@@ -192,56 +264,27 @@ nav#gnb {
       margin-bottom: 30px; }
   #technologies #technologies-content .container {
     position: relative; }
-    #technologies #technologies-content .container #technologies-left-arrow {
-      cursor: pointer;
-      left: -10px;
-      top: 50%;
-      transform: translateY(-50%);
-      position: absolute;
-      z-index: 1;
-      display: none;
-      vertical-align: middle; }
-      #technologies #technologies-content .container #technologies-left-arrow i {
-        font-size: 2rem;
-        transition: all .3s; }
-      #technologies #technologies-content .container #technologies-left-arrow:hover i {
-        transform: scale(1.2); }
-    #technologies #technologies-content .container #technologies-right-arrow {
-      cursor: pointer;
-      right: -10px;
-      top: 50%;
-      transform: translateY(-50%);
-      position: absolute;
-      z-index: 1;
-      display: none;
-      vertical-align: middle; }
-      #technologies #technologies-content .container #technologies-right-arrow i {
-        font-size: 2rem;
-        transition: all .3s; }
-      #technologies #technologies-content .container #technologies-right-arrow:hover i {
-        transform: scale(1.2); }
-    #technologies #technologies-content .container ul {
-      display: flex;
-      flex-direction: row; }
-      #technologies #technologies-content .container ul li {
+    #technologies #technologies-content .container ul li {
+      display: inline-block;
+      vertical-align: middle;
+      width: 15.83%;
+      height: auto; }
+      #technologies #technologies-content .container ul li:not(:last-child) {
+        margin-right: 1%; }
+      #technologies #technologies-content .container ul li .technologies-item {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 176px;
-        height: 176px;
-        border-radius: 50%;
-        border: 1px solid #333; }
-        #technologies #technologies-content .container ul li:not(:last-child) {
-          margin-right: 10px; }
-        #technologies #technologies-content .container ul li i {
+        text-align: center; }
+        #technologies #technologies-content .container ul li .technologies-item i {
           font-size: 4rem;
           margin-bottom: 15px; }
-        #technologies #technologies-content .container ul li img {
+        #technologies #technologies-content .container ul li .technologies-item img {
           height: 64px;
           width: auto;
           margin-bottom: 15px; }
-        #technologies #technologies-content .container ul li p {
+        #technologies #technologies-content .container ul li .technologies-item p {
           font-size: 1.2rem;
           font-weight: bold; }
 
@@ -275,19 +318,19 @@ nav#gnb {
             border-bottom: 1px solid #333; }
         #portfolios #portfolios-filters ul li.active a {
           border-bottom: 2px solid #333; }
-  #portfolios #portfolios-items .container .row div {
+  #portfolios #portfolios-items .container .row > div {
     padding: 30px; }
-    #portfolios #portfolios-items .container .row div .portfolio {
+    #portfolios #portfolios-items .container .row > div .portfolio {
       position: relative;
       width: 320px;
       height: 320px; }
-      #portfolios #portfolios-items .container .row div .portfolio img {
+      #portfolios #portfolios-items .container .row > div .portfolio img {
         width: 320px;
         height: 320px;
         position: absolute;
         width: 100%;
         height: auto; }
-      #portfolios #portfolios-items .container .row div .portfolio .hovered {
+      #portfolios #portfolios-items .container .row > div .portfolio .hovered {
         padding: 20px;
         opacity: 0;
         width: 320px;
@@ -299,16 +342,18 @@ nav#gnb {
         align-items: center;
         background: rgba(0, 0, 0, 0.5);
         text-align: center; }
-        #portfolios #portfolios-items .container .row div .portfolio .hovered p.portfolio-title {
+        #portfolios #portfolios-items .container .row > div .portfolio .hovered p.portfolio-title {
           color: white;
           font-size: 1.5rem;
           margin-bottom: 10px; }
-        #portfolios #portfolios-items .container .row div .portfolio .hovered p.portfolio-description {
+        #portfolios #portfolios-items .container .row > div .portfolio .hovered p.portfolio-description {
           font-size: 1.2rem;
           color: white; }
 
 #clients {
-  margin-bottom: 100px; }
+  padding: 50px 0;
+  margin-bottom: 30px;
+  background-color: #EEE; }
   #clients #clients-header {
     text-align: center;
     margin-bottom: 30px; }
@@ -321,9 +366,13 @@ nav#gnb {
       vertical-align: middle;
       margin-bottom: 15px; }
       #clients #clients-list ul li:not(:last-child) {
-        margin-right: 15px; }
+        margin-right: 25px; }
+      #clients #clients-list ul li img {
+        height: 30px;
+        width: auto; }
 
 #contact {
+  margin-top: 100px;
   margin-bottom: 100px; }
   #contact #contact-header {
     text-align: center;
@@ -392,7 +441,7 @@ nav#gnb {
           #footer .container #footer-sitemap > ul > li > ul > li > a {
             color: inherit; }
             #footer .container #footer-sitemap > ul > li > ul > li > a:hover {
-              text-decoration: none; }
+              text-decoration: underline; }
     #footer .container #footer-brand {
       float: right; }
       #footer .container #footer-brand #footer-brand-logo {
@@ -405,22 +454,22 @@ nav#gnb {
         text-align: right;
         margin-bottom: 0; }
 
-@media only screen and (max-width: 1200px) {
-  #technologies #technologies-content .container #technologies-left-arrow {
-    display: inline-block; }
-  #technologies #technologies-content .container #technologies-right-arrow {
-    display: inline-block; }
-  #technologies #technologies-content .container #technologies-items {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden; }
-    #technologies #technologies-content .container #technologies-items ul {
-      position: relative;
-      width: 1110px; }
+@media screen and (max-width: 1200px) {
+  #header {
+    height: 850px; }
+  #portfolios #portfolios-items .container .row > div .portfolio img {
+    left: 50px; }
+  #portfolios #portfolios-items .container .row > div .portfolio .hovered {
+    left: 50px; }
   #sectors #sectors-header p {
     font-size: 1.5rem;
     width: 800px;
     margin: auto; }
+  #clients #clients-list ul {
+    margin: auto;
+    width: 60%;
+    overflow-x: scroll;
+    white-space: nowrap; }
   .carousel-content {
     top: 65%; }
     .carousel-content .carousel-buttons {
@@ -444,7 +493,9 @@ nav#gnb {
     #footer .container #footer-brand #footer-brand-address p {
       text-align: center; } }
 
-@media only screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
+  header#header {
+    height: 650px; }
   nav#gnb .container #gnb-nav {
     display: none; }
   nav#gnb .container #gnb-hamburger {
@@ -492,23 +543,16 @@ nav#gnb {
       font-size: 2rem; }
     .carousel-content p {
       font-size: 1.2rem; }
-  #portfolios #portfolios-items .container .row div {
-    padding: 0; } }
+  #portfolios #portfolios-items .container .row > div {
+    padding: 0; }
+    #portfolios #portfolios-items .container .row > div .portfolio img {
+      left: 20px; }
+    #portfolios #portfolios-items .container .row > div .portfolio .hovered {
+      left: 20px; } }
 
-@media only screen and (max-width: 768px) {
-  #technologies #technologies-content .container #technologies-items ul {
-    width: 3110px; }
-    #technologies #technologies-content .container #technologies-items ul li {
-      width: 510px;
-      height: 510px; }
-      #technologies #technologies-content .container #technologies-items ul li i {
-        font-size: 10rem;
-        margin-bottom: 30px; }
-      #technologies #technologies-content .container #technologies-items ul li img {
-        height: 160px;
-        width: auto; }
-      #technologies #technologies-content .container #technologies-items ul li p {
-        font-size: 2rem; }
+@media screen and (max-width: 768px) {
+  header#header {
+    height: 500px; }
   .carousel-inner .carousel-item {
     height: 400px; }
   .carousel-content {
@@ -523,12 +567,28 @@ nav#gnb {
     font-size: 1.5rem;
     width: 500px;
     margin: auto; }
-  #portfolios #portfolios-items .container .row div .portfolio {
-    width: 540px;
-    height: 540px; }
-    #portfolios #portfolios-items .container .row div .portfolio .hovered {
+  #portfolios #portfolios-items .container .row > div .portfolio {
+    width: 360px;
+    height: 360px; }
+    #portfolios #portfolios-items .container .row > div .portfolio img {
+      left: 0; }
+    #portfolios #portfolios-items .container .row > div .portfolio .hovered {
+      left: 0;
       width: 540px;
       height: 540px; }
+  #technologies #technologies-content .container ul {
+    overflow-x: scroll;
+    white-space: nowrap; }
+    #technologies #technologies-content .container ul li {
+      margin-right: 0;
+      width: 100%; }
+      #technologies #technologies-content .container ul li .technologies-item i {
+        font-size: 10rem; }
+      #technologies #technologies-content .container ul li .technologies-item img {
+        height: 160px;
+        width: auto; }
+      #technologies #technologies-content .container ul li .technologies-item p {
+        font-size: 3rem; }
   #contact #contact-header {
     width: 80%;
     margin: auto; }
@@ -545,23 +605,15 @@ nav#gnb {
   #footer .container #footer-sitemap {
     display: none; } }
 
-@media only screen and (max-width: 576px) {
-  #technologies #technologies-content .container {
-    width: 450px; }
-    #technologies #technologies-content .container #technologies-items ul {
-      width: 2570px; }
-      #technologies #technologies-content .container #technologies-items ul li {
-        width: 420px;
-        height: 420px; }
-        #technologies #technologies-content .container #technologies-items ul li i {
-          font-size: 10rem;
-          margin-bottom: 30px; }
-        #technologies #technologies-content .container #technologies-items ul li p {
-          font-size: 2rem; }
+@media screen and (max-width: 576px) {
   #sectors #sectors-header p {
     font-size: 1.5rem;
-    width: 400px;
+    width: 90%;
     margin: auto; }
+  #portfolios #portfolios-header {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px; }
   #portfolios #portfolios-items .container .row div .portfolio {
     width: 100vw;
     height: 100vw; }
