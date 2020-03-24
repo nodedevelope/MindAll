@@ -126,11 +126,18 @@ body {
 html, body {
   overflow-x: hidden; }
 
+section {
+  opacity: 0;
+  position: relative;
+  bottom: -50px;
+  transition: none; }
+
 header#header {
   height: 55vw; }
 
 nav#gnb {
   width: 100%;
+  transition: all 1s;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   z-index: 2;

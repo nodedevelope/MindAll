@@ -168,4 +168,39 @@ $(document).ready(function() {
         $(this).parent().addClass("active");
         var category = $(this).text();
     });
+
+    // GNB (Global Navigation Bar)
+    $("#sectors").waypoint({
+        handler: function(direction) {
+            if(direction === "down") {
+                $("nav#gnb").css({
+                    backgroundColor: "#333"
+                });
+            }
+            else {
+                $("nav#gnb").css({
+                    backgroundColor: "rgba(0, 0, 0, .5)"
+                });
+            }
+        }
+    });
+
+    // Parallax effect
+    $("section").waypoint({
+        handler: function(direction) {
+            if(direction === "down") {
+                $(this.element).animate({
+                    opacity: 1,
+                    bottom: "0"
+                }, "slow");
+            }
+            else {
+                $(this.element).animate({
+                    opacity: 0,
+                    bottom: "-80px"
+                }, "slow");
+            }
+        },
+        offset: 700
+    });
 });
