@@ -170,37 +170,48 @@ $(document).ready(function() {
     });
 
     // GNB (Global Navigation Bar)
+    var navigationBarColor = "#333";
+    var upperNavigationBarColor = "rgba(0, 0, 0, .5)";
     $("#sectors").waypoint({
         handler: function(direction) {
             if(direction === "down") {
                 $("nav#gnb").css({
-                    backgroundColor: "#333"
+                    backgroundColor: navigationBarColor
                 });
             }
             else {
                 $("nav#gnb").css({
-                    backgroundColor: "rgba(0, 0, 0, .5)"
+                    backgroundColor: upperNavigationBarColor
                 });
             }
         }
     });
 
     // Parallax effect
-    $("section").waypoint({
+    var offset = 800;
+    var speed = "slow";
+    var hiddenHeight = 80;
+    var waypointed = $("section").not("#contact").not("#clients");
+    waypointed.css({
+        opacity: 0,
+        position: "relative",
+        bottom: "-" + hiddenHeight + "px"
+    });
+    waypointed.waypoint({
         handler: function(direction) {
             if(direction === "down") {
                 $(this.element).animate({
                     opacity: 1,
                     bottom: "0"
-                }, "slow");
+                }, speed);
             }
             else {
                 $(this.element).animate({
                     opacity: 0,
-                    bottom: "-80px"
-                }, "slow");
+                    bottom: "-" + hiddenHeight + "px"
+                }, speed);
             }
         },
-        offset: 700
+        offset: offset
     });
 });
