@@ -113,7 +113,7 @@ $(document).ready(function() {
 
     // Portfolio helper functions
     function getPortfolio(item) {
-        var cell = $("<div class='col-md-6 col-xl-4'></div>").append();
+        var cell = $("<div class='col-12 col-lg-6 col-xl-4'></div>").append();
         var title = $("<p class='portfolio-title'>" + item.title + "</p>");
         var description = $("<p class='portfolio-description'>" + item.description + "</p>");
         var hoverPanel = $("<div class='hovered'></div>").append(title).append(description);
