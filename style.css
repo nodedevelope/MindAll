@@ -504,6 +504,8 @@ nav#gnb {
     font-size: 1.5rem;
     width: 800px;
     margin: auto; }
+  #sectors #sectors-content {
+    width: 960px; }
   #clients #clients-list ul li:not(:last-child) {
     margin-right: 15px; }
   .carousel-content {
@@ -564,6 +566,34 @@ nav#gnb {
     font-size: 1.5rem;
     width: 600px;
     margin: auto; }
+  #sectors #sectors-content {
+    width: 720px; }
+    #sectors #sectors-content .sector-alpha {
+      height: 600px; }
+      #sectors #sectors-content .sector-alpha .sector-left {
+        position: static;
+        width: 80%;
+        margin: auto; }
+        #sectors #sectors-content .sector-alpha .sector-left img {
+          width: 100%;
+          height: auto; }
+      #sectors #sectors-content .sector-alpha .sector-right {
+        top: 220px;
+        width: 100%;
+        text-align: center; }
+    #sectors #sectors-content .sector-beta {
+      height: 600px; }
+      #sectors #sectors-content .sector-beta .sector-left {
+        top: 220px;
+        width: 100%;
+        text-align: center; }
+      #sectors #sectors-content .sector-beta .sector-right {
+        position: static;
+        width: 80%;
+        margin: auto; }
+        #sectors #sectors-content .sector-beta .sector-right img {
+          width: 100%;
+          height: auto; }
   .carousel-inner .carousel-item {
     height: 550px;
     overflow: hidden;
@@ -623,6 +653,42 @@ nav#gnb {
     font-size: 1.5rem;
     width: 500px;
     margin: auto; }
+  #sectors #sectors-content {
+    width: 100%; }
+    #sectors #sectors-content .sector-alpha {
+      height: 60vw; }
+      #sectors #sectors-content .sector-alpha .sector-left {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); }
+      #sectors #sectors-content .sector-alpha .sector-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 50% !important;
+        transform: translateX(-50%);
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 52vw; }
+    #sectors #sectors-content .sector-beta {
+      height: 60vw; }
+      #sectors #sectors-content .sector-beta .sector-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 50% !important;
+        transform: translateX(-50%);
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 52vw; }
+      #sectors #sectors-content .sector-beta .sector-right {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); }
   #technologies {
     display: none; }
   #technologies-slider {
@@ -662,6 +728,14 @@ nav#gnb {
     font-size: 1.5rem;
     width: 90%;
     margin: auto; }
+  #sectors #sectors-content .sector-alpha .sector-right h4 {
+    margin-bottom: 5px; }
+  #sectors #sectors-content .sector-alpha .sector-right p {
+    margin-bottom: 5px; }
+  #sectors #sectors-content .sector-beta .sector-left h4 {
+    margin-bottom: 5px; }
+  #sectors #sectors-content .sector-beta .sector-left p {
+    margin-bottom: 5px; }
   #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item {
     height: 200px; }
     #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item img {

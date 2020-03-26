@@ -731,6 +731,9 @@ nav#gnb {
                 margin: auto;
             }
         }
+        #sectors-content {
+            width: 960px;
+        }
     }
     #clients {
         #clients-list {
@@ -836,6 +839,43 @@ nav#gnb {
                 margin: auto;
             }
         }
+        #sectors-content {
+            width: 720px;
+            .sector-alpha {
+                height: 600px;
+                .sector-left {
+                    position: static;
+                    width: 80%;
+                    margin: auto;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .sector-right {
+                    top: 220px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .sector-beta {
+                height: 600px;
+                .sector-left {
+                    top: 220px;
+                    width: 100%;
+                    text-align: center;
+                }
+                .sector-right {
+                    position: static;
+                    width: 80%;
+                    margin: auto;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
     }
     .carousel-inner {
         .carousel-item {
@@ -926,6 +966,49 @@ nav#gnb {
                 font-size: 1.5rem;
                 width: 500px;
                 margin: auto;
+            }
+        }
+        #sectors-content {
+            width: 100%;
+            .sector-alpha {
+                height: 60vw;
+                .sector-left {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                .sector-right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: absolute;
+                    left: 50% !important;
+                    transform: translateX(-50%);
+                    top: 0;
+                    left: 0;
+                    width: 80%;
+                    height: 52vw;
+                }
+            }
+            .sector-beta {
+                height: 60vw;
+                .sector-left {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: absolute;
+                    left: 50% !important;
+                    transform: translateX(-50%);
+                    top: 0;
+                    left: 0;
+                    width: 80%;
+                    height: 52vw;
+                }
+                .sector-right {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }
         }
     }
@@ -1021,6 +1104,28 @@ nav#gnb {
                 font-size: 1.5rem;
                 width: 90%;
                 margin: auto;
+            }
+        }
+        #sectors-content {
+            .sector-alpha {
+                .sector-right {
+                    h4 {
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .sector-beta {
+                .sector-left {
+                    h4 {
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        margin-bottom: 5px;
+                    }
+                }
             }
         }
     }
