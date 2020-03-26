@@ -18,7 +18,8 @@ body {
   font-family: "Noto Sans KR", sans-serif; }
 
 html, body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 18px; }
 
 header#header {
   height: 800px; }
@@ -342,17 +343,18 @@ nav#gnb {
       #clients #clients-list ul li:not(:last-child) {
         margin-right: 25px; }
       #clients #clients-list ul li img {
-        height: 30px;
+        height: 40px;
         width: auto; }
 
 #clients-slider {
   background-color: lightgray;
-  display: none; }
+  display: none;
+  padding: 30px 0; }
   #clients-slider #clients-slider-header {
     padding-top: 30px; }
     #clients-slider #clients-slider-header h3 {
       font-weight: bolder;
-      font-size: 2.5rem;
+      font-size: 1.75rem;
       text-align: center; }
   #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item {
     height: 300px;

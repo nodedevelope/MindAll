@@ -25,6 +25,7 @@ body {
 }
 html, body {
     overflow-x: hidden;
+    font-size: 18px;
 }
 
 // Header
@@ -495,7 +496,7 @@ nav#gnb {
                     margin-right: 25px;
                 }
                 img {
-                    height: 30px;
+                    height: 40px;
                     width: auto;
                 }
             }
@@ -505,11 +506,12 @@ nav#gnb {
 #clients-slider {
     background-color: lightgray;
     display: none;
+    padding: 30px 0;
     #clients-slider-header {
         padding-top: 30px;
         h3 {
             font-weight: bolder;
-            font-size: 2.5rem;
+            font-size: 1.75rem;
             text-align: center;
         }
     }
