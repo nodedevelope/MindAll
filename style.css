@@ -1,43 +1,4 @@
-@font-face {
-  font-family: "NanumSquare";
-  src: url("./fonts/NanumSquareB.ttf");
-  font-weight: bold; }
-
-@font-face {
-  font-family: "NanumSquare";
-  src: url("./fonts/NanumSquareEB.ttf");
-  font-weight: bolder; }
-
-@font-face {
-  font-family: "NanumSquare";
-  src: url("./fonts/NanumSquareL.ttf");
-  font-weight: lighter; }
-
-@font-face {
-  font-family: "NanumSquare";
-  src: url("./fonts/NanumSquareR.ttf");
-  font-weight: normal; }
-
-@font-face {
-  font-family: "NanumSquareRound";
-  src: url("./fonts/NanumSquareRoundB.ttf");
-  font-weight: bold; }
-
-@font-face {
-  font-family: "NanumSquareRound";
-  src: url("./fonts/NanumSquareRoundEB.ttf");
-  font-weight: bolder; }
-
-@font-face {
-  font-family: "NanumSquareRound";
-  src: url("./fonts/NanumSquareRoundL.ttf");
-  font-weight: lighter; }
-
-@font-face {
-  font-family: "NanumSquareRound";
-  src: url("./fonts/NanumSquareRoundR.ttf");
-  font-weight: normal; }
-
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700&display=swap&subset=korean");
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +15,7 @@ img {
   border: 0; }
 
 body {
-  font-family: "NanumSquare"; }
+  font-family: "Noto Sans KR", sans-serif; }
 
 html, body {
   overflow-x: hidden; }
@@ -67,7 +28,7 @@ nav#gnb {
   transition: all 1s;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  z-index: 2;
+  z-index: 16;
   height: 80px; }
   nav#gnb .container #gnb-brand {
     float: left;
@@ -184,8 +145,9 @@ nav#gnb {
         transition: all .3s; }
         #sectors #sectors-content .container .row div .sector-item a:hover {
           text-decoration: none;
-          background-color: #333;
-          color: white; }
+          background-color: #3CDBED;
+          color: white;
+          border-color: #3CDBED; }
     #sectors #sectors-content .container .row div:nth-of-type(4) {
       text-align: center; }
     #sectors #sectors-content .container .row div:nth-of-type(5) {
@@ -237,13 +199,13 @@ nav#gnb {
       font-weight: bolder;
       text-align: center; }
   #technologies-slider .container .carousel .carousel-inner .carousel-item {
-    height: 400px;
+    height: 300px;
     position: relative; }
     #technologies-slider .container .carousel .carousel-inner .carousel-item img {
       width: 200px;
       height: 200px;
       position: absolute;
-      top: 25%; }
+      top: 15%; }
 
 #portfolios {
   margin-bottom: 100px; }
@@ -307,6 +269,61 @@ nav#gnb {
           font-size: 1.2rem;
           color: white; }
 
+#portfolios-slider {
+  display: none;
+  margin-bottom: 80px; }
+  #portfolios-slider #portfolios-slider-header {
+    width: 80%;
+    margin: auto;
+    text-align: center; }
+    #portfolios-slider #portfolios-slider-header h3 {
+      font-size: 1.75rem;
+      font-weight: bolder;
+      margin-bottom: 20px; }
+    #portfolios-slider #portfolios-slider-header p {
+      font-size: 1.5rem; }
+  #portfolios-slider #portfolios-slider-category ul {
+    text-align: center; }
+    #portfolios-slider #portfolios-slider-category ul li {
+      display: inline-block; }
+      #portfolios-slider #portfolios-slider-category ul li:not(:last-child) {
+        margin-right: 10px; }
+      #portfolios-slider #portfolios-slider-category ul li a {
+        font-weight: bold;
+        border-bottom: 3px solid transparent;
+        color: inherit;
+        font-size: 1.2rem;
+        transition: all .3s; }
+        #portfolios-slider #portfolios-slider-category ul li a:hover {
+          border-bottom: 1px solid #333;
+          text-decoration: none; }
+      #portfolios-slider #portfolios-slider-category ul li.active a {
+        border-bottom: 3px solid #333; }
+  #portfolios-slider #portfolios-slider-carousel > div {
+    display: none; }
+    #portfolios-slider #portfolios-slider-carousel > div .container .carousel .carousel-inner .carousel-item {
+      position: relative; }
+      #portfolios-slider #portfolios-slider-carousel > div .container .carousel .carousel-inner .carousel-item img {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        top: 5%; }
+    #portfolios-slider #portfolios-slider-carousel > div .container .carousel .carousel-control-prev .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
+    #portfolios-slider #portfolios-slider-carousel > div .container .carousel .carousel-control-next .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
+    #portfolios-slider #portfolios-slider-carousel > div .container .carousel .carousel-indicators li {
+      background-color: #333; }
+  #portfolios-slider #portfolios-slider-carousel #portfolios-solution .container {
+    text-align: center; }
+    #portfolios-slider #portfolios-slider-carousel #portfolios-solution .container img {
+      width: 720px;
+      height: 720px; }
+    #portfolios-slider #portfolios-slider-carousel #portfolios-solution .container h5 {
+      font-size: 2rem; }
+    #portfolios-slider #portfolios-slider-carousel #portfolios-solution .container p {
+      font-size: 1.5rem; }
+
 #clients {
   padding: 50px 0;
   margin-bottom: 30px;
@@ -327,6 +344,24 @@ nav#gnb {
       #clients #clients-list ul li img {
         height: 30px;
         width: auto; }
+
+#clients-slider {
+  background-color: lightgray;
+  display: none; }
+  #clients-slider #clients-slider-header {
+    padding-top: 30px; }
+    #clients-slider #clients-slider-header h3 {
+      font-weight: bolder;
+      font-size: 2.5rem;
+      text-align: center; }
+  #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item {
+    height: 300px;
+    position: relative; }
+    #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item img {
+      position: absolute;
+      top: 30%;
+      height: 100px;
+      width: auto; }
 
 #contact {
   margin-top: 100px;
@@ -422,11 +457,8 @@ nav#gnb {
     font-size: 1.5rem;
     width: 800px;
     margin: auto; }
-  #clients #clients-list ul {
-    margin: auto;
-    width: 60%;
-    overflow-x: scroll;
-    white-space: nowrap; }
+  #clients #clients-list ul li:not(:last-child) {
+    margin-right: 15px; }
   .carousel-content {
     top: 65%; }
     .carousel-content .carousel-buttons {
@@ -516,17 +548,16 @@ nav#gnb {
       font-size: 2rem; }
     .carousel-content p {
       font-size: 1.2rem; }
-  #portfolios #portfolios-items .container .row > div {
-    padding: 0; }
-    #portfolios #portfolios-items .container .row > div .portfolio {
-      width: 720px;
-      height: 720px; }
-      #portfolios #portfolios-items .container .row > div .portfolio img {
-        left: 0; }
-      #portfolios #portfolios-items .container .row > div .portfolio .hovered {
-        left: 0;
-        width: 720px;
-        height: 720px; } }
+  #portfolios {
+    display: none; }
+  #portfolios-slider {
+    display: block; }
+    #portfolios-slider #portfolios-slider-carousel #portfolios-all {
+      display: block; }
+  #clients {
+    display: none; }
+  #clients-slider {
+    display: block; } }
 
 @media screen and (max-width: 767px) {
   header#header {
@@ -545,15 +576,6 @@ nav#gnb {
     font-size: 1.5rem;
     width: 500px;
     margin: auto; }
-  #portfolios #portfolios-items .container .row > div .portfolio {
-    width: 540px;
-    height: 540px; }
-    #portfolios #portfolios-items .container .row > div .portfolio img {
-      left: 0; }
-    #portfolios #portfolios-items .container .row > div .portfolio .hovered {
-      left: 0;
-      width: 540px;
-      height: 540px; }
   #technologies {
     display: none; }
   #technologies-slider {
@@ -571,6 +593,20 @@ nav#gnb {
     display: block; }
     #contact #contact-content #contact-phone i {
       font-size: 8rem; }
+  #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item img {
+    height: 80px;
+    width: auto; }
+  #portfolios-slider-carousel > div .container .carousel .carousel-inner .carousel-item img {
+    width: 300px !important;
+    height: 300px !important;
+    top: -3% !important; }
+  #portfolios-slider-carousel > div .container .carousel .carousel-inner .carousel-item .carousel-caption {
+    display: block !important; }
+    #portfolios-slider-carousel > div .container .carousel .carousel-inner .carousel-item .carousel-caption p {
+      letter-spacing: -1px; }
+  #portfolios-slider-carousel #portfolios-solution .container img {
+    width: 540px !important;
+    height: 540px !important; }
   #footer .container #footer-sitemap {
     display: none; } }
 
@@ -579,13 +615,16 @@ nav#gnb {
     font-size: 1.5rem;
     width: 90%;
     margin: auto; }
-  #portfolios #portfolios-header {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 30px; }
-  #portfolios #portfolios-items .container .row div .portfolio {
-    width: 100vw;
-    height: 100vw; }
-    #portfolios #portfolios-items .container .row div .portfolio .hovered {
-      width: 100vw;
-      height: 100vw; } }
+  #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item {
+    height: 200px; }
+    #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item img {
+      height: 60px;
+      width: auto;
+      top: 35%; }
+  #portfolios-slider #portfolios-slider-carousel > div .container .carousel .carousel-inner .carousel-item img {
+    width: 60% !important;
+    height: auto !important;
+    top: 5% !important; }
+  #portfolios-slider #portfolios-slider-carousel #portfolios-solution .container img {
+    width: 80% !important;
+    height: auto !important; } }

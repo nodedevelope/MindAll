@@ -111,6 +111,38 @@ $(document).ready(function() {
     });
     $("#portfolios-filters > ul > li.default").click(); // Initial set-up
 
+    // Portfolio-slider filters
+    $("#portfolios-slider-category > ul > li > a").click(function(event) {
+        event.preventDefault();
+        $("#portfolios-slider-category > ul > li").removeClass("active");
+        $(this).parent().addClass("active");
+        $("#portfolios-slider-carousel > div").css({
+            display: "none"
+        });
+        switch($(this).text()) {
+            case "All":
+                $("#portfolios-all").css({
+                    display: "block"
+                });
+                break;
+            case "Web":
+                $("#portfolios-web").css({
+                    display: "block"
+                });
+                break;
+            case "App":
+                $("#portfolios-app").css({
+                    display: "block"
+                });
+                break;
+            case "솔루션":
+                $("#portfolios-solution").css({
+                    display: "block"
+                });
+                break;
+        }
+    });
+
     // Portfolio helper functions
     function getPortfolio(item) {
         var cell = $("<div class='col-12 col-lg-6 col-xl-4'></div>").append();

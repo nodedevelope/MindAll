@@ -2,47 +2,7 @@
 @import "./service.scss";
 
 // Importing fonts...
-@font-face {
-    font-family: "NanumSquare";
-    src: url("./fonts/NanumSquareB.ttf");
-    font-weight: bold;
-}
-@font-face {
-    font-family: "NanumSquare";
-    src: url("./fonts/NanumSquareEB.ttf");
-    font-weight: bolder;
-}
-@font-face {
-    font-family: "NanumSquare";
-    src: url("./fonts/NanumSquareL.ttf");
-    font-weight: lighter;
-}
-@font-face {
-    font-family: "NanumSquare";
-    src: url("./fonts/NanumSquareR.ttf");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "NanumSquareRound";
-    src: url("./fonts/NanumSquareRoundB.ttf");
-    font-weight: bold;
-}
-@font-face {
-    font-family: "NanumSquareRound";
-    src: url("./fonts/NanumSquareRoundEB.ttf");
-    font-weight: bolder;
-}
-@font-face {
-    font-family: "NanumSquareRound";
-    src: url("./fonts/NanumSquareRoundL.ttf");
-    font-weight: lighter;
-}
-@font-face {
-    font-family: "NanumSquareRound";
-    src: url("./fonts/NanumSquareRoundR.ttf");
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700&display=swap&subset=korean');
 
 // Basic settings
 * {
@@ -61,7 +21,7 @@ img {
     border: 0;
 }
 body {
-    font-family: "NanumSquare";
+    font-family: "Noto Sans KR", sans-serif;
 }
 html, body {
     overflow-x: hidden;
@@ -78,7 +38,7 @@ nav#gnb {
     transition: all 1s;
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
-    z-index: 2;
+    z-index: 16;
     height: 80px;
     .container {
         #gnb-brand {
@@ -233,8 +193,9 @@ nav#gnb {
                             transition: all .3s;
                             &:hover {
                                 text-decoration: none;
-                                background-color: #333;
+                                background-color: #3CDBED;
                                 color: white;
+                                border-color: #3CDBED;
                             }
                         }
                     }
@@ -315,13 +276,13 @@ nav#gnb {
         .carousel {
             .carousel-inner {
                 .carousel-item {
-                    height: 400px;
+                    height: 300px;
                     position: relative;
                     img {
                         width: 200px;
                         height: 200px;
                         position: absolute;
-                        top: 25%;
+                        top: 15%;
                     }
                 }
             }
@@ -416,6 +377,100 @@ nav#gnb {
         }
     }
 }
+#portfolios-slider {
+    display: none;
+    margin-bottom: 80px;
+    #portfolios-slider-header {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        h3 {
+            font-size: 1.75rem;
+            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    #portfolios-slider-category {
+        ul {
+            text-align: center;
+            li {
+                display: inline-block;
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+                a {
+                    font-weight: bold;
+                    border-bottom: 3px solid transparent;
+                    color: inherit;
+                    font-size: 1.2rem;
+                    transition: all .3s;
+                    &:hover {
+                        border-bottom: 1px solid #333;
+                        text-decoration: none;
+                    }
+                }
+                &.active {
+                    a {
+                        border-bottom: 3px solid #333;
+                    }
+                }
+            }
+        }
+    }
+    #portfolios-slider-carousel {
+        & > div {
+            display: none;
+            .container {
+                .carousel {
+                    .carousel-inner {
+                        .carousel-item {
+                            position: relative;
+                            img {
+                                position: absolute;
+                                width: 400px;
+                                height: 400px;
+                                top: 5%;
+                            }
+                        }
+                    }
+                    .carousel-control-prev {
+                        .carousel-control-prev-icon {
+                            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+                        }
+                    }
+                    .carousel-control-next {
+                        .carousel-control-next-icon {
+                            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+                        }
+                    }
+                    .carousel-indicators {
+                        li {
+                            background-color: #333;
+                        }
+                    }
+                }
+            }
+        }
+        #portfolios-solution {
+            .container {
+                text-align: center;
+                img {
+                    width: 720px;
+                    height: 720px;
+                }
+                h5 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
 
 // Clients
 #clients {
@@ -442,6 +497,36 @@ nav#gnb {
                 img {
                     height: 30px;
                     width: auto;
+                }
+            }
+        }
+    }
+}
+#clients-slider {
+    background-color: lightgray;
+    display: none;
+    #clients-slider-header {
+        padding-top: 30px;
+        h3 {
+            font-weight: bolder;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    }
+    #clients-slider-carousel {
+        .container {
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        height: 300px;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            top: 30%;
+                            height: 100px;
+                            width: auto;
+                        }
+                    }
                 }
             }
         }
@@ -601,10 +686,9 @@ nav#gnb {
     #clients {
         #clients-list {
             ul {
-                margin: auto;
-                width: 60%;
-                overflow-x: scroll;
-                white-space: nowrap;
+                li:not(:last-child) {
+                    margin-right: 15px;
+                }
             }
         }
     }
@@ -747,27 +831,21 @@ nav#gnb {
         }
     }
     #portfolios {
-        #portfolios-items {
-            .container {
-                .row {
-                    & > div {
-                        padding: 0;
-                        .portfolio {
-                            width: 720px;
-                            height: 720px;
-                            img {
-                                left: 0;
-                            }
-                            .hovered {
-                                left: 0;
-                                width: 720px;
-                                height: 720px;
-                            }
-                        }
-                    }
-                }
+        display: none;
+    }
+    #portfolios-slider {
+        display: block;
+        #portfolios-slider-carousel {
+            #portfolios-all {
+                display: block;
             }
         }
+    }
+    #clients {
+        display: none;
+    }
+    #clients-slider {
+        display: block;
     }
 }
 
@@ -802,28 +880,6 @@ nav#gnb {
             }
         }
     }
-    #portfolios {
-        #portfolios-items {
-            .container {
-                .row {
-                    & > div {
-                        .portfolio {
-                            width: 540px;
-                            height: 540px;
-                            img {
-                                left: 0;
-                            }
-                            .hovered {
-                                left: 0;
-                                width: 540px;
-                                height: 540px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
     #technologies {
         display: none;
     }
@@ -852,6 +908,53 @@ nav#gnb {
             }
         }
     }
+    #clients-slider {
+        #clients-slider-carousel {
+            .container {
+                .carousel {
+                    .carousel-inner {
+                        .carousel-item {
+                            img {
+                                height: 80px;
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #portfolios-slider-carousel {
+        & > div {
+            .container {
+                .carousel {
+                    .carousel-inner {
+                        .carousel-item {
+                            img {
+                                width: 300px !important;
+                                height: 300px !important;
+                                top: -3% !important;
+                            }
+                            .carousel-caption {
+                                display: block !important;
+                                p {
+                                    letter-spacing: -1px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #portfolios-solution {
+            .container {
+                img {
+                    width: 540px !important;
+                    height: 540px !important;
+                }
+            }
+        }
+    }
     #footer {
         .container {
             #footer-sitemap {
@@ -872,24 +975,46 @@ nav#gnb {
             }
         }
     }
-    #portfolios {
-        #portfolios-header {
-            width: 80%;
-            margin: auto;
-            margin-bottom: 30px;
-        }
-        #portfolios-items {
+    #clients-slider {
+        #clients-slider-carousel {
             .container {
-                .row {
-                    div {
-                        .portfolio {
-                            width: 100vw;
-                            height: 100vw;
-                            .hovered {
-                                width: 100vw;
-                                height: 100vw;
+                .carousel {
+                    .carousel-inner {
+                        .carousel-item {
+                            height: 200px;
+                            img {
+                                height: 60px;
+                                width: auto;
+                                top: 35%;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    #portfolios-slider {
+        #portfolios-slider-carousel {
+            & > div {
+                .container {
+                    .carousel {
+                        .carousel-inner {
+                            .carousel-item {
+                                img {
+                                    width: 60% !important;
+                                    height: auto !important;
+                                    top: 5% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #portfolios-solution {
+                .container {
+                    img {
+                        width: 80% !important;
+                        height: auto !important;
                     }
                 }
             }
