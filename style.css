@@ -122,37 +122,82 @@ nav#gnb {
     #sectors #sectors-header p {
       line-height: 150%;
       font-size: 1.2rem; }
-  #sectors #sectors-content .container .row div {
-    padding: 10px; }
-    #sectors #sectors-content .container .row div .sector-item {
-      padding: 30px;
-      text-align: center; }
-      #sectors #sectors-content .container .row div .sector-item i {
-        font-size: 4rem;
-        margin-bottom: 20px; }
-      #sectors #sectors-content .container .row div .sector-item h3 {
-        font-weight: bolder;
-        margin-bottom: 20px; }
-      #sectors #sectors-content .container .row div .sector-item p {
-        line-height: 150%;
-        margin-bottom: 30px;
-        font-size: 1.2rem; }
-      #sectors #sectors-content .container .row div .sector-item a {
-        color: #333;
-        display: inline-block;
-        font-size: 1.2rem;
-        padding: 8px 30px;
-        border: 1px solid #333;
-        transition: all .3s; }
-        #sectors #sectors-content .container .row div .sector-item a:hover {
-          text-decoration: none;
-          background-color: #3CDBED;
-          color: white;
-          border-color: #3CDBED; }
-    #sectors #sectors-content .container .row div:nth-of-type(4) {
-      text-align: center; }
-    #sectors #sectors-content .container .row div:nth-of-type(5) {
-      text-align: center; }
+  #sectors #sectors-content {
+    width: 1140px;
+    margin: auto; }
+    #sectors #sectors-content .sector-alpha {
+      position: relative;
+      height: 500px; }
+      #sectors #sectors-content .sector-alpha .sector-left {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: auto; }
+        #sectors #sectors-content .sector-alpha .sector-left img {
+          width: 100%;
+          height: auto; }
+      #sectors #sectors-content .sector-alpha .sector-right {
+        padding: 50px 60px;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        top: 125px;
+        right: 0;
+        width: 55%;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); }
+        #sectors #sectors-content .sector-alpha .sector-right h4 {
+          font-weight: bold;
+          margin-bottom: 20px; }
+        #sectors #sectors-content .sector-alpha .sector-right p {
+          margin-bottom: 30px;
+          color: #777; }
+        #sectors #sectors-content .sector-alpha .sector-right a {
+          display: inline-block;
+          padding: 10px 30px;
+          border: 1px solid #333;
+          color: inherit;
+          transition: all .3s; }
+          #sectors #sectors-content .sector-alpha .sector-right a:hover {
+            text-decoration: none;
+            background-color: #3CDBED;
+            border: 1px solid #3CDBED;
+            color: white; }
+    #sectors #sectors-content .sector-beta {
+      position: relative;
+      height: 500px; }
+      #sectors #sectors-content .sector-beta .sector-left {
+        position: absolute;
+        padding: 50px 60px;
+        left: 0;
+        top: 125px;
+        z-index: 1;
+        width: 55%;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); }
+        #sectors #sectors-content .sector-beta .sector-left h4 {
+          font-weight: bold;
+          margin-bottom: 20px; }
+        #sectors #sectors-content .sector-beta .sector-left p {
+          margin-bottom: 30px;
+          color: #777; }
+        #sectors #sectors-content .sector-beta .sector-left a {
+          display: inline-block;
+          padding: 10px 30px;
+          border: 1px solid #333;
+          color: inherit;
+          transition: all .3s; }
+          #sectors #sectors-content .sector-beta .sector-left a:hover {
+            text-decoration: none;
+            background-color: #3CDBED;
+            border: 1px solid #3CDBED;
+            color: white; }
+      #sectors #sectors-content .sector-beta .sector-right {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: auto; }
+        #sectors #sectors-content .sector-beta .sector-right img {
+          width: 100%;
+          height: auto; }
 
 #technologies {
   margin-bottom: 100px;
