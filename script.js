@@ -83,7 +83,17 @@ $(document).ready(function() {
     // Portfolio filters
     $("#portfolios-filters > ul > li").click(function(event) {
         event.preventDefault();
+        var moreButton = $("<a class='see-more' href='" + null + "'>더 보기</a>").css({
+            color: "inherit",
+            display: "block",
+            width: "200px",
+            textAlign: "center",
+            margin: "auto",
+            padding: "10px 20px",
+            border: "1px solid #333"
+        });
         $("#portfolios-filters > ul > li").removeClass("active");
+        $(".see-more").remove();
         $(this).addClass("active");
         emptyPortfolios();
         switch($(this).children("a").text()) {
@@ -91,6 +101,7 @@ $(document).ready(function() {
                 getPortfolios("all").forEach(function(item) {
                     $("#portfolios-items > .container > .row").append(getPortfolio(item));
                 });
+                $("#portfolios-items > .container").append(moreButton);
                 break;
             case "Web":
                 getPortfolios("web").forEach(function(item) {
@@ -101,6 +112,7 @@ $(document).ready(function() {
                 getPortfolios("app").forEach(function(item) {
                     $("#portfolios-items > .container > .row").append(getPortfolio(item));
                 });
+                $("#portfolios-items > .container").append(moreButton);
                 break;
             case "솔루션":
                 getPortfolios("solution").forEach(function(item) {
@@ -168,11 +180,11 @@ $(document).ready(function() {
 
     function getPortfolios(category) {
         if(category === "all") {
-            return portfolios;
+            return portfolios.slice(0, 6);
         }
         return portfolios.filter(function(portfolio) {
             return portfolio.category === category;
-        });
+        }).slice(0, 6);
     }
 
     function emptyPortfolios() {
