@@ -80,7 +80,7 @@ nav#gnb {
     margin-bottom: 30px; }
   .carousel-content p {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 30px; }
   .carousel-content .carousel-buttons {
     position: absolute;
@@ -90,8 +90,7 @@ nav#gnb {
       padding: 10px 20px;
       font-size: 1.5rem;
       color: white;
-      display: inline-block;
-      font-weight: bold; }
+      display: inline-block; }
       .carousel-content .carousel-buttons a.detail {
         margin-right: 30px;
         background-color: rgba(60, 219, 237, 0.5);
@@ -202,10 +201,14 @@ nav#gnb {
 #technologies {
   margin-bottom: 100px;
   padding: 50px 0;
-  background-color: #EEE; }
+  background-image: url("./images/technologies_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   #technologies #technologies-header {
     text-align: center; }
     #technologies #technologies-header h3 {
+      color: white;
       font-weight: bolder;
       margin-bottom: 30px; }
   #technologies #technologies-content .container {
@@ -224,6 +227,7 @@ nav#gnb {
         flex-direction: column;
         text-align: center; }
         #technologies #technologies-content .container ul li .technologies-item i {
+          color: white;
           font-size: 4rem;
           margin-bottom: 15px; }
         #technologies #technologies-content .container ul li .technologies-item img {
@@ -231,6 +235,7 @@ nav#gnb {
           width: auto;
           margin-bottom: 15px; }
         #technologies #technologies-content .container ul li .technologies-item p {
+          color: white;
           font-size: 1.2rem;
           font-weight: bold; }
 
@@ -241,7 +246,6 @@ nav#gnb {
   #technologies-slider #technologies-slider-header {
     padding-top: 30px; }
     #technologies-slider #technologies-slider-header h3 {
-      font-size: 2.5rem;
       font-weight: bolder;
       text-align: center; }
   #technologies-slider .container .carousel .carousel-inner .carousel-item {
@@ -262,7 +266,7 @@ nav#gnb {
       font-weight: bolder;
       margin-bottom: 30px; }
     #portfolios #portfolios-header h4 {
-      font-weight: bold; }
+      font-size: 1.2rem; }
   #portfolios #portfolios-filters {
     margin-bottom: 30px; }
     #portfolios #portfolios-filters ul {
@@ -323,7 +327,6 @@ nav#gnb {
     margin: auto;
     text-align: center; }
     #portfolios-slider #portfolios-slider-header h3 {
-      font-size: 1.75rem;
       font-weight: bolder;
       margin-bottom: 20px; }
     #portfolios-slider #portfolios-slider-header p {
@@ -398,7 +401,6 @@ nav#gnb {
     padding-top: 30px; }
     #clients-slider #clients-slider-header h3 {
       font-weight: bolder;
-      font-size: 1.75rem;
       text-align: center; }
   #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item {
     height: 300px;
@@ -474,20 +476,20 @@ nav#gnb {
       #footer .container #footer-sitemap > ul > li {
         display: inline-block;
         vertical-align: top;
-        width: 120px; }
+        width: 100px; }
         #footer .container #footer-sitemap > ul > li:not(:last-child) {
           margin-right: 15px; }
         #footer .container #footer-sitemap > ul > li > a {
           display: inline-block;
           margin-bottom: 10px;
           color: white;
-          font-size: 1.2rem;
           font-weight: bold; }
           #footer .container #footer-sitemap > ul > li > a:hover {
             text-decoration: none; }
         #footer .container #footer-sitemap > ul > li > ul > li {
           margin-bottom: 3px; }
           #footer .container #footer-sitemap > ul > li > ul > li > a {
+            font-size: .8rem;
             color: white;
             letter-spacing: -2px; }
             #footer .container #footer-sitemap > ul > li > ul > li > a:hover {
@@ -500,7 +502,6 @@ nav#gnb {
         #footer .container #footer-brand #footer-brand-logo img {
           float: right; }
       #footer .container #footer-brand #footer-brand-address p {
-        letter-spacing: -2px;
         line-height: 150%;
         text-align: right;
         margin-bottom: 0;
@@ -647,7 +648,9 @@ nav#gnb {
   #clients {
     display: none; }
   #clients-slider {
-    display: block; } }
+    display: block; }
+  #contact #contact-header p {
+    font-size: 1.5rem; } }
 
 @media screen and (max-width: 767px) {
   header#header {
