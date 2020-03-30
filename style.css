@@ -22,7 +22,7 @@ html, body {
   font-size: 18px; }
 
 header#header {
-  height: 800px; }
+  height: 700px; }
 
 nav#gnb {
   width: 100%;
@@ -67,7 +67,7 @@ nav#gnb {
       height: 700px; }
 
 .carousel-content {
-  padding: 50px;
+  padding: 50px 0;
   position: absolute;
   top: 55%;
   left: 50%;
@@ -85,7 +85,7 @@ nav#gnb {
   .carousel-content .carousel-buttons {
     position: absolute;
     bottom: 50px;
-    right: 50px; }
+    right: 0; }
     .carousel-content .carousel-buttons a {
       padding: 10px 20px;
       font-size: 1.5rem;
@@ -111,10 +111,10 @@ nav#gnb {
         text-decoration: none; }
 
 #sectors {
-  margin-bottom: 100px; }
+  padding: 144px 0 100px 0; }
   #sectors #sectors-header {
     text-align: center;
-    margin-bottom: 50px; }
+    margin-bottom: 60px; }
     #sectors #sectors-header h3 {
       font-weight: bolder;
       margin-bottom: 30px; }
@@ -199,7 +199,6 @@ nav#gnb {
           height: auto; }
 
 #technologies {
-  margin-bottom: 100px;
   padding: 50px 0;
   background-image: url("./images/technologies_background.jpg");
   background-size: cover;
@@ -210,7 +209,7 @@ nav#gnb {
     #technologies #technologies-header h3 {
       color: white;
       font-weight: bolder;
-      margin-bottom: 30px; }
+      margin-bottom: 50px; }
   #technologies #technologies-content .container {
     position: relative; }
     #technologies #technologies-content .container ul li {
@@ -258,7 +257,7 @@ nav#gnb {
       top: 15%; }
 
 #portfolios {
-  margin-bottom: 100px; }
+  padding: 144px 0 100px 0; }
   #portfolios #portfolios-header {
     margin-bottom: 30px;
     text-align: center; }
@@ -374,11 +373,11 @@ nav#gnb {
       font-size: 1.5rem; }
 
 #clients {
-  padding: 80px 0;
+  padding: 50px 0;
   background-color: #EEE; }
   #clients #clients-header {
     text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 50px; }
     #clients #clients-header h3 {
       font-weight: bolder; }
   #clients #clients-list ul {
@@ -412,8 +411,7 @@ nav#gnb {
       width: auto; }
 
 #contact {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0 144px 0;
   background-image: url("./images/contact_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
