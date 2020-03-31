@@ -1,5 +1,5 @@
 // Import other stylesheets...
-@import "./service.scss";
+@import "./about/introduction.scss";
 
 // Importing fonts...
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700&display=swap&subset=korean');
@@ -1127,8 +1127,6 @@ nav#gnb {
         }
         #sectors-content {
             .sector-alpha {
-                .sector-left {
-                }
                 .sector-right {
                     height: 53vw;
                     padding: 30px;
@@ -1150,8 +1148,6 @@ nav#gnb {
                     p {
                         display: none;
                     }
-                }
-                .sector-right {
                 }
             }
         }

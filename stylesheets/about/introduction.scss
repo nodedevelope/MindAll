@@ -1,0 +1,45 @@
+// Header - About
+#header-about {
+    background-image: url("images/about_background.jpg");
+    background-size: cover;
+    .container {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 3rem;
+            font-weight: bolder;
+            color: white;
+            margin-bottom: 30px;
+        }
+        p {
+            text-align: center;
+            font-size: 1.8rem;
+            color: white;
+        }
+    }
+}
+
+// LNB (Local Navigation Bar)
+nav#lnb {
+    ul {
+        margin-bottom: 0;
+        padding: 15px 0;
+        text-align: center;
+        li {
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+            a {
+                color: inherit;
+                font-size: 1.5rem;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

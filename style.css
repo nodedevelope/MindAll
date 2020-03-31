@@ -1,4 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700&display=swap&subset=korean");
+#header-about {
+  background-image: url("images/about_background.jpg");
+  background-size: cover; }
+  #header-about .container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #header-about .container h1 {
+      font-size: 3rem;
+      font-weight: bolder;
+      color: white;
+      margin-bottom: 30px; }
+    #header-about .container p {
+      text-align: center;
+      font-size: 1.8rem;
+      color: white; }
+
+nav#lnb ul {
+  margin-bottom: 0;
+  padding: 15px 0;
+  text-align: center; }
+  nav#lnb ul li {
+    display: inline-block; }
+    nav#lnb ul li:not(:last-child) {
+      margin-right: 30px; }
+    nav#lnb ul li a {
+      color: inherit;
+      font-size: 1.5rem; }
+      nav#lnb ul li a:hover {
+        text-decoration: none; }
+
 * {
   margin: 0;
   padding: 0;

@@ -161,7 +161,7 @@ $(document).ready(function() {
         var title = $("<p class='portfolio-title'>" + item.title + "</p>");
         var description = $("<p class='portfolio-description'>" + item.description + "</p>");
         var hoverPanel = $("<div class='hovered'></div>").append(title).append(description);
-        var img = $("<img src='./images/portfolios/" + item.image + ".jpg' alt='" + item.title + "'/>");
+        var img = $("<img src='images/portfolios/" + item.image + ".jpg' alt='" + item.title + "'/>");
         var item = $("<div class='portfolio'></div>").append(img);
         $(item).hover(function() {
             $(this).append(hoverPanel);
