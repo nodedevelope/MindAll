@@ -24,13 +24,99 @@ nav#lnb ul {
   text-align: center; }
   nav#lnb ul li {
     display: inline-block; }
+    nav#lnb ul li.active a {
+      font-weight: bold;
+      color: #3CDBED;
+      border-bottom: 3px solid #3CDBED; }
+      nav#lnb ul li.active a:hover {
+        border-bottom: 3px solid #3CDBED; }
     nav#lnb ul li:not(:last-child) {
       margin-right: 30px; }
     nav#lnb ul li a {
+      display: inline-block;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
       color: inherit;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      transition: all .3s; }
       nav#lnb ul li a:hover {
-        text-decoration: none; }
+        text-decoration: none;
+        border-bottom: 2px solid #333; }
+
+#introduction {
+  padding-top: 100px; }
+  #introduction #introduction-header {
+    margin-bottom: 80px; }
+    #introduction #introduction-header .container h2 {
+      font-weight: bolder;
+      margin-bottom: 30px; }
+    #introduction #introduction-header .container h3 {
+      font-weight: bolder;
+      margin-bottom: 20px; }
+    #introduction #introduction-header .container p {
+      margin-bottom: 5px; }
+  #introduction #introduction-subheader {
+    background-image: url("./images/introduction_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px; }
+    #introduction #introduction-subheader .container {
+      position: relative;
+      height: 400px; }
+      #introduction #introduction-subheader .container #subheader-box {
+        background: linear-gradient(to bottom, #3CDBED, #00b9ce);
+        position: absolute;
+        right: 0;
+        bottom: 30px;
+        width: 50%;
+        height: 400px;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+        padding: 50px; }
+        #introduction #introduction-subheader .container #subheader-box p.since {
+          font-weight: lighter;
+          color: white;
+          margin-bottom: 30px; }
+        #introduction #introduction-subheader .container #subheader-box p.title {
+          font-weight: bolder;
+          font-size: 2rem;
+          color: white;
+          margin-bottom: 10px; }
+        #introduction #introduction-subheader .container #subheader-box p.subtitle {
+          font-weight: bolder;
+          font-size: 1.2rem;
+          color: white;
+          margin-bottom: 30px; }
+        #introduction #introduction-subheader .container #subheader-box p.content {
+          color: white; }
+
+#values {
+  padding: 100px 0 144px 0;
+  background-color: #F8F8F8; }
+  #values #values-header .container {
+    margin-bottom: 30px; }
+  #values #values-content .value-alpha .container, #values #values-content .value-beta .container {
+    display: flex;
+    flex-direction: row; }
+    #values #values-content .value-alpha .container .value-image, #values #values-content .value-beta .container .value-image {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50%; }
+      #values #values-content .value-alpha .container .value-image img, #values #values-content .value-beta .container .value-image img {
+        width: 100%;
+        height: auto; }
+    #values #values-content .value-alpha .container .value-content, #values #values-content .value-beta .container .value-content {
+      display: inline-block;
+      padding: 30px;
+      vertical-align: middle;
+      width: 50%;
+      text-align: center; }
+      #values #values-content .value-alpha .container .value-content img, #values #values-content .value-beta .container .value-content img {
+        margin-bottom: 30px; }
+      #values #values-content .value-alpha .container .value-content p.title, #values #values-content .value-beta .container .value-content p.title {
+        font-weight: bolder;
+        margin-bottom: 10px; }
+      #values #values-content .value-alpha .container .value-content p.description, #values #values-content .value-beta .container .value-content p.description {
+        color: gray; }
 
 * {
   margin: 0;

@@ -30,14 +30,135 @@ nav#lnb {
         text-align: center;
         li {
             display: inline-block;
+            &.active {
+                a {
+                    font-weight: bold;
+                    color: #3CDBED;
+                    border-bottom: 3px solid #3CDBED;
+                    &:hover {
+                        border-bottom: 3px solid #3CDBED;
+                    }
+                }
+            }
             &:not(:last-child) {
                 margin-right: 30px;
             }
             a {
+                display: inline-block;
+                padding-bottom: 5px;
+                border-bottom: 2px solid transparent;
                 color: inherit;
                 font-size: 1.5rem;
+                transition: all .3s;
                 &:hover {
                     text-decoration: none;
+                    border-bottom: 2px solid #333;
+                }
+            }
+        }
+    }
+}
+
+// Introduction
+#introduction {
+    padding-top: 100px;
+    #introduction-header {
+        margin-bottom: 80px;
+        .container {
+            h2 {
+                font-weight: bolder;
+                margin-bottom: 30px;
+            }
+            h3 {
+                font-weight: bolder;
+                margin-bottom: 20px;
+            }
+            p {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    #introduction-subheader {
+        background-image: url("./images/introduction_background.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        height: 400px;
+        .container {
+            position: relative;
+            height: 400px;
+            #subheader-box {
+                background: linear-gradient(to bottom, #3CDBED, rgb(0, 185, 206));
+                position: absolute;
+                right: 0;
+                bottom: 30px;
+                width: 50%;
+                height: 400px;
+                box-shadow: 10px 10px 30px rgba(0, 0, 0, .5);
+                padding: 50px;
+                p.since {
+                    font-weight: lighter;
+                    color: white;
+                    margin-bottom: 30px;
+                }
+                p.title {
+                    font-weight: bolder;
+                    font-size: 2rem;
+                    color: white;
+                    margin-bottom: 10px;
+                }
+                p.subtitle {
+                    font-weight: bolder;
+                    font-size: 1.2rem;
+                    color: white;
+                    margin-bottom: 30px;
+                }
+                p.content {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+// Core values
+#values {
+    padding: 100px 0 144px 0;
+    background-color: #F8F8F8;
+    #values-header {
+        .container {
+            margin-bottom: 30px;
+        }
+    }
+    #values-content {
+        .value-alpha, .value-beta {
+            .container {
+                display: flex;
+                flex-direction: row;
+                .value-image {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 50%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .value-content {
+                    display: inline-block;
+                    padding: 30px;
+                    vertical-align: middle;
+                    width: 50%;
+                    text-align: center;
+                    img {
+                        margin-bottom: 30px;
+                    }
+                    p.title {
+                        font-weight: bolder;
+                        margin-bottom: 10px;
+                    }
+                    p.description {
+                        color: gray;
+                    }
                 }
             }
         }
