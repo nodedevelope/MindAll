@@ -130,22 +130,27 @@ nav#lnb {
         }
     }
     #values-content {
-        .value-alpha, .value-beta {
+        .value-alpha {
+            margin-bottom: 10px;
             .container {
                 display: flex;
                 flex-direction: row;
                 .value-image {
                     display: inline-block;
                     vertical-align: middle;
-                    width: 50%;
+                    width: 47.5%;
+                    margin-right: 2.5%;
                     img {
                         width: 100%;
                         height: auto;
                     }
                 }
                 .value-content {
-                    display: inline-block;
-                    padding: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 50px;
                     vertical-align: middle;
                     width: 50%;
                     text-align: center;
@@ -158,6 +163,127 @@ nav#lnb {
                     }
                     p.description {
                         color: gray;
+                    }
+                }
+            }
+        }
+        .value-beta {
+            margin-bottom: 10px;
+            .container {
+                display: flex;
+                flex-direction: row;
+                .value-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 50px;
+                    vertical-align: middle;
+                    width: 47.5%;
+                    margin-right: 2.5%;
+                    text-align: center;
+                    img {
+                        margin-bottom: 30px;
+                    }
+                    p.title {
+                        font-weight: bolder;
+                        margin-bottom: 10px;
+                    }
+                    p.description {
+                        color: gray;
+                    }
+                }
+                .value-image {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 50%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Techstacks
+#stacks {
+    padding: 100px 0 144px 0;
+    #stacks-header {
+        .container {
+            margin-bottom: 30px;
+        }
+    }
+    #stacks-content {
+        .container {
+            .stack {
+                display: inline-block;
+                vertical-align: middle;
+                width: 33.33%;
+                padding: 30px;
+                .stack-image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 300px;
+                    height: 300px;
+                    text-align: center;
+                    background-color: #3CDBED;
+                    border-radius: 50%;
+                    margin-bottom: 30px;
+                    img {
+                        width: 50%;
+                        height: auto;
+                    }
+                }
+                .stack-content {
+                    text-align: center;
+                    p.title {
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                        margin-bottom: 10px;
+                    }
+                    p.subtitle {
+                        color: #555;
+                        font-size: 1.1rem;
+                    }
+                    p.description {
+                        color: #777;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Certificates
+#certification {
+    background-color: #F8F8F8;
+    padding: 100px 0 144px 0;
+    #certification-header {
+        .container {
+            margin-bottom: 30px;
+        }
+    }
+    #certification-content {
+        .container {
+            .certificate {
+                display: inline-block;
+                vertical-align: middle;
+                width: 33.33%;
+                padding: 30px;
+                .certificate-image {
+                    margin-bottom: 30px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .certificate-content {
+                    p {
+                        font-size: 1.5rem;
+                        text-align: center;
                     }
                 }
             }
