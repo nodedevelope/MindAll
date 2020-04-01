@@ -9,8 +9,31 @@
     .cd-date {
       font-style: italic !important;
     }
-    .cd-timeline-content p {
-      font-size: 1.2rem !important;
+    .cd-timeline-content {
+      .cd-timeline-content-month {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 1.5rem;
+        width: 30px;
+        margin-right: 10px;
+        h2 {
+          text-align: center;
+          font-weight: bolder;
+          
+        }
+      }
+      .cd-timeline-content-detail {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 40px);
+        p {
+          margin-top: 0;
+          margin-bottom: 3px;
+        }
+        p:last-of-type {
+          margin-bottom: 30px;
+        }
+      }
     }
     // Chronicle (from CodePen) : compiled from Scss
     /* -------------------------------- 
@@ -104,16 +127,15 @@
       }
       .cd-timeline-img img {
         display: block;
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
         position: relative;
         left: 50%;
         top: 50%;
-        margin-left: -12px;
-        margin-top: -12px;
+        transform: translate(-50%, -50%);
       }
       .cd-timeline-img.cd-picture {
-        background: #75ce66;
+        background: #3CDBED;
       }
       .cd-timeline-img.cd-movie {
         background: #c03b44;
