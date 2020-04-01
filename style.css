@@ -201,10 +201,113 @@ nav#lnb ul {
       margin-bottom: 30px; }
       #certification #certification-content .container .certificate .certificate-image img {
         width: 100%;
-        height: auto; }
+        height: auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); }
     #certification #certification-content .container .certificate .certificate-content p {
       font-size: 1.5rem;
       text-align: center; }
+
+#areas {
+  padding: 100px 0 144px 0;
+  background-color: #F8F8F8; }
+  #areas #areas-header {
+    margin-bottom: 80px; }
+  #areas #areas-content .container .area-alpha {
+    margin: 80px 0;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    height: 333px; }
+    #areas #areas-content .container .area-alpha .area-image {
+      position: absolute;
+      display: inline-block;
+      width: 45%;
+      height: auto;
+      left: 30px;
+      top: -30px; }
+      #areas #areas-content .container .area-alpha .area-image img {
+        width: 100%;
+        height: auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); }
+    #areas #areas-content .container .area-alpha .area-content {
+      position: absolute;
+      left: 52%;
+      display: inline-block;
+      width: 45%;
+      top: 30px; }
+      #areas #areas-content .container .area-alpha .area-content p.supertitle {
+        font-weight: bold;
+        font-size: .8rem;
+        margin-bottom: 0; }
+      #areas #areas-content .container .area-alpha .area-content p.title {
+        color: #3CDBED;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        margin-bottom: 10px; }
+      #areas #areas-content .container .area-alpha .area-content p.subtitle {
+        font-weight: bold;
+        margin-bottom: 5px; }
+      #areas #areas-content .container .area-alpha .area-content p.content {
+        font-weight: lighter;
+        margin-bottom: 30px; }
+      #areas #areas-content .container .area-alpha .area-content a.more-button {
+        color: white;
+        font-weight: bolder;
+        padding: 5px 20px;
+        background-color: #3CDBED;
+        transition: all .3s; }
+        #areas #areas-content .container .area-alpha .area-content a.more-button:hover {
+          text-decoration: none;
+          background-color: #00b5c9; }
+  #areas #areas-content .container .area-beta {
+    margin: 80px 0;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    height: 333px; }
+    #areas #areas-content .container .area-beta .area-content {
+      position: absolute;
+      left: 3%;
+      display: inline-block;
+      width: 45%;
+      top: 30px; }
+      #areas #areas-content .container .area-beta .area-content p.supertitle {
+        font-weight: bold;
+        font-size: .8rem;
+        margin-bottom: 0; }
+      #areas #areas-content .container .area-beta .area-content p.title {
+        color: #3CDBED;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        margin-bottom: 10px; }
+      #areas #areas-content .container .area-beta .area-content p.subtitle {
+        font-weight: bold;
+        margin-bottom: 5px; }
+      #areas #areas-content .container .area-beta .area-content p.content {
+        font-weight: lighter;
+        margin-bottom: 30px; }
+      #areas #areas-content .container .area-beta .area-content a.more-button {
+        color: white;
+        font-weight: bolder;
+        padding: 5px 20px;
+        background-color: #3CDBED;
+        transition: all .3s; }
+        #areas #areas-content .container .area-beta .area-content a.more-button:hover {
+          text-decoration: none;
+          background-color: #00b5c9; }
+    #areas #areas-content .container .area-beta .area-image {
+      position: absolute;
+      display: inline-block;
+      width: 45%;
+      height: auto;
+      right: 30px;
+      top: -30px; }
+      #areas #areas-content .container .area-beta .area-image img {
+        width: 100%;
+        height: auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); }
 
 * {
   margin: 0;

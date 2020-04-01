@@ -1,0 +1,130 @@
+// Business areas
+#areas {
+    padding: 100px 0 144px 0;
+    background-color: #F8F8F8;
+    #areas-header {
+        margin-bottom: 80px;
+        .container {
+        }
+    }
+    #areas-content {
+        .container {
+            .area-alpha {
+                margin: 80px 0;
+                background-color: white;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+                position: relative;
+                height: 333px;
+                .area-image {
+                    position: absolute;
+                    display: inline-block;
+                    width: 45%;
+                    height: auto;
+                    left: 30px;
+                    top: -30px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+                    }
+                }
+                .area-content {
+                    position: absolute;
+                    left: 52%;
+                    display: inline-block;
+                    width: 45%;
+                    top: 30px;
+                    p.supertitle {
+                        font-weight: bold;
+                        font-size: .8rem;
+                        margin-bottom: 0;
+                    }
+                    p.title {
+                        color: #3CDBED;
+                        font-size: 2rem;
+                        font-weight: bolder;
+                        letter-spacing: 3px;
+                        margin-bottom: 10px;
+                    }
+                    p.subtitle {
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    p.content {
+                        font-weight: lighter;
+                        margin-bottom: 30px;
+                    }
+                    a.more-button {
+                        color: white;
+                        font-weight: bolder;
+                        padding: 5px 20px;
+                        background-color: #3CDBED;
+                        transition: all .3s;
+                        &:hover {
+                            text-decoration: none;
+                            background-color: rgb(0, 181, 201);
+                        }
+                    }
+                }
+            }
+            .area-beta {
+                margin: 80px 0;
+                background-color: white;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+                position: relative;
+                height: 333px;
+                .area-content {
+                    position: absolute;
+                    left: 3%;
+                    display: inline-block;
+                    width: 45%;
+                    top: 30px;
+                    p.supertitle {
+                        font-weight: bold;
+                        font-size: .8rem;
+                        margin-bottom: 0;
+                    }
+                    p.title {
+                        color: #3CDBED;
+                        font-size: 2rem;
+                        font-weight: bolder;
+                        letter-spacing: 3px;
+                        margin-bottom: 10px;
+                    }
+                    p.subtitle {
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    p.content {
+                        font-weight: lighter;
+                        margin-bottom: 30px;
+                    }
+                    a.more-button {
+                        color: white;
+                        font-weight: bolder;
+                        padding: 5px 20px;
+                        background-color: #3CDBED;
+                        transition: all .3s;
+                        &:hover {
+                            text-decoration: none;
+                            background-color: rgb(0, 181, 201);
+                        }
+                    }
+                }
+                .area-image {
+                    position: absolute;
+                    display: inline-block;
+                    width: 45%;
+                    height: auto;
+                    right: 30px;
+                    top: -30px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+                    }
+                }
+            }
+        }
+    }
+}
