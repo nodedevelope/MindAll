@@ -30,10 +30,15 @@ directories.forEach(function(directory) {
                 if(error) {
                     return console.log(error);
                 }
-                fs.writeFile(directory + ejsFile.replace("ejs", "html"), result, function(error) {
+                fs.unlink(directory + ejsFile.replace("ejs", "html"), function(error) {
                     if(error) {
                         return console.log(error);
                     }
+                    fs.writeFile(directory + ejsFile.replace("ejs", "html"), result, function(error) {
+                        if(error) {
+                            return console.log(error);
+                        }
+                    });
                 });
             });
         });
