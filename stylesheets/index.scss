@@ -2,6 +2,7 @@
 @import "./about/introduction.scss";
 @import "./about/areas.scss";
 @import "./about/map.scss";
+@import "./about/chronicle.scss";
 
 // Importing fonts...
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700&display=swap&subset=korean');
@@ -15,6 +16,10 @@
 }
 a {
     text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: none !important;
+    }
 }
 li {
     list-style-type: none;
