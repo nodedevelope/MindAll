@@ -128,3 +128,74 @@
         }
     }
 }
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+    #areas {
+        #areas-content {
+            .container {
+                .area-alpha {
+                    height: auto;
+                    padding: 30px;
+                    padding-top: 0;
+                    .area-image {
+                        position: static;
+                        display: block;
+                        width: 100%;
+                        margin: auto;
+                        left: 0;
+                        top: 0;
+                        img {
+                            box-shadow: none;
+                        }
+                    }
+                    .area-content {
+                        position: static;
+                        padding-top: 30px;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                .area-beta {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    height: auto;
+                    padding: 30px;
+                    padding-top: 0;
+                    .area-image {
+                        position: static;
+                        display: block;
+                        width: 100%;
+                        margin: auto;
+                        left: 0;
+                        top: 0;
+                        img {
+                            box-shadow: none;
+                        }
+                    }
+                    .area-content {
+                        position: static;
+                        padding-top: 30px;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 575px) {
+
+}

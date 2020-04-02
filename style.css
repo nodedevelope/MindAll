@@ -207,6 +207,111 @@ nav#lnb ul {
       font-size: 1.5rem;
       text-align: center; }
 
+@media only screen and (max-width: 1199px) {
+  #stacks #stacks-header .container {
+    margin-bottom: 0;
+    max-width: 70vw; }
+  #stacks #stacks-content .container .stack {
+    width: 50%;
+    position: relative;
+    height: 500px; }
+    #stacks #stacks-content .container .stack .stack-image {
+      margin-bottom: 0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    #stacks #stacks-content .container .stack .stack-content {
+      position: absolute;
+      padding: 30px;
+      left: 0;
+      bottom: -100px; } }
+
+@media only screen and (max-width: 991px) {
+  #stacks #stacks-content .container .stack .stack-content {
+    bottom: -85px; }
+    #stacks #stacks-content .container .stack .stack-content p.description {
+      display: none; }
+  #introduction #introduction-subheader .container #subheader-box {
+    width: 100%; }
+  #values #values-content .value-alpha .container {
+    flex-direction: column; }
+    #values #values-content .value-alpha .container .value-image {
+      width: 100%;
+      margin-right: 0; }
+    #values #values-content .value-alpha .container .value-content {
+      width: 100%;
+      margin-right: 0; }
+  #values #values-content .value-beta .container {
+    flex-direction: column-reverse; }
+    #values #values-content .value-beta .container .value-image {
+      width: 100%;
+      margin-right: 0; }
+    #values #values-content .value-beta .container .value-content {
+      width: 100%;
+      margin-right: 0; }
+  #header-about .container {
+    padding-top: 100px; }
+    #header-about .container p {
+      font-size: 1.2rem; } }
+
+@media only screen and (max-width: 767px) {
+  #introduction #introduction-subheader .container #subheader-box {
+    width: 100%;
+    padding: 30px; }
+  #stacks #stacks-content .container {
+    max-width: 85vw; }
+    #stacks #stacks-content .container .stack {
+      height: 400px; }
+      #stacks #stacks-content .container .stack .stack-image {
+        width: 200px;
+        height: 200px; }
+  #header-about .container p {
+    display: none; }
+  nav#lnb ul li:not(:last-child) {
+    margin-right: 10px; }
+  nav#lnb ul li a {
+    font-size: 1.2rem;
+    padding-bottom: 3px; }
+  #certification #certification-content .container .certificate {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px; } }
+
+@media only screen and (max-width: 575px) {
+  #introduction #introduction-header {
+    margin-bottom: 100px; }
+    #introduction #introduction-header .container {
+      width: 90%;
+      margin: auto; }
+  #introduction #introduction-subheader .container #subheader-box {
+    width: 85%;
+    left: 7.5%;
+    bottom: 50px;
+    padding: 10px; }
+  #stacks #stacks-header .container {
+    max-width: 85vw; }
+  #stacks #stacks-content .container {
+    max-width: 90vw; }
+    #stacks #stacks-content .container .stack {
+      height: 300px; }
+      #stacks #stacks-content .container .stack .stack-content {
+        padding: 5px;
+        bottom: -30px; }
+        #stacks #stacks-content .container .stack .stack-content p.title {
+          letter-spacing: -3px; }
+        #stacks #stacks-content .container .stack .stack-content p.subtitle {
+          font-size: .8rem; }
+      #stacks #stacks-content .container .stack .stack-image {
+        width: 100px;
+        height: 100px; }
+  nav#lnb ul li:not(:last-child) {
+    margin-right: 5px; }
+  nav#lnb ul li a {
+    font-size: 1rem;
+    padding-bottom: 3px; } }
+
 #areas {
   padding: 100px 0 144px 0;
   background-color: #F8F8F8; }
@@ -309,6 +414,50 @@ nav#lnb ul {
         height: auto;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); }
 
+@media only screen and (max-width: 991px) {
+  #areas #areas-content .container .area-alpha {
+    height: auto;
+    padding: 30px;
+    padding-top: 0; }
+    #areas #areas-content .container .area-alpha .area-image {
+      position: static;
+      display: block;
+      width: 100%;
+      margin: auto;
+      left: 0;
+      top: 0; }
+      #areas #areas-content .container .area-alpha .area-image img {
+        box-shadow: none; }
+    #areas #areas-content .container .area-alpha .area-content {
+      position: static;
+      padding-top: 30px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      display: block; }
+  #areas #areas-content .container .area-beta {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 30px;
+    padding-top: 0; }
+    #areas #areas-content .container .area-beta .area-image {
+      position: static;
+      display: block;
+      width: 100%;
+      margin: auto;
+      left: 0;
+      top: 0; }
+      #areas #areas-content .container .area-beta .area-image img {
+        box-shadow: none; }
+    #areas #areas-content .container .area-beta .area-content {
+      position: static;
+      padding-top: 30px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      display: block; } }
+
 #map {
   padding: 100px 0 144px 0; }
   #map #map-header {
@@ -386,6 +535,35 @@ nav#lnb ul {
       #map #map-subway .container #map-subway-content p.content {
         margin-bottom: 0; }
 
+@media only screen and (max-width: 1199px) {
+  #map #map-detail .container #map-detail-contact #map-detail-contact-image {
+    top: 30%; } }
+
+@media only screen and (max-width: 767px) {
+  #map #map-detail .container #map-detail-address {
+    display: block;
+    width: 100%; }
+  #map #map-detail .container #map-detail-contact {
+    display: block;
+    width: 100%; } }
+
+@media only screen and (max-width: 575px) {
+  #map #map-subway .container #map-subway-content {
+    display: block;
+    text-align: center; }
+    #map #map-subway .container #map-subway-content p.title {
+      font-size: .8rem; }
+    #map #map-subway .container #map-subway-content p.content {
+      font-size: .8rem; }
+  #map #map-subway .container #map-subway-image {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 5px; }
+    #map #map-subway .container #map-subway-image img {
+      width: 64px;
+      height: 64px; } }
+
 #chronicle {
   background-color: #e9f0f5;
   /* -------------------------------- 
@@ -427,6 +605,8 @@ nav#lnb ul {
       margin-bottom: 3px; }
     #chronicle .cd-timeline-content .cd-timeline-content-detail p:last-of-type {
       margin-bottom: 30px; }
+    #chronicle .cd-timeline-content .cd-timeline-content-detail:last-of-type p:last-child {
+      margin-bottom: 0; }
   #chronicle .cd-container {
     /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
     width: 90%;
@@ -742,6 +922,13 @@ nav#lnb ul {
     -o-transform: translateX(0);
     transform: translateX(0); } }
 
+@media only screen and (max-width: 767px) {
+  #chronicle .cd-timeline-content .cd-timeline-content-month {
+    font-size: 1.2rem; }
+    #chronicle .cd-timeline-content .cd-timeline-content-month h2 {
+      font-weight: bold;
+      font-size: 1.2rem; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -889,9 +1076,16 @@ nav#gnb {
         right: 0;
         width: 55%;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); }
+        #sectors #sectors-content .sector-alpha .sector-right p.supertitle {
+          font-size: .8rem;
+          margin-bottom: 5px; }
         #sectors #sectors-content .sector-alpha .sector-right h4 {
           font-weight: bold;
-          margin-bottom: 20px; }
+          margin-bottom: 10px;
+          color: #3CDBED; }
+        #sectors #sectors-content .sector-alpha .sector-right p.subtitle {
+          margin-bottom: 20px;
+          color: #333; }
         #sectors #sectors-content .sector-alpha .sector-right p {
           margin-bottom: 30px;
           color: #777; }
@@ -918,9 +1112,16 @@ nav#gnb {
         width: 55%;
         background-color: rgba(255, 255, 255, 0.8);
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); }
+        #sectors #sectors-content .sector-beta .sector-left p.supertitle {
+          font-size: .8rem;
+          margin-bottom: 5px; }
         #sectors #sectors-content .sector-beta .sector-left h4 {
           font-weight: bold;
-          margin-bottom: 20px; }
+          margin-bottom: 10px;
+          color: #3CDBED; }
+        #sectors #sectors-content .sector-beta .sector-left p.subtitle {
+          margin-bottom: 20px;
+          color: #333; }
         #sectors #sectors-content .sector-beta .sector-left p {
           margin-bottom: 30px;
           color: #777; }
@@ -1032,39 +1233,50 @@ nav#gnb {
             border-bottom: 1px solid #333; }
         #portfolios #portfolios-filters ul li.active a {
           border-bottom: 2px solid #333; }
-  #portfolios #portfolios-items .container .row > div {
-    padding: 30px; }
-    #portfolios #portfolios-items .container .row > div .portfolio {
-      position: relative;
-      width: 320px;
-      height: 320px; }
-      #portfolios #portfolios-items .container .row > div .portfolio img {
+  #portfolios #portfolios-items .container .see-more:hover {
+    text-decoration: underline !important; }
+  #portfolios #portfolios-items .container .row {
+    margin-bottom: 30px; }
+    #portfolios #portfolios-items .container .row > div {
+      padding: 30px; }
+      #portfolios #portfolios-items .container .row > div .portfolio {
+        position: relative;
         width: 320px;
-        height: 320px;
-        position: absolute;
-        width: 100%;
-        height: auto; }
-      #portfolios #portfolios-items .container .row > div .portfolio .hovered {
-        padding: 20px;
-        opacity: 0;
-        width: 320px;
-        height: 320px;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.5);
-        text-align: center; }
-        #portfolios #portfolios-items .container .row > div .portfolio .hovered p.portfolio-title {
-          color: white;
-          font-size: 1.5rem;
-          margin-bottom: 10px; }
-        #portfolios #portfolios-items .container .row > div .portfolio .hovered p.portfolio-description {
+        height: 320px; }
+        #portfolios #portfolios-items .container .row > div .portfolio img {
+          width: 320px;
+          height: 320px;
+          position: absolute;
+          width: 100%;
+          height: auto; }
+        #portfolios #portfolios-items .container .row > div .portfolio > p.subtitle {
           font-size: 1.2rem;
-          color: white; }
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          bottom: -30px; }
+        #portfolios #portfolios-items .container .row > div .portfolio .hovered {
+          padding: 20px;
+          opacity: 0;
+          width: 320px;
+          height: 320px;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: rgba(0, 0, 0, 0.5);
+          text-align: center; }
+          #portfolios #portfolios-items .container .row > div .portfolio .hovered p.portfolio-title {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 10px; }
+          #portfolios #portfolios-items .container .row > div .portfolio .hovered p.portfolio-description {
+            font-size: 1.2rem;
+            color: white; }
 
 #portfolios-slider {
+  padding: 100px 0 144px 0;
   display: none;
   margin-bottom: 80px; }
   #portfolios-slider #portfolios-slider-header {
@@ -1258,6 +1470,8 @@ nav#gnb {
     left: 50px; }
   #portfolios #portfolios-items .container .row > div .portfolio .hovered {
     left: 50px; }
+  #portfolios #portfolios-items .container .row > div .portfolio p.subtitle {
+    left: 50px; }
   #sectors #sectors-header p {
     font-size: 1.5rem;
     width: 800px;
@@ -1267,11 +1481,9 @@ nav#gnb {
   #clients #clients-list ul li:not(:last-child) {
     margin-right: 15px; }
   .carousel-content {
-    top: 65%; }
-    .carousel-content .carousel-buttons {
-      bottom: 180px; }
-      .carousel-content .carousel-buttons a {
-        padding: 8px 20px; }
+    top: 55%; }
+    .carousel-content .carousel-buttons a {
+      padding: 8px 20px; }
     .carousel-content h2 {
       font-size: 2rem; }
     .carousel-content p {
@@ -1291,7 +1503,7 @@ nav#gnb {
 
 @media screen and (max-width: 991px) {
   header#header {
-    height: 650px; }
+    height: 550px; }
   nav#gnb .container #gnb-nav {
     display: none; }
   nav#gnb .container #gnb-hamburger {
@@ -1327,28 +1539,32 @@ nav#gnb {
   #sectors #sectors-content {
     width: 720px; }
     #sectors #sectors-content .sector-alpha {
-      height: 600px; }
+      height: 760px; }
       #sectors #sectors-content .sector-alpha .sector-left {
-        position: static;
+        position: relative;
         width: 80%;
-        margin: auto; }
+        margin: auto;
+        z-index: 1; }
         #sectors #sectors-content .sector-alpha .sector-left img {
           width: 100%;
           height: auto; }
       #sectors #sectors-content .sector-alpha .sector-right {
-        top: 220px;
+        padding: 420px 70px 50px 70px;
         width: 100%;
-        text-align: center; }
+        background-color: white;
+        top: 0; }
     #sectors #sectors-content .sector-beta {
-      height: 600px; }
+      height: 730px; }
       #sectors #sectors-content .sector-beta .sector-left {
-        top: 220px;
+        padding: 420px 70px 50px 70px;
         width: 100%;
-        text-align: center; }
+        background-color: white;
+        top: 0; }
       #sectors #sectors-content .sector-beta .sector-right {
-        position: static;
+        position: relative;
         width: 80%;
-        margin: auto; }
+        margin: auto;
+        z-index: 1; }
         #sectors #sectors-content .sector-beta .sector-right img {
           width: 100%;
           height: auto; }
@@ -1370,8 +1586,14 @@ nav#gnb {
       bottom: 0;
       transform: translateX(-50%); }
     .carousel-inner .carousel-item .carousel-content {
+      top: 75%;
       position: relative;
-      z-index: 2; }
+      z-index: 2;
+      margin: 0; }
+      .carousel-inner .carousel-item .carousel-content p {
+        display: none; }
+      .carousel-inner .carousel-item .carousel-content .carousel-buttons {
+        display: none; }
   .carousel-content {
     text-align: center;
     top: 60%; }
@@ -1398,57 +1620,39 @@ nav#gnb {
 
 @media screen and (max-width: 767px) {
   header#header {
-    height: 500px; }
+    height: 400px; }
   .carousel-inner .carousel-item {
     height: 400px; }
   .carousel-content {
-    top: 90%; }
+    top: 85% !important; }
     .carousel-content .carousel-buttons {
       display: none; }
     .carousel-content h2 {
       font-size: 1.5rem; }
     .carousel-content p {
       display: none; }
-  #sectors #sectors-header p {
-    font-size: 1.5rem;
-    width: 500px;
-    margin: auto; }
+  #sectors #sectors-header {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto; }
+    #sectors #sectors-header p {
+      width: auto; }
   #sectors #sectors-content {
     width: 100%; }
     #sectors #sectors-content .sector-alpha {
-      height: 60vw; }
-      #sectors #sectors-content .sector-alpha .sector-left {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%); }
+      margin: auto;
+      max-width: 90%;
+      height: 100vw;
+      margin-bottom: 10vh; }
       #sectors #sectors-content .sector-alpha .sector-right {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: absolute;
-        left: 50% !important;
-        transform: translateX(-50%);
-        top: 0;
-        left: 0;
-        width: 80%;
-        height: 52vw; }
+        padding: 52vw 9vw 9vw 9vw; }
     #sectors #sectors-content .sector-beta {
-      height: 60vw; }
+      margin: auto;
+      max-width: 90%;
+      height: 100vw;
+      margin-bottom: 10vh; }
       #sectors #sectors-content .sector-beta .sector-left {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: absolute;
-        left: 50% !important;
-        transform: translateX(-50%);
-        top: 0;
-        left: 0;
-        width: 80%;
-        height: 52vw; }
-      #sectors #sectors-content .sector-beta .sector-right {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%); }
+        padding: 52vw 9vw 9vw 9vw; }
   #technologies {
     display: none; }
   #technologies-slider {
@@ -1484,24 +1688,10 @@ nav#gnb {
     display: none; } }
 
 @media screen and (max-width: 575px) {
-  #sectors #sectors-header p {
-    font-size: 1.5rem;
-    width: 90%;
-    margin: auto; }
-  #sectors #sectors-content .sector-alpha .sector-right {
-    height: 53vw;
-    padding: 30px; }
-    #sectors #sectors-content .sector-alpha .sector-right h4 {
-      margin-bottom: 20px; }
-    #sectors #sectors-content .sector-alpha .sector-right p {
-      display: none; }
-  #sectors #sectors-content .sector-beta .sector-left {
-    height: 53vw;
-    padding: 30px; }
-    #sectors #sectors-content .sector-beta .sector-left h4 {
-      margin-bottom: 20px; }
-    #sectors #sectors-content .sector-beta .sector-left p {
-      display: none; }
+  #sectors #sectors-content .sector-alpha {
+    margin-bottom: 28vh; }
+  #sectors #sectors-content .sector-beta {
+    margin-bottom: 28vh; }
   #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item {
     height: 200px; }
     #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item img {

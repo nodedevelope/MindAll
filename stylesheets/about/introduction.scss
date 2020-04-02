@@ -291,3 +291,223 @@ nav#lnb {
         }
     }
 }
+
+@media only screen and (max-width: 1199px) {
+    #stacks {
+        #stacks-header {
+            .container {
+                margin-bottom: 0;
+                max-width: 70vw;
+            }
+        }
+        #stacks-content {
+            .container {
+                .stack {
+                    width: 50%;
+                    position: relative;
+                    height: 500px;
+                    .stack-image {
+                        margin-bottom: 0;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    .stack-content {
+                        position: absolute;
+                        padding: 30px;
+                        left: 0;
+                        bottom: -100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #stacks {
+        #stacks-content {
+            .container {
+                .stack {
+                    .stack-content {
+                        bottom: -85px;
+                        p.description {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #introduction {
+        #introduction-subheader {
+            .container {
+                #subheader-box {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #values {
+        #values-content {
+            .value-alpha {
+                .container {
+                    flex-direction: column;
+                    .value-image {
+                        width: 100%;
+                        margin-right: 0;
+                    }
+                    .value-content {
+                        width: 100%;
+                        margin-right: 0;
+                    }
+                }
+            }
+            .value-beta {
+                .container {
+                    flex-direction: column-reverse;
+                    .value-image {
+                        width: 100%;
+                        margin-right: 0;
+                    }
+                    .value-content {
+                        width: 100%;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    #header-about {
+        .container {
+            padding-top: 100px;
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #introduction {
+        #introduction-subheader {
+            .container {
+                #subheader-box {
+                    width: 100%;
+                    padding: 30px;
+                }
+            }
+        }
+    }
+    #stacks {
+        #stacks-content {
+            .container {
+                max-width: 85vw;
+                .stack {
+                    height: 400px;
+                    .stack-image {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+    #header-about {
+        .container {
+            p {
+                display: none;
+            }
+        }
+    }
+    nav#lnb {
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+                a {
+                    font-size: 1.2rem;
+                    padding-bottom: 3px;
+                }
+            }
+        }
+    }
+    #certification {
+        #certification-content {
+            .container {
+                .certificate {
+                    display: block;
+                    width: 100%;
+                    padding: 0;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #introduction {
+        #introduction-header {
+            margin-bottom: 100px;
+            .container {
+                width: 90%;
+                margin: auto;
+            }
+        }
+        #introduction-subheader {
+            .container {
+                #subheader-box {
+                    width: 85%;
+                    left: 7.5%;
+                    bottom: 50px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    #stacks {
+        #stacks-header {
+            .container {
+                max-width: 85vw;
+            }
+        }
+        #stacks-content {
+            .container {
+                max-width: 90vw;
+                .stack {
+                    height: 300px;
+                    .stack-content {
+                        padding: 5px;
+                        bottom: -30px;
+                        p.title {
+                            letter-spacing: -3px;
+                        }
+                        p.subtitle {
+                            font-size: .8rem;
+                        }
+                    }
+                    .stack-image {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+    nav#lnb {
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-right: 5px;
+                }
+                a {
+                    font-size: 1rem;
+                    padding-bottom: 3px;
+                }
+            }
+        }
+    }
+}

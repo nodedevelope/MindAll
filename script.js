@@ -183,7 +183,8 @@ $(document).ready(function() {
         var description = $("<p class='portfolio-description'>" + item.description + "</p>");
         var hoverPanel = $("<div class='hovered'></div>").append(title).append(description);
         var img = $("<img src='images/portfolios/" + item.image + ".jpg' alt='" + item.title + "'/>");
-        var item = $("<div class='portfolio'></div>").append(img);
+        var subtitle = $("<p class='subtitle'>" + item.title + "</p>");
+        var item = $("<div class='portfolio'></div>").append(img).append(subtitle);
         $(item).hover(function() {
             $(this).append(hoverPanel);
             $(".hovered").animate({
@@ -237,7 +238,7 @@ $(document).ready(function() {
     // GNB (Global Navigation Bar)
     var navigationBarColor = "#333";
     var upperNavigationBarColor = "rgba(0, 0, 0, .5)";
-    $("#sectors").waypoint({
+    $("#sectors, #lnb").waypoint({
         handler: function(direction) {
             if(direction === "down") {
                 $("nav#gnb").css({

@@ -194,9 +194,18 @@ nav#gnb {
                 right: 0;
                 width: 55%;
                 box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+                p.supertitle {
+                    font-size: .8rem;
+                    margin-bottom: 5px;
+                }
                 h4 {
                     font-weight: bold;
+                    margin-bottom: 10px;
+                    color: #3CDBED;
+                }
+                p.subtitle {
                     margin-bottom: 20px;
+                    color: #333;
                 }
                 p {
                     margin-bottom: 30px;
@@ -229,9 +238,18 @@ nav#gnb {
                 width: 55%;
                 background-color: rgba(255, 255, 255, 0.8);
                 box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+                p.supertitle {
+                    font-size: .8rem;
+                    margin-bottom: 5px;
+                }
                 h4 {
                     font-weight: bold;
+                    margin-bottom: 10px;
+                    color: #3CDBED;
+                }
+                p.subtitle {
                     margin-bottom: 20px;
+                    color: #333;
                 }
                 p {
                     margin-bottom: 30px;
@@ -393,7 +411,13 @@ nav#gnb {
     }
     #portfolios-items {
         .container {
+            .see-more {
+                &:hover {
+                    text-decoration: underline !important;
+                }
+            }
             .row {
+                margin-bottom: 30px;
                 & > div {
                     padding: 30px;
                     .portfolio {
@@ -406,6 +430,13 @@ nav#gnb {
                             position: absolute;
                             width: 100%;
                             height: auto;
+                        }
+                        & > p.subtitle {
+                            font-size: 1.2rem;
+                            position: absolute;
+                            width: 100%;
+                            text-align: center;
+                            bottom: -30px;
                         }
                         .hovered {
                             padding: 20px;
@@ -436,6 +467,7 @@ nav#gnb {
     }
 }
 #portfolios-slider {
+    padding: 100px 0 144px 0;
     display: none;
     margin-bottom: 80px;
     #portfolios-slider-header {
@@ -736,6 +768,9 @@ nav#gnb {
                             .hovered {
                                 left: 50px;
                             }
+                            p.subtitle {
+                                left: 50px;
+                            }
                         }
                     }
                 }
@@ -764,9 +799,8 @@ nav#gnb {
         }
     }
     .carousel-content {
-        top: 65%;
+        top: 55%;
         .carousel-buttons {
-            bottom: 180px;
             a {
                 padding: 8px 20px;
             }
@@ -807,7 +841,7 @@ nav#gnb {
 // Media query (max-width: 992px)
 @media screen and (max-width: 991px) {
     header#header {
-        height: 650px;
+        height: 550px;
     }
     nav#gnb {
         .container {
@@ -861,33 +895,37 @@ nav#gnb {
         #sectors-content {
             width: 720px;
             .sector-alpha {
-                height: 600px;
+                height: 760px;
                 .sector-left {
-                    position: static;
+                    position: relative;
                     width: 80%;
                     margin: auto;
+                    z-index: 1;
                     img {
                         width: 100%;
                         height: auto;
                     }
                 }
                 .sector-right {
-                    top: 220px;
+                    padding: 420px 70px 50px 70px;
                     width: 100%;
-                    text-align: center;
+                    background-color: white;
+                    top: 0;
                 }
             }
             .sector-beta {
-                height: 600px;
+                height: 730px;
                 .sector-left {
-                    top: 220px;
+                    padding: 420px 70px 50px 70px;
                     width: 100%;
-                    text-align: center;
+                    background-color: white;
+                    top: 0;
                 }
                 .sector-right {
-                    position: static;
+                    position: relative;
                     width: 80%;
                     margin: auto;
+                    z-index: 1;
                     img {
                         width: 100%;
                         height: auto;
@@ -917,8 +955,16 @@ nav#gnb {
                 transform: translateX(-50%);
             }
             .carousel-content {
+                top: 75%;
                 position: relative;
                 z-index: 2;
+                margin: 0;
+                p {
+                    display: none;
+                }
+                .carousel-buttons {
+                    display: none;
+                }
             }
         }
     }
@@ -967,7 +1013,7 @@ nav#gnb {
 // Media query (max-width: 767px)
 @media screen and (max-width: 767px) {
     header#header {
-        height: 500px;
+        height: 400px;
     }
     .carousel-inner {
         .carousel-item {
@@ -975,7 +1021,7 @@ nav#gnb {
         }
     }
     .carousel-content {
-        top: 90%;
+        top: 85% !important;
         .carousel-buttons {
             display: none;
         }
@@ -988,52 +1034,31 @@ nav#gnb {
     }
     #sectors {
         #sectors-header {
+            max-width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
             p {
-                font-size: 1.5rem;
-                width: 500px;
-                margin: auto;
+                width: auto;
             }
         }
         #sectors-content {
             width: 100%;
             .sector-alpha {
-                height: 60vw;
-                .sector-left {
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
+                margin: auto;
+                max-width: 90%;
+                height: 100vw;
+                margin-bottom: 10vh;
                 .sector-right {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    position: absolute;
-                    left: 50% !important;
-                    transform: translateX(-50%);
-                    top: 0;
-                    left: 0;
-                    width: 80%;
-                    height: 52vw;
+                    padding: 52vw 9vw 9vw 9vw;
                 }
             }
             .sector-beta {
-                height: 60vw;
+                margin: auto;
+                max-width: 90%;
+                height: 100vw;
+                margin-bottom: 10vh;
                 .sector-left {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    position: absolute;
-                    left: 50% !important;
-                    transform: translateX(-50%);
-                    top: 0;
-                    left: 0;
-                    width: 80%;
-                    height: 52vw;
-                }
-                .sector-right {
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
+                    padding: 52vw 9vw 9vw 9vw;
                 }
             }
         }
@@ -1125,37 +1150,12 @@ nav#gnb {
 // Media query (max-width: 576px)
 @media screen and (max-width: 575px) {
     #sectors {
-        #sectors-header {
-            p {
-                font-size: 1.5rem;
-                width: 90%;
-                margin: auto;
-            }
-        }
         #sectors-content {
             .sector-alpha {
-                .sector-right {
-                    height: 53vw;
-                    padding: 30px;
-                    h4 {
-                        margin-bottom: 20px;
-                    }
-                    p {
-                        display: none;
-                    }
-                }
+                margin-bottom: 28vh;
             }
             .sector-beta {
-                .sector-left {
-                    height: 53vw;
-                    padding: 30px;
-                    h4 {
-                        margin-bottom: 20px;
-                    }
-                    p {
-                        display: none;
-                    }
-                }
+                margin-bottom: 28vh;
             }
         }
     }

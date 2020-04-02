@@ -1,3 +1,4 @@
+// Chronicle
 #chronicle {
     background-color: #e9f0f5;
     .cd-read-more {
@@ -32,6 +33,11 @@
         }
         p:last-of-type {
           margin-bottom: 30px;
+        }
+        &:last-of-type {
+          p:last-child {
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -451,4 +457,29 @@
         }
       }
 }
-  
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+    #chronicle {
+      .cd-timeline-content {
+        .cd-timeline-content-month {
+          font-size: 1.2rem;
+          h2 {
+            font-weight: bold;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+}

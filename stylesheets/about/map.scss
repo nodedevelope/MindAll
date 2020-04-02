@@ -109,3 +109,67 @@
         }
     }
 }
+
+@media only screen and (max-width: 1199px) {
+    #map {
+        #map-detail {
+            .container {
+                #map-detail-contact {
+                    #map-detail-contact-image {
+                        top: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+    #map {
+        #map-detail {
+            .container {
+                #map-detail-address {
+                    display: block;
+                    width: 100%;
+                }
+                #map-detail-contact {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #map {
+        #map-subway {
+            .container {
+                #map-subway-content {
+                    display: block;
+                    text-align: center;
+                    p.title {
+                        font-size: .8rem;
+                    }
+                    p.content {
+                        font-size: .8rem;
+                    }
+                }
+                #map-subway-image {
+                    display: block;
+                    text-align: center;
+                    margin-right: 0;
+                    margin-bottom: 5px;
+                    img {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+            }
+        }
+    }
+}
