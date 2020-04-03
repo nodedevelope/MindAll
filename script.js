@@ -282,7 +282,7 @@ $(document).ready(function() {
     // GNB (Global Navigation Bar)
     var navigationBarColor = "#333";
     var upperNavigationBarColor = "rgba(0, 0, 0, .5)";
-    $("#sectors, #lnb").waypoint({
+    $("#sectors, #lnb, section").waypoint({
         handler: function(direction) {
             if(direction === "down") {
                 $("nav#gnb").css({
