@@ -117,29 +117,73 @@ $(document).ready(function() {
         $(".see-more").remove();
         $(this).addClass("active");
         emptyPortfolios();
-        switch($(this).children("a").text()) {
-            case "All":
-                getPortfolios("all").forEach(function(item) {
-                    $("#portfolios-items > .container > .row").append(getPortfolio(item));
-                });
-                $("#portfolios-items > .container").append(moreButton);
-                break;
-            case "Web":
-                getPortfolios("web").forEach(function(item) {
-                    $("#portfolios-items > .container > .row").append(getPortfolio(item));
-                });
-                break;
-            case "App":
-                getPortfolios("app").forEach(function(item) {
-                    $("#portfolios-items > .container > .row").append(getPortfolio(item));
-                });
-                $("#portfolios-items > .container").append(moreButton);
-                break;
-            case "솔루션":
-                getPortfolios("solution").forEach(function(item) {
-                    $("#portfolios-items > .container > .row").append(getPortfolio(item));
-                });
-                break;
+        var maxNum = 12;
+        var extended = false;
+        var limit = $("#portfolios").hasClass("annexed") ? 9 : 6;
+        if(limit === 9) {
+            moreButton.on("click", function(event) {
+                event.preventDefault();
+                if(!extended) {
+                    emptyPortfolios();
+                    limit = maxNum;
+                    getPortfolios("all", limit).forEach(function(item) {
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                    });
+                    $(".see-more").hide();
+                }
+            });
+            switch($(this).children("a").text()) {
+                case "All":
+                    getPortfolios("all", limit).forEach(function(item) {
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                    });
+                    $("#portfolios-items > .container").append(moreButton);
+                    break;
+                case "Web":
+                    getPortfolios("web", limit).forEach(function(item) {
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                    });
+                    break;
+                case "App":
+                    getPortfolios("app", limit).forEach(function(item) {
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                    });
+                    break;
+                case "솔루션":
+                    getPortfolios("solution", limit).forEach(function(item) {
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                    });
+                    break;
+            }
+        }
+        else if(limit === 6) {
+            switch($(this).children("a").text()) {
+                case "All":
+                    getPortfolios("all", limit).forEach(function(item) {
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                    });
+                    $("#portfolios-items > .container").append(moreButton);
+                    break;
+                case "Web":
+                    getPortfolios("web", limit).forEach(function(item) {
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                    });
+                    break;
+                case "App":
+                    getPortfolios("app", limit).forEach(function(item) {
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                    });
+                    $("#portfolios-items > .container").append(moreButton);
+                    break;
+                case "솔루션":
+                    getPortfolios("solution", limit).forEach(function(item) {
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                    });
+                    break;
+            }
+        }
+        else {
+
         }
     });
     $("#portfolios-filters > ul > li.default").click(); // Initial set-up
@@ -200,13 +244,13 @@ $(document).ready(function() {
         return cell.append(item);
     }
 
-    function getPortfolios(category) {
+    function getPortfolios(category, limit) {
         if(category === "all") {
-            return portfolios.slice(0, 6);
+            return portfolios.slice(0, limit);
         }
         return portfolios.filter(function(portfolio) {
             return portfolio.category === category;
-        }).slice(0, 6);
+        }).slice(0, limit);
     }
 
     function emptyPortfolios() {

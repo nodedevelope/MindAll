@@ -929,6 +929,20 @@ nav#lnb ul {
       font-weight: bold;
       font-size: 1.2rem; } }
 
+#header-portfolio {
+  background-image: url("./images/about_background.jpg");
+  background-size: cover; }
+  #header-portfolio .container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #header-portfolio .container h1 {
+      font-weight: bolder;
+      color: white;
+      font-size: 3rem; }
+
 * {
   margin: 0;
   padding: 0;
