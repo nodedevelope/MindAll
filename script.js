@@ -272,9 +272,9 @@ $(document).ready(function() {
     });
 
     // LNB (Local Navigation Bar)
-    $("#lnb > ul > li > a").click(function(event) {
+    $("#lnb > .container > ul > li > a").click(function(event) {
         event.preventDefault();
-        $("#lnb > ul > li").removeClass("active");
+        $("#lnb > .container > ul > li").removeClass("active");
         $(this).parent().addClass("active");
         var category = $(this).text();
     });
@@ -282,7 +282,7 @@ $(document).ready(function() {
     // GNB (Global Navigation Bar)
     var navigationBarColor = "#333";
     var upperNavigationBarColor = "rgba(0, 0, 0, .5)";
-    $("#sectors, #lnb, section").waypoint({
+    $("#lnb, #sectors, #portfolios, #portfolios-slider").waypoint({
         handler: function(direction) {
             if(direction === "down") {
                 $("nav#gnb").css({

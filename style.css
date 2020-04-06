@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700&display=swap&subset=korean");
+span.superbar {
+  display: inline-block;
+  color: #333;
+  transform: scaleX(8) scaleY(1.5) translateX(36%); }
+
 #header-about {
   background-image: url("images/about_background.jpg");
   background-size: cover; }
@@ -19,29 +24,29 @@
       color: white; }
 
 nav#lnb ul {
-  margin-bottom: 0;
-  padding: 15px 0;
-  text-align: center; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
   nav#lnb ul li {
-    display: inline-block; }
-    nav#lnb ul li.active a {
-      font-weight: bold;
-      color: #3CDBED;
-      border-bottom: 3px solid #3CDBED; }
-      nav#lnb ul li.active a:hover {
-        border-bottom: 3px solid #3CDBED; }
-    nav#lnb ul li:not(:last-child) {
-      margin-right: 30px; }
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 10px 0; }
     nav#lnb ul li a {
       display: inline-block;
+      width: 50%;
+      font-size: 1.2rem;
       padding-bottom: 5px;
-      border-bottom: 2px solid transparent;
-      color: inherit;
-      font-size: 1.5rem;
-      transition: all .3s; }
+      transition: all .3s;
+      border-bottom: 3px solid transparent; }
       nav#lnb ul li a:hover {
-        text-decoration: none;
-        border-bottom: 2px solid #333; }
+        color: inherit;
+        border-bottom: 3px solid #333; }
+    nav#lnb ul li:not(:last-child) {
+      border-right: 1px solid #333; }
+    nav#lnb ul li.active a {
+      color: #3CDBED;
+      border-bottom: 3px solid #3CDBED; }
 
 #introduction {
   padding-top: 100px; }
@@ -53,6 +58,8 @@ nav#lnb ul {
     #introduction #introduction-header .container h3 {
       font-weight: bolder;
       margin-bottom: 20px; }
+    #introduction #introduction-header .container p:first-of-type {
+      font-size: 1.1rem; }
     #introduction #introduction-header .container p {
       margin-bottom: 5px; }
   #introduction #introduction-subheader {
@@ -64,7 +71,8 @@ nav#lnb ul {
       position: relative;
       height: 400px; }
       #introduction #introduction-subheader .container #subheader-box {
-        background: linear-gradient(to bottom, #3CDBED, #00b9ce);
+        background-image: url("./images/jumbotron.png");
+        background-size: cover;
         position: absolute;
         right: 0;
         bottom: 30px;
@@ -90,7 +98,7 @@ nav#lnb ul {
           color: white; }
 
 #values {
-  padding: 100px 0 144px 0;
+  padding-top: 100px;
   background-color: #F8F8F8; }
   #values #values-header .container {
     margin-bottom: 30px; }
@@ -154,42 +162,48 @@ nav#lnb ul {
           height: auto; }
 
 #stacks {
-  padding: 100px 0 144px 0; }
+  padding: 100px 0 50px 0; }
   #stacks #stacks-header .container {
     margin-bottom: 30px; }
-  #stacks #stacks-content .container .stack {
-    display: inline-block;
-    vertical-align: middle;
-    width: 33.33%;
-    padding: 30px; }
-    #stacks #stacks-content .container .stack .stack-image {
+  #stacks #stacks-content .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    #stacks #stacks-content .container .stack {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 300px;
-      height: 300px;
-      text-align: center;
-      background-color: #3CDBED;
-      border-radius: 50%;
-      margin-bottom: 30px; }
-      #stacks #stacks-content .container .stack .stack-image img {
-        width: 50%;
-        height: auto; }
-    #stacks #stacks-content .container .stack .stack-content {
-      text-align: center; }
-      #stacks #stacks-content .container .stack .stack-content p.title {
-        font-weight: bold;
-        font-size: 1.2rem;
-        margin-bottom: 10px; }
-      #stacks #stacks-content .container .stack .stack-content p.subtitle {
-        color: #555;
-        font-size: 1.1rem; }
-      #stacks #stacks-content .container .stack .stack-content p.description {
-        color: #777; }
+      width: 33.33%;
+      padding: 30px; }
+      #stacks #stacks-content .container .stack .stack-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        background-color: #3CDBED;
+        border-radius: 50%;
+        margin-bottom: 30px; }
+        #stacks #stacks-content .container .stack .stack-image img {
+          width: 50%;
+          height: auto; }
+      #stacks #stacks-content .container .stack .stack-content {
+        text-align: center; }
+        #stacks #stacks-content .container .stack .stack-content p.title {
+          font-weight: bold;
+          font-size: 1.2rem;
+          margin-bottom: 10px; }
+        #stacks #stacks-content .container .stack .stack-content p.subtitle {
+          color: #555;
+          font-size: 1.1rem; }
+        #stacks #stacks-content .container .stack .stack-content p.description {
+          color: #777; }
 
 #certification {
   background-color: #F8F8F8;
-  padding: 100px 0 144px 0; }
+  padding: 100px 0 50px 0; }
   #certification #certification-header .container {
     margin-bottom: 30px; }
   #certification #certification-content .container .certificate {
@@ -214,7 +228,7 @@ nav#lnb ul {
   #stacks #stacks-content .container .stack {
     width: 50%;
     position: relative;
-    height: 500px; }
+    height: 550px; }
     #stacks #stacks-content .container .stack .stack-image {
       margin-bottom: 0;
       position: absolute;
@@ -224,10 +238,14 @@ nav#lnb ul {
     #stacks #stacks-content .container .stack .stack-content {
       position: absolute;
       padding: 30px;
-      left: 0;
-      bottom: -100px; } }
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      top: 410px; } }
 
 @media only screen and (max-width: 991px) {
+  nav#lnb .container ul li a {
+    width: 80%; }
   #stacks #stacks-content .container .stack .stack-content {
     bottom: -85px; }
     #stacks #stacks-content .container .stack .stack-content p.description {
@@ -256,6 +274,9 @@ nav#lnb ul {
       font-size: 1.2rem; } }
 
 @media only screen and (max-width: 767px) {
+  nav#lnb .container ul li a {
+    width: 90%;
+    font-size: .9rem; }
   #introduction #introduction-subheader .container #subheader-box {
     width: 100%;
     padding: 30px; }
@@ -266,13 +287,10 @@ nav#lnb ul {
       #stacks #stacks-content .container .stack .stack-image {
         width: 200px;
         height: 200px; }
+      #stacks #stacks-content .container .stack .stack-content {
+        top: 285px; }
   #header-about .container p {
     display: none; }
-  nav#lnb ul li:not(:last-child) {
-    margin-right: 10px; }
-  nav#lnb ul li a {
-    font-size: 1.2rem;
-    padding-bottom: 3px; }
   #certification #certification-content .container .certificate {
     display: block;
     width: 100%;
@@ -280,6 +298,11 @@ nav#lnb ul {
     margin-bottom: 50px; } }
 
 @media only screen and (max-width: 575px) {
+  nav#lnb .container ul li {
+    border-right: none; }
+    nav#lnb .container ul li a {
+      width: 90%;
+      font-size: .8rem; }
   #introduction #introduction-header {
     margin-bottom: 100px; }
     #introduction #introduction-header .container {
@@ -298,7 +321,7 @@ nav#lnb ul {
       height: 300px; }
       #stacks #stacks-content .container .stack .stack-content {
         padding: 5px;
-        bottom: -30px; }
+        top: 220px; }
         #stacks #stacks-content .container .stack .stack-content p.title {
           letter-spacing: -3px; }
         #stacks #stacks-content .container .stack .stack-content p.subtitle {
@@ -306,11 +329,15 @@ nav#lnb ul {
       #stacks #stacks-content .container .stack .stack-image {
         width: 100px;
         height: 100px; }
-  nav#lnb ul li:not(:last-child) {
-    margin-right: 5px; }
-  nav#lnb ul li a {
-    font-size: 1rem;
-    padding-bottom: 3px; } }
+  #certification #certification-header .container {
+    max-width: 85vw; }
+  #certification #certification-content .container .certificate {
+    display: block;
+    width: 60%;
+    padding: 0;
+    margin: 0 auto 50px auto; }
+    #certification #certification-content .container .certificate .certificate-content p {
+      font-size: 1rem; } }
 
 #areas {
   padding: 100px 0 144px 0;

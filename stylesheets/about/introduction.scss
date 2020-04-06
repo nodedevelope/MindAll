@@ -1,3 +1,13 @@
+// Superbar
+@mixin superbar($length) {
+    display: inline-block;
+    color: #333;
+    transform: scaleX($length) scaleY(1.5) translateX(36%);
+}
+span.superbar {
+    @include superbar(8);
+}
+
 // Header - About
 #header-about {
     background-image: url("images/about_background.jpg");
@@ -25,34 +35,33 @@
 // LNB (Local Navigation Bar)
 nav#lnb {
     ul {
-        margin-bottom: 0;
-        padding: 15px 0;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         li {
             display: inline-block;
-            &.active {
-                a {
-                    font-weight: bold;
-                    color: #3CDBED;
-                    border-bottom: 3px solid #3CDBED;
-                    &:hover {
-                        border-bottom: 3px solid #3CDBED;
-                    }
+            width: 50%;
+            text-align: center;
+            margin: 10px 0;
+            a {
+                display: inline-block;
+                width: 50%;
+                font-size: 1.2rem;
+                padding-bottom: 5px;
+                transition: all .3s;
+                border-bottom: 3px solid transparent;
+                &:hover {
+                    color: inherit;
+                    border-bottom: 3px solid #333;
                 }
             }
             &:not(:last-child) {
-                margin-right: 30px;
+                border-right: 1px solid #333;
             }
-            a {
-                display: inline-block;
-                padding-bottom: 5px;
-                border-bottom: 2px solid transparent;
-                color: inherit;
-                font-size: 1.5rem;
-                transition: all .3s;
-                &:hover {
-                    text-decoration: none;
-                    border-bottom: 2px solid #333;
+            &.active {
+                a {
+                    color: #3CDBED;
+                    border-bottom: 3px solid #3CDBED;
                 }
             }
         }
@@ -73,6 +82,9 @@ nav#lnb {
                 font-weight: bolder;
                 margin-bottom: 20px;
             }
+            p:first-of-type {
+                font-size: 1.1rem;
+            }
             p {
                 margin-bottom: 5px;
             }
@@ -87,7 +99,8 @@ nav#lnb {
             position: relative;
             height: 400px;
             #subheader-box {
-                background: linear-gradient(to bottom, #3CDBED, rgb(0, 185, 206));
+                background-image: url("./images/jumbotron.png");
+                background-size: cover;
                 position: absolute;
                 right: 0;
                 bottom: 30px;
@@ -122,7 +135,7 @@ nav#lnb {
 
 // Core values
 #values {
-    padding: 100px 0 144px 0;
+    padding-top: 100px;
     background-color: #F8F8F8;
     #values-header {
         .container {
@@ -209,7 +222,7 @@ nav#lnb {
 
 // Techstacks
 #stacks {
-    padding: 100px 0 144px 0;
+    padding: 100px 0 50px 0;
     #stacks-header {
         .container {
             margin-bottom: 30px;
@@ -217,17 +230,22 @@ nav#lnb {
     }
     #stacks-content {
         .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
             .stack {
-                display: inline-block;
-                vertical-align: middle;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 width: 33.33%;
                 padding: 30px;
                 .stack-image {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 300px;
-                    height: 300px;
+                    width: 200px;
+                    height: 200px;
                     text-align: center;
                     background-color: #3CDBED;
                     border-radius: 50%;
@@ -260,7 +278,7 @@ nav#lnb {
 // Certificates
 #certification {
     background-color: #F8F8F8;
-    padding: 100px 0 144px 0;
+    padding: 100px 0 50px 0;
     #certification-header {
         .container {
             margin-bottom: 30px;
@@ -305,7 +323,7 @@ nav#lnb {
                 .stack {
                     width: 50%;
                     position: relative;
-                    height: 500px;
+                    height: 550px;
                     .stack-image {
                         margin-bottom: 0;
                         position: absolute;
@@ -316,8 +334,10 @@ nav#lnb {
                     .stack-content {
                         position: absolute;
                         padding: 30px;
-                        left: 0;
-                        bottom: -100px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 100%;
+                        top: 410px;
                     }
                 }
             }
@@ -326,6 +346,17 @@ nav#lnb {
 }
 
 @media only screen and (max-width: 991px) {
+    nav#lnb {
+        .container {
+            ul {
+                li {
+                    a {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
     #stacks {
         #stacks-content {
             .container {
@@ -390,6 +421,18 @@ nav#lnb {
 }
 
 @media only screen and (max-width: 767px) {
+    nav#lnb {
+        .container {
+            ul {
+                li {
+                    a {
+                        width: 90%;
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
     #introduction {
         #introduction-subheader {
             .container {
@@ -410,6 +453,9 @@ nav#lnb {
                         width: 200px;
                         height: 200px;
                     }
+                    .stack-content {
+                        top: 285px;
+                    }
                 }
             }
         }
@@ -418,19 +464,6 @@ nav#lnb {
         .container {
             p {
                 display: none;
-            }
-        }
-    }
-    nav#lnb {
-        ul {
-            li {
-                &:not(:last-child) {
-                    margin-right: 10px;
-                }
-                a {
-                    font-size: 1.2rem;
-                    padding-bottom: 3px;
-                }
             }
         }
     }
@@ -449,6 +482,19 @@ nav#lnb {
 }
 
 @media only screen and (max-width: 575px) {
+    nav#lnb {
+        .container {
+            ul {
+                li {
+                    border-right: none;
+                    a {
+                        width: 90%;
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
     #introduction {
         #introduction-header {
             margin-bottom: 100px;
@@ -481,13 +527,13 @@ nav#lnb {
                     height: 300px;
                     .stack-content {
                         padding: 5px;
-                        bottom: -30px;
+                        top: 220px;
                         p.title {
                             letter-spacing: -3px;
                         }
                         p.subtitle {
                             font-size: .8rem;
-                        }
+                        } 
                     }
                     .stack-image {
                         width: 100px;
@@ -497,15 +543,24 @@ nav#lnb {
             }
         }
     }
-    nav#lnb {
-        ul {
-            li {
-                &:not(:last-child) {
-                    margin-right: 5px;
-                }
-                a {
-                    font-size: 1rem;
-                    padding-bottom: 3px;
+    #certification {
+        #certification-header {
+            .container {
+                max-width: 85vw;
+            }
+        }
+        #certification-content {
+            .container {
+                .certificate {
+                    display: block;
+                    width: 60%;
+                    padding: 0;
+                    margin: 0 auto 50px auto;
+                    .certificate-content {
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
                 }
             }
         }

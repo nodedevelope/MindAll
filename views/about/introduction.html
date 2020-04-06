@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <!-- <base href="C:/Users/MindAll/Desktop/MindAll_ReNew/"> -->
-    <base href="https://nodedevelope.github.io/MindAll/">
+    <base href="C:/Users/MindAll/Desktop/MindAll_ReNew/">
+    <!-- <base href="https://nodedevelope.github.io/MindAll/"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="Web, HTML, CSS, Javascript, jQuery, React, Vue.js, App" />
     <meta name="Description" content="Web, HTML, CSS, Javascript, jQuery, React, Vue.js, App" />
@@ -87,23 +87,25 @@
     </div>
 </header>
 <nav id="lnb">
-    <ul>
-        <li class="active">
-            <a href="#">회사소개</a>
-        </li>
-        <li>
-            <a href="#">연혁</a>
-        </li>
-        <li>
-            <a href="#">사업분야</a>
-        </li>
-        <li>
-            <a href="#">보유기술</a>
-        </li>
-        <li>
-            <a href="#">오시는 길</a>
-        </li>
-    </ul>
+    <div class="container">
+        <ul>
+            <li class="active">
+                <a href="#">회사소개</a>
+            </li>
+            <li>
+                <a href="#">연혁</a>
+            </li>
+            <li>
+                <a href="#">사업분야</a>
+            </li>
+            <li>
+                <a href="#">보유기술</a>
+            </li>
+            <li>
+                <a href="#">오시는 길</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 <section id="introduction">
     <div id="introduction-header">
@@ -128,6 +130,7 @@
 <section id="values">
     <div id="values-header">
         <div class="container">
+            <span class="superbar">-</span>
             <h3>핵심 가치</h3>
         </div>
     </div>
@@ -140,7 +143,7 @@
              --><div class="value-content">
                     <img src="./images/introduction_icon1.png" alt="Introduction Icon">
                     <p class="title">고객 중심</p>
-                    <p class="description">MindAll은 모두의 생각, 마음을 하나로 모아 표현하겠다는 의미입니다. 고객의 입장에서 생각하고 고객의 Needs를 완벽히 파악하여 성공적인 비즈니스로 이끌어 나가겠습니다.</p>
+                    <p class="description">고객의 Needs를 앞서 파악하고 만족시키며, 고객의 이익을 최우선으로 고려하는 자세</p>
                 </div>
             </div>
         </div>
@@ -173,6 +176,7 @@
 <section id="stacks">
     <div id="stacks-header">
         <div class="container">
+            <span class="superbar">-</span>
             <h3>보유 기술</h3>
         </div>
     </div>
@@ -180,62 +184,62 @@
         <div class="container">
             <div class="stack">
                 <div class="stack-image">
-                    <img src="./images/api_logo.png" alt="Stack Logo">
+                    <img src="./images/technologies/html_white.png" alt="HTML Logo">
                 </div>
                 <div class="stack-content">
                     <p class="title">HTML5 & CSS3</p>
-                    <p class="subtitle">국제 웹 표준 기구 W3C 표준화 진행 및 시각화</p>
+                    <p class="subtitle">국제 웹 표준 기구 W3C 표준화 진행</p>
                     <p class="description">상황에 맞춰 표준 및 차세대 기술을 병행 적용하는 유연한 개발</p>
+                </div>
+            </div><!--
+            --><div class="stack">
+                <div class="stack-image">
+                    <img src="./images/technologies/svg_white.png" alt="SVG Logo">
+                </div>
+                <div class="stack-content">
+                    <p class="title">D3 & SVG</p>
+                    <p class="subtitle">동적이고 인터랙티브한 시각화 효과</p>
+                    <p class="description">데이터 및 이미지를 보다 효과적으로 활용, 표현할 수 있는 기술</p>
+                </div>
+            </div><!--
+            --><div class="stack">
+                <div class="stack-image">
+                    <img src="./images/technologies/web_white.png" alt="Web Logo">
+                </div>
+                <div class="stack-content">
+                    <p class="title">Web & Mobile</p>
+                    <p class="subtitle">전자정부 프레임워크 (Spring, Java)</p>
+                    <p class="description">다양한 포트폴리오를 통한, 웹과 모바일에 최적화된 기능 제공</p>
                 </div>
             </div><!--
          --><div class="stack">
                 <div class="stack-image">
-                    <img src="./images/api_logo.png" alt="Stack Logo">
+                    <img src="./images/technologies/jquery_white.png" alt="jQuery Logo">
                 </div>
                 <div class="stack-content">
-                    <p class="title">HTML5 & CSS3</p>
-                    <p class="subtitle">국제 웹 표준 기구 W3C 표준화 진행 및 시각화</p>
-                    <p class="description">상황에 맞춰 표준 및 차세대 기술을 병행 적용하는 유연한 개발</p>
+                    <p class="title">jQuery & Ajax</p>
+                    <p class="subtitle">디바이스 호환성에서 자유로워지는 크로스플랫폼</p>
+                    <p class="description">User Request의 효율적 처리와, 빠르고 자유로운 Interactive를 위한 선택</p>
                 </div>
             </div><!--
          --><div class="stack">
                 <div class="stack-image">
-                    <img src="./images/api_logo.png" alt="Stack Logo">
+                    <img src="./images/technologies/api_white.png" alt="API Logo">
                 </div>
                 <div class="stack-content">
-                    <p class="title">HTML5 & CSS3</p>
-                    <p class="subtitle">국제 웹 표준 기구 W3C 표준화 진행 및 시각화</p>
-                    <p class="description">상황에 맞춰 표준 및 차세대 기술을 병행 적용하는 유연한 개발</p>
+                    <p class="title">Open API</p>
+                    <p class="subtitle">기능 제어 및 컨텐츠 서비스를 위한 개방형 인터페이스</p>
+                    <p class="description">웹 2.0의 근본 개념인 데이터의 개방 및 공유를 구현할 수 있는 핵심 기술</p>
                 </div>
             </div><!--
          --><div class="stack">
                 <div class="stack-image">
-                    <img src="./images/api_logo.png" alt="Stack Logo">
+                    <img src="./images/technologies/ai_white.png" alt="AI Logo">
                 </div>
                 <div class="stack-content">
-                    <p class="title">HTML5 & CSS3</p>
-                    <p class="subtitle">국제 웹 표준 기구 W3C 표준화 진행 및 시각화</p>
-                    <p class="description">상황에 맞춰 표준 및 차세대 기술을 병행 적용하는 유연한 개발</p>
-                </div>
-            </div><!--
-         --><div class="stack">
-                <div class="stack-image">
-                    <img src="./images/api_logo.png" alt="Stack Logo">
-                </div>
-                <div class="stack-content">
-                    <p class="title">HTML5 & CSS3</p>
-                    <p class="subtitle">국제 웹 표준 기구 W3C 표준화 진행 및 시각화</p>
-                    <p class="description">상황에 맞춰 표준 및 차세대 기술을 병행 적용하는 유연한 개발</p>
-                </div>
-            </div><!--
-         --><div class="stack">
-                <div class="stack-image">
-                    <img src="./images/api_logo.png" alt="Stack Logo">
-                </div>
-                <div class="stack-content">
-                    <p class="title">HTML5 & CSS3</p>
-                    <p class="subtitle">국제 웹 표준 기구 W3C 표준화 진행 및 시각화</p>
-                    <p class="description">상황에 맞춰 표준 및 차세대 기술을 병행 적용하는 유연한 개발</p>
+                    <p class="title">AI (인공지능)</p>
+                    <p class="subtitle">MindTrip을 통한 인공지능 검출 서비스</p>
+                    <p class="description">딥러닝 기반의 인공지능 영상분석, 처리 플랫폼</p>
                 </div>
             </div>
         </div>
@@ -244,6 +248,7 @@
 <section id="certification">
     <div id="certification-header">
         <div class="container">
+            <span class="superbar">-</span>
             <h3>인증 내역</h3>
         </div>
     </div>
