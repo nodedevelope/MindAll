@@ -486,11 +486,19 @@ nav#lnb ul {
       display: block; } }
 
 #marker-info {
+  border: none;
   padding: 30px;
   transition: all .3s;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   text-align: center; }
+  #marker-info img {
+    margin-bottom: 30px; }
+  #marker-info p {
+    font-weight: bold;
+    margin-bottom: 5px; }
+    #marker-info p:last-of-type {
+      margin-bottom: 0; }
 
 #map-section {
   padding: 100px 0 144px 0; }
