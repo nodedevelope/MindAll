@@ -563,7 +563,13 @@ nav#lnb ul {
   #map-section #map-detail .container #map-detail-contact #map-detail-contact-image {
     top: 30%; } }
 
+@media only screen and (max-width: 991px) {
+  #map-section #map-content .container #map {
+    height: 500px; } }
+
 @media only screen and (max-width: 767px) {
+  #map-section #map-content .container #map {
+    height: 400px; }
   #map-section #map-detail .container #map-detail-address {
     display: block;
     width: 100%; }
@@ -1011,7 +1017,7 @@ nav#gnb {
   transition: all 1s;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  z-index: 16;
+  z-index: 101;
   height: 80px; }
   nav#gnb .container #gnb-brand {
     float: left;
