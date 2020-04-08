@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <base href="C:/Users/MindAll/Desktop/MindAll_ReNew/">
-    <!-- <base href="https://nodedevelope.github.io/MindAll/"> -->
+    <!-- <base href="C:/Users/MindAll/Desktop/MindAll_ReNew/"> -->
+    <base href="https://nodedevelope.github.io/MindAll/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Keywords" content="Web, HTML, CSS, Javascript, jQuery, React, Vue.js, App" />
     <meta name="Description" content="Web, HTML, CSS, Javascript, jQuery, React, Vue.js, App" />
@@ -105,17 +105,18 @@
         </li>
     </ul>
 </nav>
-<section id="map">
+<section id="map-section">
     <div id="map-header">
         <div class="container">
             <h3>오시는 길</h3>
         </div>
     </div>
-    <div id="map-content">
+    <!-- <div id="map-content">
         <div class="container">
             <img src="./images/map.png" alt="MindAll Location Map">
         </div>
-    </div>
+    </div> -->
+    <div id="map" style="width:100%;height:400px;"></div>
     <div id="map-detail">
         <div class="container">
             <div id="map-detail-address">
@@ -150,6 +151,17 @@
         </div>
     </div>
 </section>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=nw5tdwmwy5&callback=initMap"></script>
+<script type="text/javascript">
+    var map = null;
+
+    function initMap() {
+        var map = new naver.maps.Map("map", {
+            center: new naver.maps.LatLng(37.3595704, 127.105399),
+            zoom: 10
+        });
+    }
+</script>
 <footer id="footer">
     <div class="container">
         <div id="footer-sitemap">

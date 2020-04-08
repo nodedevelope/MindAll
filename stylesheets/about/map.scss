@@ -1,5 +1,5 @@
 // Map
-#map {
+#map-section {
     padding: 100px 0 144px 0;
     #map-header {
         margin-bottom: 80px;
@@ -111,7 +111,7 @@
 }
 
 @media only screen and (max-width: 1199px) {
-    #map {
+    #map-section {
         #map-detail {
             .container {
                 #map-detail-contact {
@@ -129,7 +129,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-    #map {
+    #map-section {
         #map-detail {
             .container {
                 #map-detail-address {
@@ -146,7 +146,7 @@
 }
 
 @media only screen and (max-width: 575px) {
-    #map {
+    #map-section {
         #map-subway {
             .container {
                 #map-subway-content {
