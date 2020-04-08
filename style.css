@@ -487,11 +487,12 @@ nav#lnb ul {
 
 .info-window {
   padding: 5px 10px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   transition: all .3s; }
   .info-window p {
-    font-size: .8rem; }
+    font-size: .8rem;
+    margin-bottom: 0; }
 
 #marker-info {
   border: none;
