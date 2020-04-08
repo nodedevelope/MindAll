@@ -495,16 +495,55 @@ nav#lnb ul {
     margin-bottom: 0; }
 
 #marker-info {
-  padding: 15px;
   transition: all .3s;
   text-align: center; }
   #marker-info img {
-    margin-bottom: 20px; }
+    margin-bottom: 5px; }
   #marker-info p {
     font-weight: bold;
     margin-bottom: 5px; }
     #marker-info p:last-of-type {
       margin-bottom: 0; }
+
+#dmc {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  #dmc #dmc-icons #dmc-arex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: turquoise; }
+    #dmc #dmc-icons #dmc-arex p {
+      font-size: .8rem;
+      color: white; }
+  #dmc #dmc-icons #dmc-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: mediumseagreen; }
+    #dmc #dmc-icons #dmc-central p {
+      font-size: .8rem;
+      color: white; }
+  #dmc #dmc-icons #dmc-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: brown; }
+    #dmc #dmc-icons #dmc-6 p {
+      font-size: .8rem;
+      color: white; }
 
 #map-section {
   padding: 100px 0 144px 0; }
