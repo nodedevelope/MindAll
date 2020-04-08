@@ -78,7 +78,7 @@
     function initMap() {
         var map = new naver.maps.Map("map", {
             center: new naver.maps.LatLng(lat, lng),
-            zoom: 17,
+            zoom: 18,
             zoomControl: true,
             logoControl: false,
             mapDataControl: false,
@@ -114,7 +114,7 @@
         var polylineA = new naver.maps.Polyline({
             map: map,
             path: [
-                new naver.maps.LatLng(37.376944, 126.898040),
+                new naver.maps.LatLng(37.576951, 126.898034),
                 new naver.maps.LatLng(37.576623, 126.898512),
                 new naver.maps.LatLng(37.576198, 126.898064),
                 new naver.maps.LatLng(37.576089, 126.897881),
@@ -122,6 +122,8 @@
                 new naver.maps.LatLng(37.575798, 126.897820),
                 new naver.maps.LatLng(lat, lng)
             ],
+            clickable: true,
+            strokeStyle: "solid",
             strokeColor: "#FF0000",
             strokeOpacity: 0.5,
             strokeWeight: 5
@@ -142,6 +144,8 @@
                 new naver.maps.LatLng(37.575849, 126.897364),
                 new naver.maps.LatLng(lat, lng)
             ],
+            clickable: true,
+            strokeStyle: "solid",
             strokeColor: "#00FF00",
             strokeOpacity: 0.5,
             strokeWeight: 5
@@ -164,6 +168,8 @@
                 new naver.maps.LatLng(37.575849, 126.897364),
                 new naver.maps.LatLng(lat, lng)
             ],
+            clickable: true,
+            strokeStyle: "solid",
             strokeColor: "#0000FF",
             strokeOpacity: 0.5,
             strokeWeight: 5
@@ -171,17 +177,40 @@
 
         naver.maps.Event.addListener(polylineA, "mouseover", function() {
             polylineA.setOptions({
-                strokeOpacity: 1
+                strokeOpacity: 1,
+                strokeWeight: 8
             });
         });
+        naver.maps.Event.addListener(polylineA, "mouseout", function() {
+            polylineA.setOptions({
+                strokeOpacity: 0.5,
+                strokeWeight: 5
+            });
+        });
+
         naver.maps.Event.addListener(polylineB, "mouseover", function() {
             polylineB.setOptions({
-                strokeOpacity: 1
+                strokeOpacity: 1,
+                strokeWeight: 8
             });
         });
+        naver.maps.Event.addListener(polylineB, "mouseout", function() {
+            polylineB.setOptions({
+                strokeOpacity: 0.5,
+                strokeWeight: 5
+            });
+        });
+
         naver.maps.Event.addListener(polylineC, "mouseover", function() {
             polylineC.setOptions({
-                strokeOpacity: 1
+                strokeOpacity: 1,
+                strokeWeight: 8
+            });
+        });
+        naver.maps.Event.addListener(polylineC, "mouseout", function() {
+            polylineC.setOptions({
+                strokeOpacity: 0.5,
+                strokeWeight: 5
             });
         });
     }
