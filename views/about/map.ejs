@@ -236,39 +236,42 @@
         });
 
         var newtownInfoWindow = new naver.maps.InfoWindow({
-            content: "<div>새마을공판장</div>"
+            content: "<div class='info-window'>새마을공판장</div>",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            borderColor: "transparent",
+            borderWidth: 0,
+            anchorSize: new naver.maps.Size(0, 0),
+            anchorSkew: false,
+            anchorColor: "transparent",
+            padding: "5px 10px",
+            boxShadow: "5px 5px 5px rgba(0, 0, 0, .5)"
         });
         var huhMarkerInfoWindow = new naver.maps.InfoWindow({
-            content: "<div>Huh's Coffee</div>"
+            content: "<div class='info-window'>Huh's Coffee</div>",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            borderColor: "transparent",
+            borderWidth: 0,
+            anchorSize: new naver.maps.Size(0, 0),
+            anchorSkew: false,
+            anchorColor: "transparent",
+            padding: "5px 10px",
+            boxShadow: "5px 5px 5px rgba(0, 0, 0, .5)"
         });
         var ediyaInfoWindow = new naver.maps.InfoWindow({
-            content: "<div>이디야커피</div>"
+            content: "<div class='info-window'>이디야커피</div>",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            borderColor: "transparent",
+            borderWidth: 0,
+            anchorSize: new naver.maps.Size(0, 0),
+            anchorSkew: false,
+            anchorColor: "transparent",
+            padding: "5px 10px",
+            boxShadow: "5px 5px 5px rgba(0, 0, 0, .5)"
         });
 
-        naver.maps.Event.addListener(newtownMarker, "mouseover", function() {
-            if(newtownInfoWindow.getMap()) {
-                newtownInfoWindow.close();
-            }
-            else {
-                newtownInfoWindow.open(map, newtownMarker);
-            }
-        });
-        naver.maps.Event.addListener(huhMarker, "mouseover", function() {
-            if(huhMarkerInfoWindow.getMap()) {
-                huhMarkerInfoWindow.close();
-            }
-            else {
-                huhMarkerInfoWindow.open(map, huhMarker);
-            }
-        });
-        naver.maps.Event.addListener(ediyaMarker, "mouseover", function() {
-            if(ediyaInfoWindow.getMap()) {
-                ediyaInfoWindow.close();
-            }
-            else {
-                ediyaInfoWindow.open(map, ediyaMarker);
-            }
-        });
+        newtownInfoWindow.open(map, newtownMarker);
+        huhMarkerInfoWindow.open(map, huhMarker);
+        ediyaInfoWindow.open(map, ediyaMarker);
     }
 </script>
 <%- include ("../templates/footer.ejs") %>
