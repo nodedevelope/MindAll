@@ -78,7 +78,7 @@
     function initMap() {
         var map = new naver.maps.Map("map", {
             center: new naver.maps.LatLng(lat, lng),
-            zoom: 16,
+            zoom: 17,
             zoomControl: true,
             logoControl: false,
             mapDataControl: false,
@@ -92,12 +92,11 @@
         });
 
         var contentString = [
-            '<div class="iw_inner">',
-            '   <h3>(주)마인드올</h3>',
-            '   <p>서울시 마포구 월드컵북로42나길 20, 301호 (상암동, 위너스하임)<br>',
-            '       <img src="images/logo_invert.png" width="55" height="55" alt="MindAll Logo" class="thumb" /><br>',
-            '   </p>',
-            '</div>'
+            "<div id='marker-info'>",
+            "<img src='images/logo_invert.png' alt='MindAll Logo'/>",
+            "<p>(주)마인드올</p>",
+            "<p>서울시 마포구 월드컵북로42나길 20, 301호 (상암동, 위너스하임)</p>",
+            "</div>"
         ].join('');
 
         var infoWindow = new naver.maps.InfoWindow({

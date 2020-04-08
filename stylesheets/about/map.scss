@@ -1,3 +1,12 @@
+// InfoWindow
+#marker-info {
+    padding: 30px;
+    transition: all .3s;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
 // Map
 #map-section {
     padding: 100px 0 144px 0;

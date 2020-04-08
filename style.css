@@ -485,6 +485,13 @@ nav#lnb ul {
       width: 100%;
       display: block; } }
 
+#marker-info {
+  padding: 30px;
+  transition: all .3s;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  text-align: center; }
+
 #map-section {
   padding: 100px 0 144px 0; }
   #map-section #map-header {
