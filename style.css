@@ -570,7 +570,8 @@ nav#lnb ul {
   #humansia #humansia-content #humansia-content-intercity {
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 3px; }
     #humansia #humansia-content #humansia-content-intercity #humansia-content-intercity-header {
       display: flex;
       justify-content: center;
@@ -593,7 +594,8 @@ nav#lnb ul {
   #humansia #humansia-content #humansia-content-terminus {
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 3px; }
     #humansia #humansia-content #humansia-content-terminus #humansia-content-terminus-header {
       display: flex;
       justify-content: center;
@@ -616,7 +618,8 @@ nav#lnb ul {
   #humansia #humansia-content #humansia-content-town {
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 3px; }
     #humansia #humansia-content #humansia-content-town #humansia-content-town-header {
       display: flex;
       justify-content: center;
@@ -658,6 +661,113 @@ nav#lnb ul {
       #humansia #humansia-content #humansia-content-metropolitan #humansia-content-metropolitan-content ul li {
         font-size: .8rem; }
         #humansia #humansia-content #humansia-content-metropolitan #humansia-content-metropolitan-content ul li:not(:last-child) {
+          margin-right: 5px; }
+
+#worldcup {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; }
+  #worldcup #worldcup-header {
+    margin-bottom: 5px; }
+    #worldcup #worldcup-header p {
+      margin-bottom: 0; }
+  #worldcup #worldcup-content #worldcup-content-intercity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3px; }
+    #worldcup #worldcup-content #worldcup-content-intercity #worldcup-content-intercity-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      background-color: blue;
+      border-radius: 50%;
+      margin-right: 5px; }
+      #worldcup #worldcup-content #worldcup-content-intercity #worldcup-content-intercity-header p {
+        margin-bottom: 0;
+        color: white; }
+    #worldcup #worldcup-content #worldcup-content-intercity #worldcup-content-intercity-content ul {
+      margin-bottom: 0;
+      display: flex; }
+      #worldcup #worldcup-content #worldcup-content-intercity #worldcup-content-intercity-content ul li {
+        font-size: .8rem; }
+        #worldcup #worldcup-content #worldcup-content-intercity #worldcup-content-intercity-content ul li:not(:last-child) {
+          margin-right: 5px; }
+  #worldcup #worldcup-content #worldcup-content-terminus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3px; }
+    #worldcup #worldcup-content #worldcup-content-terminus #worldcup-content-terminus-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      background-color: green;
+      border-radius: 50%;
+      margin-right: 5px; }
+      #worldcup #worldcup-content #worldcup-content-terminus #worldcup-content-terminus-header p {
+        margin-bottom: 0;
+        color: white; }
+    #worldcup #worldcup-content #worldcup-content-terminus #worldcup-content-terminus-content ul {
+      margin-bottom: 0;
+      display: flex; }
+      #worldcup #worldcup-content #worldcup-content-terminus #worldcup-content-terminus-content ul li {
+        font-size: .8rem; }
+        #worldcup #worldcup-content #worldcup-content-terminus #worldcup-content-terminus-content ul li:not(:last-child) {
+          margin-right: 5px; }
+  #worldcup #worldcup-content #worldcup-content-town {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3px; }
+    #worldcup #worldcup-content #worldcup-content-town #worldcup-content-town-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      background-color: greenyellow;
+      border-radius: 50%;
+      margin-right: 5px; }
+      #worldcup #worldcup-content #worldcup-content-town #worldcup-content-town-header p {
+        margin-bottom: 0;
+        color: white; }
+    #worldcup #worldcup-content #worldcup-content-town #worldcup-content-town-content ul {
+      margin-bottom: 0;
+      display: flex; }
+      #worldcup #worldcup-content #worldcup-content-town #worldcup-content-town-content ul li {
+        font-size: .8rem; }
+        #worldcup #worldcup-content #worldcup-content-town #worldcup-content-town-content ul li:not(:last-child) {
+          margin-right: 5px; }
+  #worldcup #worldcup-content #worldcup-content-metropolitan {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    #worldcup #worldcup-content #worldcup-content-metropolitan #worldcup-content-metropolitan-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      background-color: red;
+      border-radius: 50%;
+      margin-right: 5px; }
+      #worldcup #worldcup-content #worldcup-content-metropolitan #worldcup-content-metropolitan-header p {
+        margin-bottom: 0;
+        color: white; }
+    #worldcup #worldcup-content #worldcup-content-metropolitan #worldcup-content-metropolitan-content ul {
+      margin-bottom: 0;
+      display: flex; }
+      #worldcup #worldcup-content #worldcup-content-metropolitan #worldcup-content-metropolitan-content ul li {
+        font-size: .8rem; }
+        #worldcup #worldcup-content #worldcup-content-metropolitan #worldcup-content-metropolitan-content ul li:not(:last-child) {
           margin-right: 5px; }
 
 #map-section {
