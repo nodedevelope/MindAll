@@ -115,14 +115,21 @@
                 height: 32px;
                 background-color: blue;
                 border-radius: 50%;
+                margin-right: 5px;
                 p {
                     margin-bottom: 0;
+                    color: white;
                 }
             }
             #humansia-content-intercity-content {
                 ul {
+                    margin-bottom: 0;
+                    display: flex;
                     li {
-
+                        font-size: .8rem;
+                        &:not(:last-child) {
+                            margin-right: 5px;
+                        }
                     }
                 }
             }
@@ -139,14 +146,21 @@
                 height: 32px;
                 background-color: green;
                 border-radius: 50%;
+                margin-right: 5px;
                 p {
                     margin-bottom: 0;
+                    color: white;
                 }
             }
             #humansia-content-terminus-content {
                 ul {
+                    margin-bottom: 0;
+                    display: flex;
                     li {
-
+                        font-size: .8rem;
+                        &:not(:last-child) {
+                            margin-right: 5px;
+                        }
                     }
                 }
             }
@@ -163,14 +177,21 @@
                 height: 32px;
                 background-color: greenyellow;
                 border-radius: 50%;
+                margin-right: 5px;
                 p {
                     margin-bottom: 0;
+                    color: white;
                 }
             }
             #humansia-content-town-content {
                 ul {
+                    margin-bottom: 0;
+                    display: flex;
                     li {
-
+                        font-size: .8rem;
+                        &:not(:last-child) {
+                            margin-right: 5px;
+                        }
                     }
                 }
             }
@@ -187,14 +208,21 @@
                 height: 32px;
                 background-color: red;
                 border-radius: 50%;
+                margin-right: 5px;
                 p {
                     margin-bottom: 0;
+                    color: white;
                 }
             }
             #humansia-content-metropolitan-content {
                 ul {
+                    margin-bottom: 0;
+                    display: flex;
                     li {
-
+                        font-size: .8rem;
+                        &:not(:last-child) {
+                            margin-right: 5px;
+                        }
                     }
                 }
             }
