@@ -6,6 +6,12 @@
     }
     #map-content {
         margin-bottom: 30px;
+        .container {
+            #map {
+                width: 100%;
+                height: 600px;
+            }
+        }
     }
     #map-detail {
         .container {
