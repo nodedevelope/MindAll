@@ -129,7 +129,7 @@
         #map-content {
             .container {
                 #map {
-                    height: 500px;
+                    height: 500px !important;
                 }
             }
         }
@@ -141,7 +141,7 @@
         #map-content {
             .container {
                 #map {
-                    height: 400px;
+                    height: 400px !important;
                 }
             }
         }
