@@ -263,8 +263,77 @@
             icon: {
                 content: "<div id='dmc'><div id='dmc-icons'><div id='dmc-arex'><p>공</p></div><div id='dmc-central'><p>경</p></div><div id='dmc-6'><p>6</p></div></div><div id='dmc-content'><p>디지털미디어시티역 8번 출구</p></div></div>"
             }
-        })
+        });
+
+        var humansiaMarker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.575141, 126.895822),
+            map: map,
+            icon: {
+                content: ""
+            }
+        });
+
+        var worldcupMarker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.573921, 126.897954),
+            map: map,
+            icon: {
+                content: "<div id='humansia'> <div id='humansia-header'> <p>상암휴먼시아아파트</p> </div> <div id='humansia-content'> <div id='humansia-content-intercity'> <div id='humansia-content-intercity-header'> <p>간</p> </div> <div id='humansia-content-intercity-content'> <ul> <li>171</li> <li>172</li> <li>673</li> <li>710</li> <li>771</li> </ul> </div> </div> <div id='humansia-content-terminus'> <div id='humansia-content-terminus-header'> <p>지</p> </div> <div id='humansia-content-terminus-content'> <ul> <li>6715</li> <li>7016</li> <li>7711</li> <li>7730</li> </ul> </div> </div> <div id='humansia-content-town'> <div id='humansia-content-town-header'> <p>마</p> </div> <div id='humansia-content-town-content'> <ul> <li>마포15</li> </ul> </div> </div> <div id='humansia-content-metropolitan'> <div id='humansia-content-metropolitan-header'> <p>광</p> </div> <div id='humansia-content-metropolitan-content'> <ul> <li>9711A</li> </ul> </div> </div> </div></div>"
+            }
+        });
     }
 </script>
-
+<div id='humansia'>
+    <div id='humansia-header'>
+        <p>상암휴먼시아아파트</p>
+    </div>
+    <div id='humansia-content'>
+        <div id='humansia-content-intercity'>
+            <div id='humansia-content-intercity-header'>
+                <p>간</p>
+            </div>
+            <div id='humansia-content-intercity-content'>
+                <ul>
+                    <li>171</li>
+                    <li>172</li>
+                    <li>673</li>
+                    <li>710</li>
+                    <li>771</li>
+                </ul>
+            </div>
+        </div>
+        <div id='humansia-content-terminus'>
+            <div id='humansia-content-terminus-header'>
+                <p>지</p>
+            </div>
+            <div id='humansia-content-terminus-content'>
+                <ul>
+                    <li>6715</li>
+                    <li>7016</li>
+                    <li>7711</li>
+                    <li>7730</li>
+                </ul>
+            </div>
+        </div>
+        <div id='humansia-content-town'>
+            <div id='humansia-content-town-header'>
+                <p>마</p>
+            </div>
+            <div id='humansia-content-town-content'>
+                <ul>
+                    <li>마포15</li>
+                </ul>
+            </div>
+        </div>
+        <div id='humansia-content-metropolitan'>
+            <div id='humansia-content-metropolitan-header'>
+                <p>광</p>
+            </div>
+            <div id='humansia-content-metropolitan-content'>
+                <ul>
+                    <li>9711A</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <%- include ("../templates/footer.ejs") %>

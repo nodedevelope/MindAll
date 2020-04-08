@@ -88,6 +88,120 @@
     }
 }
 
+// Humansia Marker
+#humansia {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    #humansia-header {
+        margin-bottom: 5px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    #humansia-content {
+        #humansia-content-intercity {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            #humansia-content-intercity-header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                background-color: blue;
+                border-radius: 50%;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            #humansia-content-intercity-content {
+                ul {
+                    li {
+
+                    }
+                }
+            }
+        }
+        #humansia-content-terminus {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            #humansia-content-terminus-header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                background-color: green;
+                border-radius: 50%;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            #humansia-content-terminus-content {
+                ul {
+                    li {
+
+                    }
+                }
+            }
+        }
+        #humansia-content-town {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            #humansia-content-town-header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                background-color: greenyellow;
+                border-radius: 50%;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            #humansia-content-town-content {
+                ul {
+                    li {
+
+                    }
+                }
+            }
+        }
+        #humansia-content-metropolitan {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            #humansia-content-metropolitan-header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                background-color: red;
+                border-radius: 50%;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            #humansia-content-metropolitan-content {
+                ul {
+                    li {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Map
 #map-section {
     padding: 100px 0 144px 0;
