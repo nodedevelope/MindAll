@@ -27,15 +27,17 @@
 
 // DMC Marker
 #dmc {
-    padding: 5px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, .8);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     #dmc-icons {
+        display: flex;
+        margin-right: 5px;
         #dmc-arex {
             display: flex;
             justify-content: center;
@@ -43,9 +45,11 @@
             width: 32px;
             height: 32px;
             background-color: turquoise;
+            border-radius: 50%;
             p {
                 font-size: .8rem;
                 color: white;
+                margin-bottom: 0;
             }
         }
         #dmc-central {
@@ -55,9 +59,11 @@
             width: 32px;
             height: 32px;
             background-color: mediumseagreen;
+            border-radius: 50%;
             p {
                 font-size: .8rem;
                 color: white;
+                margin-bottom: 0;
             }
         }
         #dmc-6 {
@@ -67,10 +73,17 @@
             width: 32px;
             height: 32px;
             background-color: brown;
+            border-radius: 50%;
             p {
                 font-size: .8rem;
                 color: white;
+                margin-bottom: 0;
             }
+        }
+    }
+    #dmc-content {
+        p {
+            margin-bottom: 0;
         }
     }
 }
