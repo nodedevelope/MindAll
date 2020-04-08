@@ -72,8 +72,8 @@
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=nw5tdwmwy5&callback=initMap"></script>
 <script type="text/javascript">
     var map = null;
-    var lat = 37.575800;
-    var lng = 126.897515;
+    var lat = 37.575751;
+    var lng = 126.897504;
 
     function initMap() {
         var map = new naver.maps.Map("map", {
@@ -109,7 +109,81 @@
             else {
                 infoWindow.open(map, marker);
             }
-        })
+        });
+
+        var polylineA = new naver.maps.Polyline({
+            map: map,
+            path: [
+                new naver.maps.LatLng(37.376944, 126.898040),
+                new naver.maps.LatLng(37.576623, 126.898512),
+                new naver.maps.LatLng(37.576198, 126.898064),
+                new naver.maps.LatLng(37.576089, 126.897881),
+                new naver.maps.LatLng(37.575951, 126.897739),
+                new naver.maps.LatLng(37.575798, 126.897820),
+                new naver.maps.LatLng(lat, lng)
+            ],
+            strokeColor: "#FF0000",
+            strokeOpacity: 0.5,
+            strokeWeight: 5
+        });
+
+        var polylineB = new naver.maps.Polyline({
+            map: map,
+            path: [
+                new naver.maps.LatLng(37.575141, 126.895822),
+                new naver.maps.LatLng(37.575540, 126.896208),
+                new naver.maps.LatLng(37.575381, 126.896627),
+                new naver.maps.LatLng(37.575058, 126.897276),
+                new naver.maps.LatLng(37.575043, 126.897375),
+                new naver.maps.LatLng(37.575268, 126.897536),
+                new naver.maps.LatLng(37.575379, 126.897576),
+                new naver.maps.LatLng(37.575566, 126.897437),
+                new naver.maps.LatLng(37.575615, 126.897270),
+                new naver.maps.LatLng(37.575849, 126.897364),
+                new naver.maps.LatLng(lat, lng)
+            ],
+            strokeColor: "#00FF00",
+            strokeOpacity: 0.5,
+            strokeWeight: 5
+        });
+
+        var polylineC = new naver.maps.Polyline({
+            map: map,
+            path: [
+                new naver.maps.LatLng(37.573921, 126.897954),
+                new naver.maps.LatLng(37.574254, 126.897404),
+                new naver.maps.LatLng(37.574881, 126.898086),
+                new naver.maps.LatLng(37.574971, 126.898064),
+                new naver.maps.LatLng(37.575003, 126.897927),
+                new naver.maps.LatLng(37.575001, 126.897571),
+                new naver.maps.LatLng(37.575043, 126.897375),
+                new naver.maps.LatLng(37.575268, 126.897536),
+                new naver.maps.LatLng(37.575379, 126.897576),
+                new naver.maps.LatLng(37.575566, 126.897437),
+                new naver.maps.LatLng(37.575615, 126.897270),
+                new naver.maps.LatLng(37.575849, 126.897364),
+                new naver.maps.LatLng(lat, lng)
+            ],
+            strokeColor: "#0000FF",
+            strokeOpacity: 0.5,
+            strokeWeight: 5
+        });
+
+        naver.maps.Event.addListener(polylineA, "mouseover", function() {
+            polylineA.setOptions({
+                strokeOpacity: 1
+            });
+        });
+        naver.maps.Event.addListener(polylineB, "mouseover", function() {
+            polylineB.setOptions({
+                strokeOpacity: 1
+            });
+        });
+        naver.maps.Event.addListener(polylineC, "mouseover", function() {
+            polylineC.setOptions({
+                strokeOpacity: 1
+            });
+        });
     }
 </script>
 <%- include ("../templates/footer.ejs") %>
