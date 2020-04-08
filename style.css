@@ -485,6 +485,14 @@ nav#lnb ul {
       width: 100%;
       display: block; } }
 
+.info-window {
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all .3s; }
+  .info-window p {
+    font-size: .8rem; }
+
 #marker-info {
   border: none;
   padding: 30px;

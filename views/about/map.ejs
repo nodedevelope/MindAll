@@ -235,28 +235,27 @@
             animation: naver.maps.Animation.DROP
         });
 
-        var newtownInfoWindow = new naver.maps.InfoWindow({
-            content: "<div class='info-window'>새마을공판장</div>",
-            backgroundColor: "rgba(255, 255, 255, 0.8)",
-            borderWidth: 0,
-            disableAnchor: true
+        var newtownInfoMarker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.575540, 126.896208),
+            map: map,
+            icon: {
+                content: "<div class='info-window'><p>새마을공판장</p></div>"
+            }
         });
-        var huhInfoWindow = new naver.maps.InfoWindow({
-            content: "<div class='info-window'>Huh's Coffee</div>",
-            backgroundColor: "rgba(255, 255, 255, 0.8)",
-            borderWidth: 0,
-            disableAnchor: true
+        var huhInfoMarker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.575043, 126.897375),
+            map: map,
+            icon: {
+                content: "<div class='info-window'><p>Huh's Coffee</p></div>"
+            }
         });
-        var ediyaInfoWindow = new naver.maps.InfoWindow({
-            content: "<div class='info-window'>이디야커피</div>",
-            backgroundColor: "rgba(255, 255, 255, 0.8)",
-            borderWidth: 0,
-            disableAnchor: true
+        var ediyaInfoMarker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.575798, 126.897820),
+            map: map,
+            icon: {
+                content: "<div class='info-window'><p>이디야커피</p></div>"
+            }
         });
-
-        newtownInfoWindow.open(map, newtownMarker);
-        huhInfoWindow.open(map, huhMarker);
-        ediyaInfoWindow.open(map, ediyaMarker);
     }
 </script>
 <%- include ("../templates/footer.ejs") %>
