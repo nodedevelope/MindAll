@@ -491,9 +491,6 @@ nav#lnb ul {
     margin-bottom: 80px; }
   #map-section #map-content {
     margin-bottom: 30px; }
-    #map-section #map-content .container img {
-      width: 100%;
-      height: auto; }
   #map-section #map-detail .container #map-detail-address {
     width: 50%;
     padding: 30px;

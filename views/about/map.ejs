@@ -30,12 +30,11 @@
             <h3>오시는 길</h3>
         </div>
     </div>
-    <!-- <div id="map-content">
+    <div id="map-content">
         <div class="container">
-            <img src="./images/map.png" alt="MindAll Location Map">
+            <div id="map" style="width:100%;height:600px;"></div>
         </div>
-    </div> -->
-    <div id="map" style="width:100%;height:400px;"></div>
+    </div>
     <div id="map-detail">
         <div class="container">
             <div id="map-detail-address">
@@ -73,11 +72,17 @@
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=nw5tdwmwy5&callback=initMap"></script>
 <script type="text/javascript">
     var map = null;
+    var lat = 37.575800;
+    var lng = 126.897515;
 
     function initMap() {
         var map = new naver.maps.Map("map", {
-            center: new naver.maps.LatLng(37.3595704, 127.105399),
-            zoom: 10
+            center: new naver.maps.LatLng(lat, lng),
+            zoom: 16,
+            zoomControl: true,
+            logoControl: false,
+            mapDataControl: false,
+            zoomOrigin: new naver.maps.LatLng(lat, lng)
         });
     }
 </script>
