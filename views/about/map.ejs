@@ -213,6 +213,62 @@
                 strokeWeight: 5
             });
         });
+
+        var newtownMarker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.575540, 126.896208),
+            map: map,
+            icon: "images/pin.png",
+            animation: naver.maps.Animation.DROP
+        });
+
+        var huhMarker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.575043, 126.897375),
+            map: map,
+            icon: "images/pin.png",
+            animation: naver.maps.Animation.DROP
+        });
+
+        var ediyaMarker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.575798, 126.897820),
+            map: map,
+            icon: "images/pin.png",
+            animation: naver.maps.Animation.DROP
+        });
+
+        var newtownInfoWindow = new naver.maps.InfoWindow({
+            content: "<div>새마을공판장</div>"
+        });
+        var huhMarkerInfoWindow = new naver.maps.InfoWindow({
+            content: "<div>Huh's Coffee</div>"
+        });
+        var ediyaInfoWindow = new naver.maps.InfoWindow({
+            content: "<div>이디야커피</div>"
+        });
+
+        naver.maps.Event.addListener(newtownMarker, "mouseover", function() {
+            if(newtownInfoWindow.getMap()) {
+                newtownInfoWindow.close();
+            }
+            else {
+                newtownInfoWindow.open(map, newtownMarker);
+            }
+        });
+        naver.maps.Event.addListener(huhMarker, "mouseover", function() {
+            if(huhMarkerInfoWindow.getMap()) {
+                huhMarkerInfoWindow.close();
+            }
+            else {
+                huhMarkerInfoWindow.open(map, huhMarker);
+            }
+        });
+        naver.maps.Event.addListener(ediyaMarker, "mouseover", function() {
+            if(ediyaInfoWindow.getMap()) {
+                ediyaInfoWindow.close();
+            }
+            else {
+                ediyaInfoWindow.open(map, ediyaMarker);
+            }
+        });
     }
 </script>
 <%- include ("../templates/footer.ejs") %>
