@@ -127,7 +127,7 @@ $(document).ready(function() {
                     emptyPortfolios();
                     limit = maxNum;
                     getPortfolios("all", limit).forEach(function(item) {
-                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item, true));
                     });
                     $(".see-more").hide();
                 }
@@ -135,23 +135,23 @@ $(document).ready(function() {
             switch($(this).children("a").text()) {
                 case "All":
                     getPortfolios("all", limit).forEach(function(item) {
-                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item, true));
                     });
                     $("#portfolios-items > .container").append(moreButton);
                     break;
                 case "Web":
                     getPortfolios("web", limit).forEach(function(item) {
-                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item, true));
                     });
                     break;
                 case "App":
                     getPortfolios("app", limit).forEach(function(item) {
-                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item, true));
                     });
                     break;
                 case "솔루션":
                     getPortfolios("solution", limit).forEach(function(item) {
-                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item, true));
                     });
                     break;
             }
@@ -160,24 +160,24 @@ $(document).ready(function() {
             switch($(this).children("a").text()) {
                 case "All":
                     getPortfolios("all", limit).forEach(function(item) {
-                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item, false));
                     });
                     $("#portfolios-items > .container").append(moreButton);
                     break;
                 case "Web":
                     getPortfolios("web", limit).forEach(function(item) {
-                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item, false));
                     });
                     break;
                 case "App":
                     getPortfolios("app", limit).forEach(function(item) {
-                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item, false));
                     });
                     $("#portfolios-items > .container").append(moreButton);
                     break;
                 case "솔루션":
                     getPortfolios("solution", limit).forEach(function(item) {
-                        $("#portfolios-items > .container > .row").append(getPortfolio(item));
+                        $("#portfolios-items > .container > .row").append(getPortfolio(item, false));
                     });
                     break;
             }
@@ -221,14 +221,21 @@ $(document).ready(function() {
     });
 
     // Portfolio helper functions
-    function getPortfolio(item) {
+    function getPortfolio(item, isAnnexed) {
         var cell = $("<div class='col-12 col-lg-6 col-xl-4'></div>").append();
         var title = $("<p class='portfolio-title'>" + item.title + "</p>");
         var description = $("<p class='portfolio-description'>" + item.description + "</p>");
         var hoverPanel = $("<div class='hovered'></div>").append(title).append(description);
         var img = $("<img src='images/portfolios/" + item.image + ".jpg' alt='" + item.title + "'/>");
         var subtitle = $("<p class='subtitle'>" + item.title + "</p>");
-        var item = $("<div class='portfolio'></div>").append(img).append(subtitle);
+        var item;
+        if(isAnnexed) {
+            var subDescription = $("<p class='subdescription'>" + item.description + "</p>");
+            item = $("<div class='portfolio'></div>").append(img).append(subtitle).append(subDescription);
+        }
+        else {
+            item = $("<div class='portfolio'></div>").append(img).append(subtitle);
+        }
         $(item).hover(function() {
             $(this).append(hoverPanel);
             $(".hovered").animate({

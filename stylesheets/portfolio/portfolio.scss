@@ -12,6 +12,71 @@
             font-weight: bolder;
             color: white;
             font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        p {
+            color: white;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// Portfolios (annexed)
+#portfolios.annexed {
+    #portfolios-items {
+        .container {
+            .row {
+                & > div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .portfolio {
+                        position: static;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            position: static;
+                        }
+                        p.subtitle {
+                            position: static;
+                            bottom: auto;
+                        }
+                        p.subdescription {
+                            position: static;
+                            margin-bottom: 0;
+                            text-align: center;
+                        }
+                        .hovered {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #portfolios.annexed {
+        padding: 50px 0;
+        #portfolios-header {
+            h3 {
+                text-align: center !important;
+            }
+        }
+        #portfolios-items {
+            .container {
+                .row {
+                    & > div {
+                        .portfolio {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

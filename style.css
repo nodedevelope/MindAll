@@ -1285,7 +1285,42 @@ nav#lnb {
     #header-portfolio .container h1 {
       font-weight: bolder;
       color: white;
-      font-size: 3rem; }
+      font-size: 3rem;
+      margin-bottom: 30px; }
+    #header-portfolio .container p {
+      color: white;
+      font-size: 1.5rem; }
+
+#portfolios.annexed #portfolios-items .container .row > div {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #portfolios.annexed #portfolios-items .container .row > div .portfolio {
+    position: static;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #portfolios.annexed #portfolios-items .container .row > div .portfolio img {
+      position: static; }
+    #portfolios.annexed #portfolios-items .container .row > div .portfolio p.subtitle {
+      position: static;
+      bottom: auto; }
+    #portfolios.annexed #portfolios-items .container .row > div .portfolio p.subdescription {
+      position: static;
+      margin-bottom: 0;
+      text-align: center; }
+    #portfolios.annexed #portfolios-items .container .row > div .portfolio .hovered {
+      display: none; }
+
+@media only screen and (max-width: 575px) {
+  #portfolios.annexed {
+    padding: 50px 0; }
+    #portfolios.annexed #portfolios-header h3 {
+      text-align: center !important; }
+    #portfolios.annexed #portfolios-items .container .row > div .portfolio {
+      margin-bottom: 30px; } }
 
 * {
   margin: 0;
