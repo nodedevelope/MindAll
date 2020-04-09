@@ -506,6 +506,8 @@ nav#lnb ul {
       margin-bottom: 0; }
 
 #dmc {
+  position: relative;
+  top: -80px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -557,6 +559,8 @@ nav#lnb ul {
     margin-bottom: 0; }
 
 #humansia {
+  position: relative;
+  left: -200px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -564,7 +568,7 @@ nav#lnb ul {
   display: flex;
   flex-direction: column; }
   #humansia #humansia-header {
-    margin-bottom: 5px; }
+    margin-bottom: 15px; }
     #humansia #humansia-header p {
       margin-bottom: 0; }
   #humansia #humansia-content #humansia-content-intercity {
@@ -576,12 +580,13 @@ nav#lnb ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 32px;
-      height: 32px;
+      width: 20px;
+      height: 20px;
       background-color: blue;
       border-radius: 50%;
       margin-right: 5px; }
       #humansia #humansia-content #humansia-content-intercity #humansia-content-intercity-header p {
+        font-size: .8rem;
         margin-bottom: 0;
         color: white; }
     #humansia #humansia-content #humansia-content-intercity #humansia-content-intercity-content ul {
@@ -600,12 +605,13 @@ nav#lnb ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 32px;
-      height: 32px;
+      width: 20px;
+      height: 20px;
       background-color: green;
       border-radius: 50%;
       margin-right: 5px; }
       #humansia #humansia-content #humansia-content-terminus #humansia-content-terminus-header p {
+        font-size: .8rem;
         margin-bottom: 0;
         color: white; }
     #humansia #humansia-content #humansia-content-terminus #humansia-content-terminus-content ul {
@@ -624,12 +630,13 @@ nav#lnb ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 32px;
-      height: 32px;
+      width: 20px;
+      height: 20px;
       background-color: greenyellow;
       border-radius: 50%;
       margin-right: 5px; }
       #humansia #humansia-content #humansia-content-town #humansia-content-town-header p {
+        font-size: .8rem;
         margin-bottom: 0;
         color: white; }
     #humansia #humansia-content #humansia-content-town #humansia-content-town-content ul {
@@ -647,12 +654,13 @@ nav#lnb ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 32px;
-      height: 32px;
+      width: 20px;
+      height: 20px;
       background-color: red;
       border-radius: 50%;
       margin-right: 5px; }
       #humansia #humansia-content #humansia-content-metropolitan #humansia-content-metropolitan-header p {
+        font-size: .8rem;
         margin-bottom: 0;
         color: white; }
     #humansia #humansia-content #humansia-content-metropolitan #humansia-content-metropolitan-content ul {
@@ -671,7 +679,7 @@ nav#lnb ul {
   display: flex;
   flex-direction: column; }
   #worldcup #worldcup-header {
-    margin-bottom: 5px; }
+    margin-bottom: 15px; }
     #worldcup #worldcup-header p {
       margin-bottom: 0; }
   #worldcup #worldcup-content #worldcup-content-intercity {
@@ -683,12 +691,13 @@ nav#lnb ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 32px;
-      height: 32px;
+      width: 20px;
+      height: 20px;
       background-color: blue;
       border-radius: 50%;
       margin-right: 5px; }
       #worldcup #worldcup-content #worldcup-content-intercity #worldcup-content-intercity-header p {
+        font-size: .8rem;
         margin-bottom: 0;
         color: white; }
     #worldcup #worldcup-content #worldcup-content-intercity #worldcup-content-intercity-content ul {
@@ -707,12 +716,13 @@ nav#lnb ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 32px;
-      height: 32px;
+      width: 20px;
+      height: 20px;
       background-color: green;
       border-radius: 50%;
       margin-right: 5px; }
       #worldcup #worldcup-content #worldcup-content-terminus #worldcup-content-terminus-header p {
+        font-size: .8rem;
         margin-bottom: 0;
         color: white; }
     #worldcup #worldcup-content #worldcup-content-terminus #worldcup-content-terminus-content ul {
@@ -731,12 +741,13 @@ nav#lnb ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 32px;
-      height: 32px;
+      width: 20px;
+      height: 20px;
       background-color: greenyellow;
       border-radius: 50%;
       margin-right: 5px; }
       #worldcup #worldcup-content #worldcup-content-town #worldcup-content-town-header p {
+        font-size: .8rem;
         margin-bottom: 0;
         color: white; }
     #worldcup #worldcup-content #worldcup-content-town #worldcup-content-town-content ul {
@@ -754,12 +765,13 @@ nav#lnb ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 32px;
-      height: 32px;
+      width: 20px;
+      height: 20px;
       background-color: red;
       border-radius: 50%;
       margin-right: 5px; }
       #worldcup #worldcup-content #worldcup-content-metropolitan #worldcup-content-metropolitan-header p {
+        font-size: .8rem;
         margin-bottom: 0;
         color: white; }
     #worldcup #worldcup-content #worldcup-content-metropolitan #worldcup-content-metropolitan-content ul {

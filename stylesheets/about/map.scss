@@ -27,6 +27,8 @@
 
 // DMC Marker
 #dmc {
+    position: relative;
+    top: -80px;
     padding: 10px;
     background-color: rgba(255, 255, 255, .8);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
@@ -90,6 +92,8 @@
 
 // Humansia Marker
 #humansia {
+    position: relative;
+    left: -200px;
     padding: 10px;
     background-color: rgba(255, 255, 255, .8);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
@@ -97,7 +101,7 @@
     display: flex;
     flex-direction: column;
     #humansia-header {
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         p {
             margin-bottom: 0;
         }
@@ -112,12 +116,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 32px;
-                height: 32px;
+                width: 20px;
+                height: 20px;
                 background-color: blue;
                 border-radius: 50%;
                 margin-right: 5px;
                 p {
+                    font-size: .8rem;
                     margin-bottom: 0;
                     color: white;
                 }
@@ -144,12 +149,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 32px;
-                height: 32px;
+                width: 20px;
+                height: 20px;
                 background-color: green;
                 border-radius: 50%;
                 margin-right: 5px;
                 p {
+                    font-size: .8rem;
                     margin-bottom: 0;
                     color: white;
                 }
@@ -176,12 +182,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 32px;
-                height: 32px;
+                width: 20px;
+                height: 20px;
                 background-color: greenyellow;
                 border-radius: 50%;
                 margin-right: 5px;
                 p {
+                    font-size: .8rem;
                     margin-bottom: 0;
                     color: white;
                 }
@@ -207,12 +214,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 32px;
-                height: 32px;
+                width: 20px;
+                height: 20px;
                 background-color: red;
                 border-radius: 50%;
                 margin-right: 5px;
                 p {
+                    font-size: .8rem;
                     margin-bottom: 0;
                     color: white;
                 }
@@ -242,7 +250,7 @@
     display: flex;
     flex-direction: column;
     #worldcup-header {
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         p {
             margin-bottom: 0;
         }
@@ -257,12 +265,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 32px;
-                height: 32px;
+                width: 20px;
+                height: 20px;
                 background-color: blue;
                 border-radius: 50%;
                 margin-right: 5px;
                 p {
+                    font-size: .8rem;
                     margin-bottom: 0;
                     color: white;
                 }
@@ -289,12 +298,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 32px;
-                height: 32px;
+                width: 20px;
+                height: 20px;
                 background-color: green;
                 border-radius: 50%;
                 margin-right: 5px;
                 p {
+                    font-size: .8rem;
                     margin-bottom: 0;
                     color: white;
                 }
@@ -321,12 +331,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 32px;
-                height: 32px;
+                width: 20px;
+                height: 20px;
                 background-color: greenyellow;
                 border-radius: 50%;
                 margin-right: 5px;
                 p {
+                    font-size: .8rem;
                     margin-bottom: 0;
                     color: white;
                 }
@@ -352,12 +363,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 32px;
-                height: 32px;
+                width: 20px;
+                height: 20px;
                 background-color: red;
                 border-radius: 50%;
                 margin-right: 5px;
                 p {
+                    font-size: .8rem;
                     margin-bottom: 0;
                     color: white;
                 }
