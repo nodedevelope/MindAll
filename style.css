@@ -23,30 +23,33 @@ span.superbar {
       font-size: 1.8rem;
       color: white; }
 
-nav#lnb ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-  nav#lnb ul li {
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    margin: 10px 0; }
-    nav#lnb ul li a {
+nav#lnb {
+  padding: 10px 0; }
+  nav#lnb ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0; }
+    nav#lnb ul li {
       display: inline-block;
       width: 50%;
-      font-size: 1.2rem;
-      padding-bottom: 5px;
-      transition: all .3s;
-      border-bottom: 3px solid transparent; }
-      nav#lnb ul li a:hover {
-        color: inherit;
-        border-bottom: 3px solid #333; }
-    nav#lnb ul li:not(:last-child) {
-      border-right: 1px solid #333; }
-    nav#lnb ul li.active a {
-      color: #3CDBED;
-      border-bottom: 3px solid #3CDBED; }
+      text-align: center;
+      height: 25px; }
+      nav#lnb ul li a {
+        display: inline-block;
+        width: 50%;
+        line-height: 25px;
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+        transition: all .3s;
+        border-bottom: 3px solid transparent; }
+        nav#lnb ul li a:hover {
+          color: inherit; }
+      nav#lnb ul li:not(:last-child) {
+        border-right: 1px solid #333; }
+      nav#lnb ul li.active a {
+        color: #3CDBED;
+        border-bottom: 3px solid #3CDBED; }
 
 #introduction {
   padding-top: 100px; }
@@ -274,9 +277,13 @@ nav#lnb ul {
       font-size: 1.2rem; } }
 
 @media only screen and (max-width: 767px) {
-  nav#lnb .container ul li a {
-    width: 90%;
-    font-size: .9rem; }
+  nav#lnb .container ul li {
+    height: 20px; }
+    nav#lnb .container ul li a {
+      position: relative;
+      top: -5px;
+      width: 90%;
+      font-size: .9rem; }
   #introduction #introduction-subheader .container #subheader-box {
     width: 100%;
     padding: 30px; }
@@ -298,11 +305,9 @@ nav#lnb ul {
     margin-bottom: 50px; } }
 
 @media only screen and (max-width: 575px) {
-  nav#lnb .container ul li {
-    border-right: none; }
-    nav#lnb .container ul li a {
-      width: 90%;
-      font-size: .8rem; }
+  nav#lnb .container ul li a {
+    width: 90%;
+    font-size: .8rem; }
   #introduction #introduction-header {
     margin-bottom: 100px; }
     #introduction #introduction-header .container {
@@ -311,8 +316,10 @@ nav#lnb ul {
   #introduction #introduction-subheader .container #subheader-box {
     width: 85%;
     left: 7.5%;
-    bottom: 50px;
-    padding: 10px; }
+    bottom: -75px;
+    z-index: 1;
+    padding: 30px;
+    height: 550px; }
   #stacks #stacks-header .container {
     max-width: 85vw; }
   #stacks #stacks-content .container {
@@ -347,7 +354,7 @@ nav#lnb ul {
   #areas #areas-content .container .area-alpha {
     margin: 80px 0;
     background-color: white;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
     position: relative;
     height: 333px; }
     #areas #areas-content .container .area-alpha .area-image {
@@ -395,7 +402,7 @@ nav#lnb ul {
   #areas #areas-content .container .area-beta {
     margin: 80px 0;
     background-color: white;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
     position: relative;
     height: 333px; }
     #areas #areas-content .container .area-beta .area-content {
@@ -1546,21 +1553,24 @@ nav#gnb {
     #portfolios #portfolios-header h4 {
       font-size: 1.2rem; }
   #portfolios #portfolios-filters ul {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 0; }
     #portfolios #portfolios-filters ul li {
-      display: inline-block; }
+      display: inline-block;
+      padding: 0 15px;
+      height: 25px; }
       #portfolios #portfolios-filters ul li:not(:last-child) {
-        margin-right: 15px; }
+        border-right: 1px solid #333; }
       #portfolios #portfolios-filters ul li a {
-        line-height: 160%;
+        display: inline-block;
+        padding: 0 5px;
+        line-height: 25px;
         color: #333;
         font-weight: bold;
         font-size: 1.2rem;
-        border-bottom: 2px solid transparent;
-        transition: all .3s; }
-        #portfolios #portfolios-filters ul li a:hover {
-          text-decoration: none;
-          border-bottom: 1px solid #333; }
+        padding-bottom: 3px;
+        transition: all .3s;
+        border-bottom: 2px solid transparent; }
       #portfolios #portfolios-filters ul li.active a {
         border-bottom: 2px solid #333; }
   #portfolios #portfolios-items .container .see-more {

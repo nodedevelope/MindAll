@@ -34,25 +34,27 @@ span.superbar {
 
 // LNB (Local Navigation Bar)
 nav#lnb {
+    padding: 10px 0;
     ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        margin-bottom: 0;
         li {
             display: inline-block;
             width: 50%;
             text-align: center;
-            margin: 10px 0;
+            height: 25px;
             a {
                 display: inline-block;
                 width: 50%;
+                line-height: 25px;
                 font-size: 1.2rem;
                 padding-bottom: 5px;
                 transition: all .3s;
                 border-bottom: 3px solid transparent;
                 &:hover {
                     color: inherit;
-                    border-bottom: 3px solid #333;
                 }
             }
             &:not(:last-child) {
@@ -425,7 +427,10 @@ nav#lnb {
         .container {
             ul {
                 li {
+                    height: 20px;
                     a {
+                        position: relative;
+                        top: -5px;
                         width: 90%;
                         font-size: .9rem;
                     }
@@ -486,7 +491,6 @@ nav#lnb {
         .container {
             ul {
                 li {
-                    border-right: none;
                     a {
                         width: 90%;
                         font-size: .8rem;
@@ -508,8 +512,10 @@ nav#lnb {
                 #subheader-box {
                     width: 85%;
                     left: 7.5%;
-                    bottom: 50px;
-                    padding: 10px;
+                    bottom: -75px;
+                    z-index: 1;
+                    padding: 30px;
+                    height: 550px;
                 }
             }
         }
