@@ -790,7 +790,7 @@ nav#lnb {
           margin-right: 5px; }
 
 #map-section {
-  padding: 100px 0 144px 0; }
+  padding: 100px 0 50px 0; }
   #map-section #map-header {
     margin-bottom: 80px; }
   #map-section #map-content {
@@ -845,7 +845,7 @@ nav#lnb {
         font-weight: bolder;
         margin-bottom: 3px; }
   #map-section #map-subway {
-    padding-top: 30px; }
+    padding: 30px 0; }
     #map-section #map-subway .container #map-subway-image {
       display: inline-block;
       vertical-align: middle;
@@ -858,13 +858,50 @@ nav#lnb {
         height: auto; }
     #map-section #map-subway .container #map-subway-content {
       display: inline-block;
-      vertical-align: middle; }
+      vertical-align: middle;
+      max-width: calc(100% - 106px); }
       #map-section #map-subway .container #map-subway-content p.title {
         color: #3CDBED;
         font-weight: bold;
         margin-bottom: 3px; }
       #map-section #map-subway .container #map-subway-content p.content {
         margin-bottom: 0; }
+  #map-section #map-bus .container #map-bus-image {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; }
+    #map-section #map-bus .container #map-bus-image img {
+      padding: 10px;
+      border: 1px solid lightgray;
+      border-radius: 50%;
+      width: 100%;
+      height: auto; }
+  #map-section #map-bus .container #map-bus-content {
+    display: inline-block;
+    vertical-align: top;
+    max-width: calc(100% - 106px); }
+    #map-section #map-bus .container #map-bus-content > p.title {
+      color: #3CDBED;
+      font-weight: bold;
+      margin-bottom: 3px; }
+    #map-section #map-bus .container #map-bus-content .map-bus-content p.title {
+      margin-bottom: -3px; }
+    #map-section #map-bus .container #map-bus-content .map-bus-content .map-bus-content-bus p.content {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 0; }
+      #map-section #map-bus .container #map-bus-content .map-bus-content .map-bus-content-bus p.content span.blue {
+        color: #386de8; }
+      #map-section #map-bus .container #map-bus-content .map-bus-content .map-bus-content-bus p.content span.green {
+        color: #3cc344; }
+      #map-section #map-bus .container #map-bus-content .map-bus-content .map-bus-content-bus p.content span.red {
+        color: #fb5852; }
+      #map-section #map-bus .container #map-bus-content .map-bus-content .map-bus-content-bus p.content span.khaki {
+        color: #87c700; }
+      #map-section #map-bus .container #map-bus-content .map-bus-content .map-bus-content-bus p.content:not(:last-child) {
+        margin-right: 10px; }
+    #map-section #map-bus .container #map-bus-content .map-bus-content:not(:last-child) {
+      margin-bottom: 10px; }
 
 @media only screen and (max-width: 1199px) {
   #map-section #map-detail .container #map-detail-contact #map-detail-contact-image {
@@ -882,24 +919,44 @@ nav#lnb {
     width: 100%; }
   #map-section #map-detail .container #map-detail-contact {
     display: block;
-    width: 100%; } }
+    width: 100%; }
+  #map-section #map-bus .container #map-bus-content .map-bus-content .map-bus-content-bus p.content {
+    display: block; } }
 
 @media only screen and (max-width: 575px) {
-  #map-section #map-subway .container #map-subway-content {
-    display: block;
-    text-align: center; }
-    #map-section #map-subway .container #map-subway-content p.title {
-      font-size: .8rem; }
-    #map-section #map-subway .container #map-subway-content p.content {
-      font-size: .8rem; }
-  #map-section #map-subway .container #map-subway-image {
-    display: block;
-    text-align: center;
-    margin-right: 0;
-    margin-bottom: 5px; }
-    #map-section #map-subway .container #map-subway-image img {
-      width: 64px;
-      height: 64px; } }
+  #map-section #map-subway {
+    padding: 30px 30px 15px 30px; }
+    #map-section #map-subway .container {
+      padding-right: 0; }
+      #map-section #map-subway .container #map-subway-image {
+        margin-right: 30px; }
+        #map-section #map-subway .container #map-subway-image img {
+          width: 60px;
+          height: 60px; }
+      #map-section #map-subway .container #map-subway-content {
+        max-width: calc(100% - 90px); }
+        #map-section #map-subway .container #map-subway-content p.title {
+          font-size: .8rem; }
+        #map-section #map-subway .container #map-subway-content p.content {
+          font-size: .8rem; }
+  #map-section #map-bus {
+    padding: 30px 30px 15px 30px; }
+    #map-section #map-bus .container {
+      padding-right: 0; }
+      #map-section #map-bus .container #map-bus-image {
+        margin-right: 30px; }
+        #map-section #map-bus .container #map-bus-image img {
+          width: 60px;
+          height: 60px; }
+      #map-section #map-bus .container #map-bus-content {
+        max-width: calc(100% - 90px); }
+        #map-section #map-bus .container #map-bus-content > p.title {
+          font-size: .8rem; }
+        #map-section #map-bus .container #map-bus-content .map-bus-content p.title {
+          margin-bottom: 0;
+          font-size: .8rem; }
+        #map-section #map-bus .container #map-bus-content .map-bus-content .map-bus-content-bus p.content {
+          font-size: .8rem; } }
 
 #chronicle {
   background-color: #e9f0f5;

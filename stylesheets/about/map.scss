@@ -392,7 +392,7 @@
 
 // Map
 #map-section {
-    padding: 100px 0 144px 0;
+    padding: 100px 0 50px 0;
     #map-header {
         margin-bottom: 80px;
     }
@@ -472,7 +472,7 @@
         }
     }
     #map-subway {
-        padding-top: 30px;
+        padding: 30px 0;
         .container {
             #map-subway-image {
                 display: inline-block;
@@ -489,6 +489,7 @@
             #map-subway-content {
                 display: inline-block;
                 vertical-align: middle;
+                max-width: calc(100% - 106px);
                 p.title {
                     color: #3CDBED;
                     font-weight: bold;
@@ -496,6 +497,62 @@
                 }
                 p.content {
                     margin-bottom: 0;
+                }
+            }
+        }
+    }
+    #map-bus {
+        .container {
+            #map-bus-image {
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 20px;
+                img {
+                    padding: 10px;
+                    border: 1px solid lightgray;
+                    border-radius: 50%;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            #map-bus-content {
+                display: inline-block;
+                vertical-align: top;
+                max-width: calc(100% - 106px);
+                & > p.title {
+                    color: #3CDBED;
+                    font-weight: bold;
+                    margin-bottom: 3px;
+                }
+                .map-bus-content {
+                    p.title {
+                        margin-bottom: -3px;
+                    }
+                    .map-bus-content-bus {
+                        p.content {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-bottom: 0;
+                            span.blue {
+                                color: #386de8;
+                            }
+                            span.green {
+                                color: #3cc344;
+                            }
+                            span.red {
+                                color: #fb5852;
+                            }
+                            span.khaki {
+                                color: #87c700;
+                            }
+                            &:not(:last-child) {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }
@@ -549,16 +606,37 @@
                 }
             }
         }
+        #map-bus {
+            .container {
+                #map-bus-content {
+                    .map-bus-content {
+                        .map-bus-content-bus {
+                            p.content {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media only screen and (max-width: 575px) {
     #map-section {
         #map-subway {
+            padding: 30px 30px 15px 30px;
             .container {
+                padding-right: 0;
+                #map-subway-image {
+                    margin-right: 30px;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
                 #map-subway-content {
-                    display: block;
-                    text-align: center;
+                    max-width: calc(100% - 90px);
                     p.title {
                         font-size: .8rem;
                     }
@@ -566,14 +644,34 @@
                         font-size: .8rem;
                     }
                 }
-                #map-subway-image {
-                    display: block;
-                    text-align: center;
-                    margin-right: 0;
-                    margin-bottom: 5px;
+            }
+        }
+        #map-bus {
+            padding: 30px 30px 15px 30px;
+            .container {
+                padding-right: 0;
+                #map-bus-image {
+                    margin-right: 30px;
                     img {
-                        width: 64px;
-                        height: 64px;
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+                #map-bus-content {
+                    max-width: calc(100% - 90px);
+                    & > p.title {
+                        font-size: .8rem;
+                    }
+                    .map-bus-content {
+                        p.title {
+                            margin-bottom: 0;
+                            font-size: .8rem;
+                        }
+                        .map-bus-content-bus {
+                            p.content {
+                                font-size: .8rem;
+                            }
+                        }
                     }
                 }
             }
