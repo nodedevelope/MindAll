@@ -514,6 +514,7 @@ nav#lnb {
 
 #dmc {
   position: relative;
+  width: 340px;
   top: -80px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
