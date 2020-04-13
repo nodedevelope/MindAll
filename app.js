@@ -15,7 +15,10 @@ sass.render({
 var directories = [
     __dirname + "/views/",
     __dirname + "/views/about/",
-    __dirname + "/views/portfolio/"
+    __dirname + "/views/portfolio/",
+    __dirname + "/views/contact/",
+    __dirname + "/views/service/",
+    __dirname + "/views/solution/"
 ];
 
 directories.forEach(function(directory) {
