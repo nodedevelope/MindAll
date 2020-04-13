@@ -1327,6 +1327,14 @@ nav#lnb {
     -o-transform: translateX(0);
     transform: translateX(0); } }
 
+@media only screen and (max-width: 1199px) {
+  #chronicle .container #chronicle-header {
+    padding-left: 46.5px; } }
+
+@media only screen and (max-width: 991px) {
+  #chronicle .container #chronicle-header {
+    padding-left: 34.5px; } }
+
 @media only screen and (max-width: 767px) {
   #chronicle .cd-timeline-content .cd-date {
     font-size: 1.5rem !important; }
@@ -1334,7 +1342,13 @@ nav#lnb {
     font-size: 1.2rem; }
     #chronicle .cd-timeline-content .cd-timeline-content-month h2 {
       font-weight: bold;
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+  #chronicle .container #chronicle-header {
+    padding-left: 25.5px; } }
+
+@media only screen and (max-width: 575px) {
+  #chronicle .container #chronicle-header {
+    padding-left: 4vw; } }
 
 #header-portfolio {
   background-image: url("./images/about_background.jpg");
