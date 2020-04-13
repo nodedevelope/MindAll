@@ -1,6 +1,12 @@
 // Chronicle
 #chronicle {
-    background-color: #e9f0f5;
+    background-color: #F8F8F8;
+    #chronicle-header {
+      padding: 100px 0 80px 0;
+      h3 {
+        font-size: 1.75rem;
+      }
+    }
     .cd-read-more {
         transition: all .3s;
         &:hover {
@@ -80,6 +86,7 @@
       #cd-timeline {
         position: relative;
         padding: 2em 0;
+        padding-top: 0;
       }
       #cd-timeline::before {
         /* this is the vertical line */

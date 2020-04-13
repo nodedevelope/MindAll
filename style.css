@@ -960,7 +960,7 @@ nav#lnb {
           font-size: .8rem; } }
 
 #chronicle {
-  background-color: #e9f0f5;
+  background-color: #F8F8F8;
   /* -------------------------------- 
     
     Primary style
@@ -976,6 +976,10 @@ nav#lnb {
       Main components 
       
       -------------------------------- */ }
+  #chronicle #chronicle-header {
+    padding: 100px 0 80px 0; }
+    #chronicle #chronicle-header h3 {
+      font-size: 1.75rem; }
   #chronicle .cd-read-more {
     transition: all .3s; }
     #chronicle .cd-read-more:hover {
@@ -1019,7 +1023,8 @@ nav#lnb {
     clear: both; }
   #chronicle #cd-timeline {
     position: relative;
-    padding: 2em 0; }
+    padding: 2em 0;
+    padding-top: 0; }
   #chronicle #cd-timeline::before {
     /* this is the vertical line */
     content: '';
