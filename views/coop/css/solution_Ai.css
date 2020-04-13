@@ -1,0 +1,551 @@
+@charset "utf-8";
+
+/* 레이아웃 */
+#header{
+    position: fixed; left: 0; top: 0; z-index: 1000;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.4);
+}
+#main #banner{
+    position: relative;
+    width: 100%;
+    height: 490px;
+    background: url(../img/serviceIT_banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#main #banner:before{
+    content: '';
+    position: absolute; left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+#main #contents{
+    padding: 100px 0 165px;
+}
+#Ai_banner{
+    position: relative;
+    width: 100%;
+    height: 340px;
+    background: url(../img/Ai_banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#Ai_banner:before{
+    content: '';
+    position: absolute; left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* 가운데 영역 */
+.inner{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.inner_row{
+    padding: 0 16px;
+}
+
+/* header */
+nav#gnb {
+  width: 100%;
+  transition: all 1s;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 101;
+  height: 80px; }
+  nav#gnb .container #gnb-brand {
+    float: left;
+    line-height: 80px; }
+  nav#gnb .container #gnb-nav {
+    float: right; }
+    nav#gnb .container #gnb-nav ul li {
+      display: inline-block;
+      line-height: 80px; }
+      nav#gnb .container #gnb-nav ul li:not(:last-child) {
+        margin-right: 15px; }
+      nav#gnb .container #gnb-nav ul li a {
+        font-size: 1.2rem;
+        transition: all .3s;
+        color: white;
+        font-weight: bold;
+        border-bottom: 1px solid transparent; }
+        nav#gnb .container #gnb-nav ul li a:hover {
+          text-decoration: none;
+          border-bottom: 1px solid white; }
+  nav#gnb .container #gnb-hamburger {
+    display: none; }
+
+/* main - 배너 */
+.banner_textBox{
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding-top: 170px;
+    text-align: center;
+    color: #fff;
+}
+.banner_textBox .banner_title{
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.banner_textBox .banner_text{
+    margin-top: 50px;
+    font-size: 30px;
+    letter-spacing: -0.25px;
+}
+
+/* main - 서비스 버튼 */
+.solution_btn ul{
+    overflow: hidden;
+    text-align: center;
+}
+.solution_btn ul li{
+    position: relative;
+    display: inline-block;
+    width: 178px;
+    margin-right: 20px;
+}
+.solution_btn ul li:last-child{
+    margin-right: 0;
+}
+.solution_btn ul li.lines:after{
+    content: '';
+    position:  absolute; right: -10px; top: 32px;
+    width: 1px; height: 20px;
+    background: #000;
+}
+.solution_btn ul li a{
+    display: block;
+    padding: 25px 0;
+    text-align: center;
+}
+.solution_btn ul li span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.solution_btn ul li.active a{
+    color: #3cd6ed;
+}
+.solution_btn ul li.active a span{
+    border-bottom: 1px solid #3cd6ed;
+}
+
+/* main - Ai_banner */
+.Ai_banner{
+    padding-top: 90px;
+    text-align: center;
+    color: #fff;
+}
+.Ai_banner h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+.Ai_banner strong{
+    display: block;
+    margin-bottom: 12px;
+    font-size: 28px;
+    font-weight: 400;
+    
+}
+.Ai_banner p{
+    margin-bottom: 1px;
+}
+.Ai_banner p.tm_visible{
+    display: none;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/* main - 컨텐츠 제목 */
+.solution_title{
+    height: 120px;
+}
+.solution_title h2{
+    color: #333;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* main - 특징 */
+.system{
+    padding: 80px 0 120px 0;
+}
+.system .sub_title{
+    padding-left: 15px;
+    margin-bottom: 50px;
+}
+.system .sub_title h3{
+    position: relative;
+    font-size: 28px;
+    font-weight: 500;
+}
+.system h3:after{
+    content: '';
+    position: absolute; left: 2px; top: -5px;
+    width: 26px;
+    height: 1px;
+    background: #000;
+}
+.system ul{
+    padding: 55px 0 50px 49px;
+}
+.system ul li{
+    margin-bottom: 45px;
+    font-size: 28px;
+}
+.system_img img{
+    display: block;
+}
+
+/* main - 활용 분야 */
+.use{
+    padding: 160px 0 85px;
+}
+.use .sub_title{
+    padding-left: 15px;
+    margin-bottom: 50px;
+}
+.use .sub_title h3{
+    position: relative;
+    font-size: 28px;
+    font-weight: 500;
+}
+.use h3:after{
+    content: '';
+    position: absolute; left: 2px; top: -5px;
+    width: 26px;
+    height: 1px;
+    background: #000;
+}
+.use ul{
+    overflow: hidden;
+    padding: 40px 0;
+}
+.use ul li{
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    text-align: center;
+}
+.use ul li:last-child{
+    margin-right: 0;
+}
+.use ul li img{
+    width: auto;
+}
+.use ul li strong{
+    display: block;
+    margin: 15px 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.use ul li span{
+    display: block;
+    color: #5c5c5c;
+}
+
+/* footer */
+#footer {
+  background-color: #111; }
+  #footer .container {
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 30px; }
+    #footer .container #footer-sitemap {
+      float: left; }
+      #footer .container #footer-sitemap > ul > li {
+        display: inline-block;
+        vertical-align: top;
+        width: 100px; }
+        #footer .container #footer-sitemap > ul > li:not(:last-child) {
+          margin-right: 15px; }
+        #footer .container #footer-sitemap > ul > li > a {
+          display: inline-block;
+          margin-bottom: 10px;
+          color: white;
+          font-weight: bold; }
+          #footer .container #footer-sitemap > ul > li > a:hover {
+            text-decoration: none; }
+        #footer .container #footer-sitemap > ul > li > ul > li {
+          margin-bottom: 3px; }
+          #footer .container #footer-sitemap > ul > li > ul > li > a {
+            font-size: .8rem;
+            color: white;
+            letter-spacing: -2px; }
+            #footer .container #footer-sitemap > ul > li > ul > li > a:hover {
+              text-decoration: underline; }
+    #footer .container #footer-brand {
+      float: right; }
+      #footer .container #footer-brand #footer-brand-logo {
+        overflow: hidden;
+        margin-bottom: 10px; }
+        #footer .container #footer-brand #footer-brand-logo img {
+          float: right; }
+      #footer .container #footer-brand #footer-brand-address p {
+        line-height: 150%;
+        text-align: right;
+        margin-bottom: 0;
+        color: white; }
+
+/* 미디어쿼리 */
+@media (max-width: 1199px){
+    .inner{
+        width: 100%;
+    }
+    .it_title h2{
+        width: 28%;
+    }
+    .it_title p{
+        width: 72%;
+    }
+    
+    #contact #contact-container {
+    width: 80%; }
+  #footer .container #footer-sitemap {
+    float: none; }
+    #footer .container #footer-sitemap ul {
+      text-align: center; }
+  #footer .container #footer-brand {
+    float: none; }
+    #footer .container #footer-brand #footer-brand-logo {
+      text-align: center; }
+      #footer .container #footer-brand #footer-brand-logo img {
+        float: none; }
+    #footer .container #footer-brand #footer-brand-address p {
+      text-align: center; }
+}
+
+@media (max-width: 991px){
+    nav#gnb .container #gnb-nav {
+    display: none; }
+  nav#gnb .container #gnb-hamburger {
+    display: block;
+    float: right; }
+    nav#gnb .container #gnb-hamburger a i {
+      line-height: 80px;
+      color: white;
+      font-size: 2rem; }
+    nav#gnb .container #gnb-hamburger ul {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      z-index: 1;
+      width: 100vw;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.5); }
+      nav#gnb .container #gnb-hamburger ul li {
+        text-align: center;
+        margin-bottom: 15px; }
+        nav#gnb .container #gnb-hamburger ul li a {
+          color: white;
+          font-size: 1.5rem;
+          border-bottom: 1px solid transparent;
+          transition: all .3s; }
+          nav#gnb .container #gnb-hamburger ul li a:hover {
+            text-decoration: none;
+            border-bottom: 1px solid white; }
+}
+@media (max-width: 767px){
+    #header{
+        height: 60px;
+    }
+    nav#gnb{
+        height: 60px;
+    }
+    nav#gnb .container #gnb-brand{
+        line-height: 60px;
+    }
+    nav#gnb .container #gnb-hamburger a i{
+        line-height: 60px;
+    }
+    nav#gnb .container #gnb-hamburger ul{
+        top: 60px;
+    }
+    #main #banner{
+        height: 360px;
+    }
+    .banner_textBox{
+        padding-top: 145px;
+    }
+    .banner_textBox .banner_title{
+        font-size: 47px;
+    }
+    .banner_textBox .banner_text{
+        max-width: 72%;
+        margin: 20px auto 0;
+        font-size: 20px;
+    }
+    #main #contents{
+        padding: 70px 0 135px;
+
+    }
+    .solution_btn ul {
+        overflow: hidden;
+    }
+    .solution_btn ul li{
+        float: left;
+        width: 49%;
+        margin-right: 0;
+    }
+    .solution_title h2{
+        font-size: 28px;
+    }
+    #Ai_banner{
+        height: 290px;
+    }
+    .Ai_banner{
+        padding-top: 60px;
+    }
+    .solution_title{
+        height: 84px;
+    }
+    .Ai_banner h2{
+        font-size: 28px;
+    }
+    .Ai_banner strong{
+        font-size: 24px;
+    }
+    .Ai_banner p{
+        display: none;
+    }
+    .Ai_banner p.tm_visible{
+        display: block;
+    }
+    .system{
+        padding: 80px 0 80px 0;
+    }
+    .system .sub_title h3{
+        font-size: 24px;
+    }
+    .system h3:after{
+        width: 18px;
+    }
+    .system ul{
+        padding: 0 0 50px 49px;
+    }
+    .system ul li p{
+        font-size: 24px;
+    }
+    .use{
+        padding: 80px 0;
+    }
+    #footer .container #footer-sitemap {
+    display: none; }
+}
+
+@media (max-width: 575px){
+    #main #banner{
+        height: 240px;
+    }
+    .banner_textBox{
+        padding-top: 123px;
+    }
+    .banner_textBox .banner_title{
+        font-size: 40px;
+    }
+    .banner_textBox .banner_text{
+        display: none;
+    }
+    .solution_btn ul li a{
+        padding: 12px 0;
+    }
+    .solution_btn ul li.lines:after{
+        right: 0;
+        top: 19px;
+    }
+    .solution_btn ul li span{
+        font-size: 11px;
+    }
+    .solution_title{
+        height: auto;
+        padding: 0 0 15px 15px;
+    }
+    .solution_title h2{
+        font-size: 24px;
+    }
+    #main #contents{
+        padding: 40px 0;
+    }
+    #Ai_banner{
+        height: 236px;
+    }
+    .Ai_banner{
+        padding-top: 35px;
+    }
+    .Ai_banner h2{
+        margin-bottom: 0px;
+    }
+    .Ai_banner strong{
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .Ai_banner p{
+        display: none;
+    }
+    .Ai_banner p.tm_visible{
+        display: block;
+        max-width: 275px;
+        margin: 0 auto;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .system{
+        padding: 40px 0 30px 0;
+    }
+    .system .sub_title{
+        margin-bottom: 25px;
+    }
+    .system .sub_title h3{
+        font-size: 20px;
+    }
+    .system ul{
+        max-width: 85%;
+        margin: 0 auto;
+        padding: 0 0 40px 0;
+    }
+    .system ul li{
+        margin-bottom: 35px;        
+    }
+    .system ul li p{
+        font-size: 14px;
+    }
+    #use{
+        background: #f8f8f8;
+    }
+    .use{
+        padding: 40px 0;
+    }
+    .use .sub_title{
+        margin-bottom: 25px; 
+    }
+    .use .sub_title h3{
+        font-size: 20px;
+    }
+    .use ul{
+        padding: 0;
+        text-align: center;
+    }
+    .use ul li{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        padding: 24px 64px;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+    .use ul li strong{
+        margin: 18px 0 10px;
+        font-size: 16px;
+    }
+    .use ul li span{
+        font-size: 12px;
+    }
+}
+

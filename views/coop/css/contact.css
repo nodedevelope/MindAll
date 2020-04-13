@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+/* 레이아웃 */
+#header{
+    position: fixed; left: 0; top: 0; z-index: 1000;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.4);
+}
+#main #banner{
+    position: relative;
+    width: 100%;
+    height: 940px;
+    background: url(../img/contact_banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#main #banner:before{
+    content: '';
+    position: absolute; left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* 가운데 영역 */
+.inner{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.inner_row{
+    padding: 0 16px;
+}
+
+/* header */
+nav#gnb {
+  width: 100%;
+  transition: all 1s;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 101;
+  height: 80px; }
+  nav#gnb .container #gnb-brand {
+    float: left;
+    line-height: 80px; }
+  nav#gnb .container #gnb-nav {
+    float: right; }
+    nav#gnb .container #gnb-nav ul li {
+      display: inline-block;
+      line-height: 80px; }
+      nav#gnb .container #gnb-nav ul li:not(:last-child) {
+        margin-right: 15px; }
+      nav#gnb .container #gnb-nav ul li a {
+        font-size: 1.2rem;
+        transition: all .3s;
+        color: white;
+        font-weight: bold;
+        border-bottom: 1px solid transparent; }
+        nav#gnb .container #gnb-nav ul li a:hover {
+          text-decoration: none;
+          border-bottom: 1px solid white; }
+  nav#gnb .container #gnb-hamburger {
+    display: none; }
+
+/* main */
+.title{
+    padding: 185px 0 210px;
+    text-align: center;
+}
+.title h2{
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.title p{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+/* main - banner */
+#main #banner{
+    height: auto;
+    margin-top: 50px;
+}
+.banner{
+    color: #fff;
+    text-align: center;
+}
+.banner > p{
+    padding-top: 80px;
+    font-size: 28px;
+}
+.banner .help{
+    padding: 140px 0 230px;
+}
+.help ul li{
+    display: inline-block;
+    width: 41%;
+}
+.help ul li:first-child{
+    margin-right: 20px;
+}
+.help ul li em.icon{
+    position: relative;
+    display: inline-block;
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    background: #3cd6ed;
+}
+.help ul li em img{
+    position: absolute; left: 50%; top: 50%;
+    display: block;
+    width: auto;
+    transform: translate(-50%, -50%);
+    
+}
+.help span{
+    display: block;
+}
+.help span.tit{
+    margin-top: 35px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.help span.desc{
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+/* footer */
+#footer {
+  background-color: #111; }
+  #footer .container {
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 30px; }
+    #footer .container #footer-sitemap {
+      float: left; }
+      #footer .container #footer-sitemap > ul > li {
+        display: inline-block;
+        vertical-align: top;
+        width: 100px; }
+        #footer .container #footer-sitemap > ul > li:not(:last-child) {
+          margin-right: 15px; }
+        #footer .container #footer-sitemap > ul > li > a {
+          display: inline-block;
+          margin-bottom: 10px;
+          color: white;
+          font-weight: bold; }
+          #footer .container #footer-sitemap > ul > li > a:hover {
+            text-decoration: none; }
+        #footer .container #footer-sitemap > ul > li > ul > li {
+          margin-bottom: 3px; }
+          #footer .container #footer-sitemap > ul > li > ul > li > a {
+            font-size: .8rem;
+            color: white;
+            letter-spacing: -2px; }
+            #footer .container #footer-sitemap > ul > li > ul > li > a:hover {
+              text-decoration: underline; }
+    #footer .container #footer-brand {
+      float: right; }
+      #footer .container #footer-brand #footer-brand-logo {
+        overflow: hidden;
+        margin-bottom: 10px; }
+        #footer .container #footer-brand #footer-brand-logo img {
+          float: right; }
+      #footer .container #footer-brand #footer-brand-address p {
+        line-height: 150%;
+        text-align: right;
+        margin-bottom: 0;
+        color: white; }
+
+/* mediaquery */
+@media (max-width: 1199px){
+    .inner{
+        width: 100%;
+    }
+    
+    #contact #contact-container {
+    width: 80%; }
+  #footer .container #footer-sitemap {
+    float: none; }
+    #footer .container #footer-sitemap ul {
+      text-align: center; }
+  #footer .container #footer-brand {
+    float: none; }
+    #footer .container #footer-brand #footer-brand-logo {
+      text-align: center; }
+      #footer .container #footer-brand #footer-brand-logo img {
+        float: none; }
+    #footer .container #footer-brand #footer-brand-address p {
+      text-align: center; }
+}
+
+@media (max-width: 991px){
+    nav#gnb .container #gnb-nav {
+    display: none; }
+  nav#gnb .container #gnb-hamburger {
+    display: block;
+    float: right; }
+    nav#gnb .container #gnb-hamburger a i {
+      line-height: 80px;
+      color: white;
+      font-size: 2rem; }
+    nav#gnb .container #gnb-hamburger ul {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      z-index: 1;
+      width: 100vw;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.5); }
+      nav#gnb .container #gnb-hamburger ul li {
+        text-align: center;
+        margin-bottom: 15px; }
+        nav#gnb .container #gnb-hamburger ul li a {
+          color: white;
+          font-size: 1.5rem;
+          border-bottom: 1px solid transparent;
+          transition: all .3s; }
+          nav#gnb .container #gnb-hamburger ul li a:hover {
+            text-decoration: none;
+            border-bottom: 1px solid white; }
+    
+    .help ul li em.icon{
+        width: 60%;
+        height: auto;
+        padding-top: 60%;
+    }
+    .help ul li em img{
+        width: 45%
+    }
+    .help span.tit{
+        font-size: 24px;
+    }
+    .help span.desc{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 767px){
+    #header{
+        height: 60px;
+    }
+    nav#gnb{
+        height: 60px;
+    }
+    nav#gnb .container #gnb-brand{
+        line-height: 60px;
+    }
+    nav#gnb .container #gnb-hamburger a i{
+        line-height: 60px;
+    }
+    nav#gnb .container #gnb-hamburger ul{
+        top: 60px;
+    }
+    .title{
+        padding: 123px 0 77px;
+    }
+    .title h2{
+        font-size: 47px;
+    }
+    .title p{
+        max-width: 72%;
+        margin: 30px auto 0;
+        font-size: 20px;
+    }
+    .banner .help{
+        padding: 90px 0;
+    }
+    .banner > p{
+        max-width: 72%;
+        margin: 0 auto;
+        font-size: 21px;
+    }
+    .help ul li{
+        display: block;
+        width: 100%;
+    }
+    .help ul li:first-child{
+        margin-right: 0;
+    }
+    
+    .help ul li em.icon{
+        width: 35%;
+        height: auto;
+        padding-top: 35%;
+    }
+    .help ul li em img{
+        width: 45%
+    }
+    .help span.tit{
+        margin-top: 27px;
+        font-size: 21px;
+    }
+    .help span.desc{
+        margin-top: 14px;
+        font-size: 23px;
+    }
+    .help ul li:last-child{
+        margin-top: 70px;
+    }
+    #footer .container #footer-sitemap {
+    display: none; }
+}
+
+@media (max-width: 575px){
+    .title h2{
+        font-size: 40px;
+    }
+    .title p{
+        display: none;
+    }
+    .banner > p{
+        padding-top: 32px;
+        max-width: 315px;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .banner .help{
+        padding: 40px 0;
+    }
+    .help ul li em.icon{
+        width: 34%;
+        height: auto;
+        padding-top: 34%;
+    }
+    .help ul li:last-child img{
+        width: 35%;
+    }
+    .help span.tit{
+        margin-top: 19px;
+        font-size: 14px;
+    }
+    .help span.desc{
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    .help ul li:last-child{
+        margin-top: 60px;
+    }
+}
