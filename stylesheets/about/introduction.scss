@@ -34,36 +34,39 @@ span.superbar {
 
 // LNB (Local Navigation Bar)
 nav#lnb {
-    padding: 10px 0;
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 0;
-        li {
-            display: inline-block;
-            width: 50%;
-            text-align: center;
-            height: 25px;
-            a {
+    padding: 25px 0;
+    .container {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 0;
+            li {
                 display: inline-block;
-                width: 50%;
-                line-height: 25px;
-                font-size: 1.2rem;
-                padding-bottom: 5px;
-                transition: all .3s;
-                border-bottom: 3px solid transparent;
-                &:hover {
-                    color: inherit;
-                }
-            }
-            &:not(:last-child) {
-                border-right: 1px solid #333;
-            }
-            &.active {
+                width: 15%;
+                text-align: center;
+                height: 20px;
                 a {
-                    color: #3CDBED;
-                    border-bottom: 3px solid #3CDBED;
+                    position: relative;
+                    top: -3px;
+                    line-height: 20px;
+                    font-size: 1.2rem;
+                    font-weight: bolder;
+                    padding-bottom: 3px;
+                    transition: all .3s;
+                    border-bottom: 1px solid transparent;
+                    &:hover {
+                        color: inherit;
+                    }
+                }
+                &:not(:last-child) {
+                    border-right: 1px solid #333;
+                }
+                &.active {
+                    a {
+                        color: #3CDBED;
+                        border-bottom: 1px solid #3CDBED;
+                    }
                 }
             }
         }
@@ -352,6 +355,7 @@ nav#lnb {
         .container {
             ul {
                 li {
+                    width: 20%;
                     a {
                         width: 80%;
                     }
@@ -428,6 +432,7 @@ nav#lnb {
             ul {
                 li {
                     height: 20px;
+                    width: 30%;
                     a {
                         position: relative;
                         top: -5px;

@@ -25,32 +25,33 @@ span.superbar {
       color: white; }
 
 nav#lnb {
-  padding: 10px 0; }
-  nav#lnb ul {
+  padding: 25px 0; }
+  nav#lnb .container ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 0; }
-    nav#lnb ul li {
+    nav#lnb .container ul li {
       display: inline-block;
-      width: 50%;
+      width: 15%;
       text-align: center;
-      height: 25px; }
-      nav#lnb ul li a {
-        display: inline-block;
-        width: 50%;
-        line-height: 25px;
+      height: 20px; }
+      nav#lnb .container ul li a {
+        position: relative;
+        top: -3px;
+        line-height: 20px;
         font-size: 1.2rem;
-        padding-bottom: 5px;
+        font-weight: bolder;
+        padding-bottom: 3px;
         transition: all .3s;
-        border-bottom: 3px solid transparent; }
-        nav#lnb ul li a:hover {
+        border-bottom: 1px solid transparent; }
+        nav#lnb .container ul li a:hover {
           color: inherit; }
-      nav#lnb ul li:not(:last-child) {
+      nav#lnb .container ul li:not(:last-child) {
         border-right: 1px solid #333; }
-      nav#lnb ul li.active a {
+      nav#lnb .container ul li.active a {
         color: #3CDBED;
-        border-bottom: 3px solid #3CDBED; }
+        border-bottom: 1px solid #3CDBED; }
 
 #introduction {
   padding-top: 100px; }
@@ -248,8 +249,10 @@ nav#lnb {
       top: 410px; } }
 
 @media only screen and (max-width: 991px) {
-  nav#lnb .container ul li a {
-    width: 80%; }
+  nav#lnb .container ul li {
+    width: 20%; }
+    nav#lnb .container ul li a {
+      width: 80%; }
   #stacks #stacks-content .container .stack .stack-content {
     bottom: -85px; }
     #stacks #stacks-content .container .stack .stack-content p.description {
@@ -279,7 +282,8 @@ nav#lnb {
 
 @media only screen and (max-width: 767px) {
   nav#lnb .container ul li {
-    height: 20px; }
+    height: 20px;
+    width: 30%; }
     nav#lnb .container ul li a {
       position: relative;
       top: -5px;
