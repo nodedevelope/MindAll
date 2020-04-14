@@ -240,7 +240,7 @@
         background: #ffffff;
         border-radius: 0.25em;
         padding: 1em;
-        box-shadow: 0 3px 0 #d7e4ed;
+        box-shadow: 0 3px 0 #d7e4ed70;
       }
       .cd-timeline-content::after {
         clear: both;
@@ -326,7 +326,6 @@
           width: 100%;
           left: 122%;
           top: 6px;
-          font-size: 16px;
           font-size: 1rem;
         }
         .cd-timeline-block:nth-child(even) .cd-timeline-content {
@@ -520,6 +519,27 @@
     .container {
       #chronicle-header {
         padding-left: 4vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1169px) {
+  #chronicle {
+    .cd-timeline-content {
+      position: relative;
+      padding-top: 80px;
+      .cd-timeline-content-month {
+        h2 {
+          font-size: 1rem;
+          line-height: normal;
+        }
+      }
+      .cd-date {
+        position: absolute;
+        padding: 0;
+        top: 18px !important;
+        left: 18px;
       }
     }
   }

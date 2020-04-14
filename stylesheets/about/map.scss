@@ -393,7 +393,7 @@
 
 // Map
 #map-section {
-    padding: 100px 0 50px 0;
+    padding: 100px 0 165px 0;
     #map-header {
         margin-bottom: 80px;
     }
@@ -408,10 +408,10 @@
     }
     #map-detail {
         .container {
+            background-color: #F8F8F8;
             #map-detail-address {
                 width: 50%;
                 padding: 30px;
-                background-color: #F8F8F8;
                 display: inline-block;
                 vertical-align: middle;
                 #map-detail-address-image {
@@ -441,7 +441,6 @@
                 width: 50%;
                 height: 162px;
                 padding: 30px;
-                background-color: #F8F8F8;
                 display: inline-block;
                 vertical-align: middle;
                 #map-detail-contact-image {
@@ -632,8 +631,8 @@
                 #map-subway-image {
                     margin-right: 30px;
                     img {
-                        width: 60px;
-                        height: 60px;
+                        width: 80px;
+                        height: 80px;
                     }
                 }
                 #map-subway-content {
@@ -654,8 +653,8 @@
                 #map-bus-image {
                     margin-right: 30px;
                     img {
-                        width: 60px;
-                        height: 60px;
+                        width: 80px;
+                        height: 80px;
                     }
                 }
                 #map-bus-content {

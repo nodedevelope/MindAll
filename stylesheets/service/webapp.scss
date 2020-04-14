@@ -2,7 +2,6 @@
 
 /* 레이아웃 */
 #container-webapp {
-
     #header{
         position: fixed; left: 0; top: 0; z-index: 1000;
         width: 100%;
@@ -199,6 +198,7 @@
     .web_app_bg .web_app_text p.underlines span:after{
         content: '';
         position: absolute; left: 0; top: 20px;
+        z-index: -1;
         width: 100%;
         height: 20px;
         background-color: #3cd6ed;
@@ -232,6 +232,9 @@
     }
     .web_app_info .info_icon ul li:last-child{
         margin-right: 0;
+    }
+    .web_app_info .info_icon ul li.border {
+        border: none !important;
     }
     .web_app_info .info_icon ul li.border:after{
         content: '';

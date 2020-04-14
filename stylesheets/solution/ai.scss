@@ -2,6 +2,36 @@
 
 /* 레이아웃 */
 #container-ai {
+    section#use {
+        background-color: #F8F8F8;
+    }
+    #system {
+        .inner {
+            .inner_row {
+                .system {
+                    ul {
+                        list-style: none;
+                        counter-reset: system-counter;
+                        li {
+                            position: relative;
+                            counter-increment: system-counter;
+                            &:before {
+                                position: absolute;
+                                top: -30px;
+                                left: -30px;
+                                z-index: -1;
+                                content: "0" counter(system-counter);
+                                font-size: 3rem;
+                                font-weight: bolder;
+                                font-style: italic;
+                                color: gainsboro;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     #header{
         position: fixed; left: 0; top: 0; z-index: 1000;
         width: 100%;
@@ -25,6 +55,7 @@
     }
     #main #contents{
         padding: 100px 0 165px;
+        padding-bottom: 0;
     }
     #Ai_banner{
         position: relative;
@@ -362,6 +393,23 @@
                 border-bottom: 1px solid white; }
     }
     @media (max-width: 767px){
+        #system {
+            .inner {
+                .inner_row {
+                    .system {
+                        ul {
+                            li {
+                                &:before {
+                                    font-size: 1.875rem;
+                                    top: -20px;
+                                    left: -25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         #header{
             height: 60px;
         }
@@ -393,7 +441,7 @@
         }
         #main #contents{
             padding: 70px 0 135px;
-    
+            padding-bottom: 0;
         }
         .solution_btn ul {
             overflow: hidden;
@@ -481,6 +529,7 @@
         }
         #main #contents{
             padding: 40px 0;
+            padding-bottom: 0;
         }
         #Ai_banner{
             height: 236px;

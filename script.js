@@ -93,6 +93,24 @@ $(document).ready(function() {
             description: "지도 기반 레미콘 차량 위치 관제 시스템 개발",
             image: "ajugps",
             category: "app"
+        },
+        {
+            title: "서울시 보도지원시스템",
+            description: "시정 관련 보도 자료 검색 및 활용을 위한 반응형 웹사이트 구축",
+            image: "news",
+            category: "web"
+        },
+        {
+            title: "국방아키텍처(ARMS) 성능 개량",
+            description: "ARMS 성능 개선을 통해, 업무에 직접 활용할 수 있는 아키텍처 정보를 제공하여 상호운용성 업무의 효율성 향상",
+            image: "arms",
+            category: "web"
+        },
+        {
+            title: "서울시 BIS 버스정보시스템",
+            description: "서울시 버스정보시스템의 안정적인 유지 관리",
+            image: "bis",
+            category: "web"
         }
     ];
 
@@ -117,7 +135,7 @@ $(document).ready(function() {
         $(".see-more").remove();
         $(this).addClass("active");
         emptyPortfolios();
-        var maxNum = 12;
+        var maxNum = 15;
         var extended = false;
         var limit = $("#portfolios").hasClass("annexed") ? 9 : 6;
         if(limit === 9) {

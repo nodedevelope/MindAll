@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 #container-location {
-
     #lc_desc {
         .inner {
             .inner_row {
@@ -179,7 +178,7 @@
     }
     .desc_box figure{
         margin-top: 60px;
-        background: #fff;
+        background: rgba(255, 255, 255, 0.8);
     }
     
     /* footer */
@@ -434,11 +433,11 @@
             width: 100%;
             padding: 24px 14px;
             margin-top: 0px;
-            background: none;
+            background: gainsboro;
             box-sizing: border-box;
         }
         .desc_box figure img{
-            background: #929292;
+            background: #929292c4;
         }
     }
 }

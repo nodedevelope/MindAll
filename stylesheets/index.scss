@@ -58,23 +58,24 @@ nav#gnb {
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
     z-index: 101;
-    height: 80px;
+    height: 60px;
     .container {
         #gnb-brand {
             float: left;
-            line-height: 80px;
+            line-height: 60px;
         }
         #gnb-nav {
             float: right;
             ul {
+                margin-bottom: 0;
                 li {
                     display: inline-block;
-                    line-height: 80px;
+                    line-height: 60px;
                     &:not(:last-child) {
                         margin-right: 15px;
                     }
                     a {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         transition: all .3s;
                         color: white;
                         font-weight: bold;
@@ -371,6 +372,7 @@ nav#gnb {
         }
     }
     #portfolios-filters {
+        padding: 10px 0;
         ul {
             text-align: center;
             margin-bottom: 0;
@@ -542,9 +544,10 @@ nav#gnb {
                 font-weight: bolder;
                 margin-bottom: 30px;
                 color: #333;
+                font-size: 1.5rem;
             }
             p {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 color: #333;
             }
         }
@@ -556,7 +559,7 @@ nav#gnb {
                 margin-right: 150px;
                 text-align: center;
                 i {
-                    font-size: 5rem;
+                    font-size: 4rem;
                     margin-bottom: 20px;
                     color: #333;
                 }
@@ -579,7 +582,7 @@ nav#gnb {
                 vertical-align: middle;
                 text-align: center;
                 i {
-                    font-size: 5rem;
+                    font-size: 4rem;
                     margin-bottom: 20px;
                     color: #333;
                 }
@@ -656,6 +659,7 @@ nav#gnb {
                     text-align: right;
                     margin-bottom: 0;
                     color: white;
+                    font-size: .875rem;
                 }
             }
         }
@@ -766,14 +770,14 @@ nav#gnb {
                 float: right;
                 a {
                     i {
-                        line-height: 80px;
+                        line-height: 60px;
                         color: white;
-                        font-size: 2rem;
+                        font-size: 1.5rem;
                     }
                 }
                 ul {
                     position: absolute;
-                    top: 80px;
+                    top: 60px;
                     left: 0;
                     z-index: 1;
                     width: 100vw;
@@ -931,7 +935,49 @@ nav#gnb {
             width: 90%;
             #contact-header {
                 p {
-                    font-size: 1.5rem;
+                    font-size: 0.75rem;
+                }
+            }
+            #contact-content {
+                #contact-email {
+                    p {
+                        font-size: .875rem;
+                    }
+                    a {
+                        font-size: .875rem;
+                    }
+                }
+                #contact-phone {
+                    p#contact-phone-title {
+                        font-size: .875rem;
+                    }
+                    p#contact-phone-number {
+                        font-size: .875rem;
+                    }
+                }
+            }
+        }
+    }
+    #values {
+        #values-content {
+            .value-alpha {
+                .container {
+                    .value-content {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+            .value-beta {
+                .container {
+                    .value-content {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
                 }
             }
         }
@@ -992,14 +1038,37 @@ nav#gnb {
                     margin: 0;
                     margin-bottom: 50px;
                     i {
-                        font-size: 5rem;
+                        font-size: 3rem;
                     }
                 }
                 #contact-phone {
                     display: block;
                     width: 100%;
                     i {
-                        font-size: 5rem;
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    #introduction {
+        #introduction-subheader {
+            height: 300px;
+            .container {
+                #subheader-box {
+                    height: 300px;
+                    bottom: 140px;
+                    p.since {
+                        font-size: .625rem;
+                    }
+                    p.title {
+                        font-size: 1.125rem;
+                    }
+                    p.subtitle {
+                        font-size: .75rem;
+                    }
+                    p.content {
+                        font-size: .75rem;
                     }
                 }
             }
@@ -1049,11 +1118,16 @@ nav#gnb {
                         padding-top: 0;
                         padding-bottom: 0;
                         .portfolio {
+                            text-align: center;
                             .hovered {
                                 height: 85%;
                             }
                             p.subtitle {
                                 font-size: 1.5rem;
+                            }
+                            img {
+                                width: 275px;
+                                height: 275px;
                             }
                         }
                     }
