@@ -349,7 +349,7 @@ $(document).ready(function() {
         },
         offset: offset
     });
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper('.swiper-container', {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,

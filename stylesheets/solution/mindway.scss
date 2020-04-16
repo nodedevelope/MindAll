@@ -261,12 +261,12 @@
     .smart .smart_right .ss1{
         background: url(./img/mindway_slider001.jpg) no-repeat;
         background-position: center center;
-        background-size: cover;
+        background-size: contain;
     }
     .smart .smart_right .ss2{
         background: url(./img/mindway_slider002.jpg) no-repeat;
         background-position: center center;
-        background-size: cover;
+        background-size: contain;
     }
     
     /* Mind Way 슬라이드 */
@@ -652,5 +652,11 @@
         .specification ul li p{
             font-size: 14px;
         }
+    }
+}
+
+@media (max-width: 400px) {
+    .smart_right .swiper-slide {
+        width: 342px !important;
     }
 }
