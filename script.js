@@ -354,12 +354,6 @@ $(document).ready(function() {
             el: '.swiper-pagination',
             clickable: true,
         },
-        breakpoints: {
-            767: {
-                slidesPerView: 1.2,
-                spaceBetween: 24
-            },
-        },
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,

@@ -34,13 +34,13 @@
         text-align: center;
     }
     .title h2{
-        font-size: 72px;
+        font-size: 3rem;
         font-weight: 700;
         text-transform: uppercase;
     }
     .title p{
         margin-top: 30px;
-        font-size: 30px;
+        font-size: 1.8rem;
     }
     
     /* main - banner */
@@ -54,7 +54,7 @@
     .banner > p{
         color: white;
         padding-top: 80px;
-        font-size: 28px;
+        font-size: $supertitle;
     }
     .banner .help{
         padding: 140px 0 230px;
@@ -85,13 +85,13 @@
     }
     .help span.tit{
         margin-top: 35px;
-        font-size: 28px;
+        font-size: $supertitle;
         font-weight: 700;
         color: white;
     }
     .help span.desc{
         margin-top: 20px;
-        font-size: 32px;
+        font-size: $subtitle;
         color: white;
     }
     

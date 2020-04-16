@@ -82,16 +82,19 @@ nav#lnb {
             h2 {
                 font-weight: bolder;
                 margin-bottom: 30px;
+                font-size: $title;
             }
             h3 {
                 font-weight: bolder;
                 margin-bottom: 20px;
+                font-size: $supertitle;
             }
             p:first-of-type {
                 font-size: 1.1rem;
             }
             p {
                 margin-bottom: 5px;
+                font-size: $normal;
             }
         }
     }
@@ -120,18 +123,19 @@ nav#lnb {
                 }
                 p.title {
                     font-weight: bolder;
-                    font-size: 2rem;
+                    font-size: $title;
                     color: white;
                     margin-bottom: 10px;
                 }
                 p.subtitle {
                     font-weight: bolder;
-                    font-size: 1.2rem;
+                    font-size: $supertitle;
                     color: white;
                     margin-bottom: 30px;
                 }
                 p.content {
                     color: white;
+                    font-size: $normal;
                 }
             }
         }
@@ -145,6 +149,9 @@ nav#lnb {
     #values-header {
         .container {
             margin-bottom: 30px;
+            h3 {
+                font-size: $title;
+            }
         }
     }
     #values-content {
@@ -178,9 +185,11 @@ nav#lnb {
                     p.title {
                         font-weight: bolder;
                         margin-bottom: 10px;
+                        font-size: $subtitle;
                     }
                     p.description {
                         color: gray;
+                        font-size: $normal;
                     }
                 }
             }
@@ -206,9 +215,11 @@ nav#lnb {
                     p.title {
                         font-weight: bolder;
                         margin-bottom: 10px;
+                        font-size: $subtitle;
                     }
                     p.description {
                         color: gray;
+                        font-size: $normal;
                     }
                 }
                 .value-image {
@@ -231,6 +242,9 @@ nav#lnb {
     #stacks-header {
         .container {
             margin-bottom: 30px;
+            h3 {
+                font-size: $title;
+            }
         }
     }
     #stacks-content {
@@ -266,13 +280,16 @@ nav#lnb {
                         font-weight: bold;
                         font-size: 1.2rem;
                         margin-bottom: 10px;
+                        font-size: $subtitle;
                     }
                     p.subtitle {
                         color: #555;
                         font-size: 1.1rem;
+                        font-size: $normal;
                     }
                     p.description {
                         color: #777;
+                        font-size: $small;
                     }
                 }
             }
@@ -287,6 +304,9 @@ nav#lnb {
     #certification-header {
         .container {
             margin-bottom: 30px;
+            h3 {
+                font-size: $title;
+            }
         }
     }
     #certification-content {
@@ -306,7 +326,7 @@ nav#lnb {
                 }
                 .certificate-content {
                     p {
-                        font-size: 1.5rem;
+                        font-size: $supertitle;
                         text-align: center;
                     }
                 }
@@ -510,6 +530,15 @@ nav#lnb {
             .container {
                 width: 90%;
                 margin: auto;
+                h2 {
+                    font-size: $supertitle;
+                }
+                h3 {
+                    font-size: $subtitle;
+                }
+                p {
+                    font-size: $small !important;
+                }
             }
         }
         #introduction-subheader {
@@ -558,6 +587,9 @@ nav#lnb {
         #certification-header {
             .container {
                 max-width: 85vw;
+                h3 {
+                    font-size: $subtitle;
+                }
             }
         }
         #certification-content {
@@ -569,7 +601,66 @@ nav#lnb {
                     margin: 0 auto 50px auto;
                     .certificate-content {
                         p {
-                            font-size: 1rem;
+                            font-size: $small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #values {
+        #values-header {
+            .container {
+                h3 {
+                    font-size: $subtitle;
+                }
+            }
+        }
+        #values-content {
+            .value-alpha {
+                .container {
+                    .value-content {
+                        p.title {
+                            font-size: $small;
+                        }
+                        p.description {
+                            font-size: $small;
+                        }
+                    }
+                }
+            }
+            .value-beta {
+                .container {
+                    .value-content {
+                        p.title {
+                            font-size: $small;
+                        }
+                        p.description {
+                            font-size: $small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #stacks {
+        #stacks-header {
+            .container {
+                h3 {
+                    font-size: $subtitle;
+                }
+            }
+        }
+        #stacks-content {
+            .container {
+                .stack {
+                    .stack-content {
+                        p.title {
+                            font-size: $small;
+                            letter-spacing: 0;
+                        }
+                        p.subtitle {
+                            font-size: $small;
                         }
                     }
                 }

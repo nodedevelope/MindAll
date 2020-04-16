@@ -1,3 +1,11 @@
+// Font sizes definitions
+$big: 2rem;
+$title: 1.75rem;
+$supertitle: 1.5rem;
+$subtitle: 1.2rem;
+$normal: 1rem;
+$small: .8rem;
+
 // Import other stylesheets...
 @import "./about/introduction.scss";
 @import "./about/areas.scss";
@@ -175,11 +183,12 @@ nav#gnb {
         margin-bottom: 60px;
         h3 {
             font-weight: bolder;
+            font-size: $title;
             margin-bottom: 30px;
         }
         p {
             line-height: 150%;
-            font-size: 1.2rem;
+            font-size: $supertitle;
         }
     }
     #sectors-content {
@@ -207,9 +216,11 @@ nav#gnb {
                     }
                     h4 {
                         margin-bottom: 10px;
+                        font-size: $supertitle;
                     }
                     p {
                         margin-bottom: 30px;
+                        font-size: $normal;
                     }
                     a {
                         display: inline-block;
@@ -247,9 +258,11 @@ nav#gnb {
                     }
                     h4 {
                         margin-bottom: 10px;
+                        font-size: $supertitle;
                     }
                     p {
                         margin-bottom: 30px;
+                        font-size: $normal;
                     }
                     a {
                         display: inline-block;
@@ -281,6 +294,7 @@ nav#gnb {
             color: white;
             font-weight: bolder;
             margin-bottom: 50px;
+            font-size: $title;
         }
     }
     #technologies-content {
@@ -364,11 +378,12 @@ nav#gnb {
         margin-bottom: 30px;
         text-align: center;
         h3 {
-            font-weight: bolder;
             margin-bottom: 30px;
+            font-size: $title;
         }
         h4 {
             font-size: 1.2rem;
+            font-size: $supertitle;
         }
     }
     #portfolios-filters {
@@ -472,6 +487,7 @@ nav#gnb {
         margin-bottom: 50px;
         h3 {
             font-weight: bolder;
+            font-size: $title;
         }
     }
     #clients-list {
@@ -544,11 +560,12 @@ nav#gnb {
                 font-weight: bolder;
                 margin-bottom: 30px;
                 color: #333;
-                font-size: 1.5rem;
+                font-size: $title;
             }
             p {
                 font-size: 1rem;
                 color: #333;
+                font-size: $supertitle;
             }
         }
         #contact-content {
@@ -566,12 +583,12 @@ nav#gnb {
                 p {
                     font-weight: bold;
                     margin-bottom: 10px;
-                    font-size: 1.5rem;
+                    font-size: $supertitle;
                     color: #333;
                 }
                 a {
                     color: #333;
-                    font-size: 1.2rem;
+                    font-size: $subtitle;
                     &:hover {
                         text-decoration: underline !important;
                     }
@@ -588,12 +605,12 @@ nav#gnb {
                 }
                 p#contact-phone-title {
                     font-weight: bold;
-                    font-size: 1.5rem;
+                    font-size: $supertitle;
                     margin-bottom: 10px;
                     color: #333;
                 }
                 p#contact-phone-number {
-                    font-size: 1.2rem;
+                    font-size: $subtitle;
                     font-weight: normal;
                     color: #333;
                 }
@@ -1101,7 +1118,37 @@ nav#gnb {
 
 // Media query (max-width: 576px)
 @media screen and (max-width: 575px) {
+    #sectors {
+        #sectors-header {
+            h3 {
+                font-size: $supertitle;
+            }
+            p {
+                font-size: $small;
+            }
+        }
+        #sectors-content {
+            .container {
+                .sector {
+                    .sector-content {
+                        h4 {
+                            font-size: $normal !important;
+                        }
+                        p {
+                            font-size: $small !important;
+                        }
+                        a {
+                            font-size: $small !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .carousel-content {
+        h2 {
+            font-size: $subtitle;
+        }
         .carousel-buttons {
             a {
                 font-size: .9rem;
@@ -1111,8 +1158,28 @@ nav#gnb {
     }
     #portfolios {
         padding-top: 0;
+        #portfolios-header {
+            h3 {
+                font-size: $supertitle;
+            }
+            h4 {
+                font-size: $small;
+            }
+        }
+        #portfolios-filters {
+            ul {
+                li {
+                    a {
+                        font-size: $small;
+                    }
+                }
+            }
+        }
         #portfolios-items {
             .container {
+                .see-more {
+                    font-size: $small;
+                }
                 .row {
                     & > div {
                         padding-top: 0;
@@ -1123,7 +1190,7 @@ nav#gnb {
                                 height: 85%;
                             }
                             p.subtitle {
-                                font-size: 1.5rem;
+                                font-size: $normal;
                             }
                             img {
                                 width: 275px;
@@ -1136,6 +1203,11 @@ nav#gnb {
         }
     }
     #clients-slider {
+        #clients-slider-header {
+            h3 {
+                font-size: $supertitle;
+            }
+        }
         #clients-slider-carousel {
             .container {
                 .carousel {
@@ -1154,6 +1226,11 @@ nav#gnb {
         }
     }
     #technologies-slider {
+        #technologies-slider-header {
+            h3 {
+                font-size: $supertitle;
+            }
+        }
         .container {
             .carousel {
                 .carousel-inner {
@@ -1163,6 +1240,36 @@ nav#gnb {
                             height: 100px;
                             top: 25%;
                         }
+                    }
+                }
+            }
+        }
+    }
+    #contact {
+        #contact-container {
+            #contact-header {
+                h3 {
+                    font-size: $supertitle;
+                }
+                p {
+                    font-size: $small;
+                }
+            }
+            #contact-content {
+                #contact-email {
+                    p {
+                        font-size: $small;
+                    }
+                    a {
+                        font-size: $small;
+                    }
+                }
+                #contact-phone {
+                    #contact-phone-title {
+                        font-size: $small !important;
+                    }
+                    #contact-phone-number {
+                        font-size: $small !important;
                     }
                 }
             }

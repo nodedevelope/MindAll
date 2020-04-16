@@ -1,13 +1,35 @@
 @charset "utf-8";
 
 #container-mindway {
-
+    section#smart {
+        background-color: #F8F8F8;
+        padding: 30px 0;
+    }
+    .smart {
+        background-color: white;
+    }
     #specification {
         .inner {
             .inner_row {
                 .specification {
                     ul {
-                        margin-bottom: 0;
+                        list-style: none;
+                        counter-reset: specification-counter;
+                        li {
+                            position: relative;
+                            counter-increment: specification-counter;
+                            &:before {
+                                position: absolute;
+                                top: -30px;
+                                left: -30px;
+                                z-index: -1;
+                                content: "0" counter(specification-counter);
+                                font-size: 3rem;
+                                font-weight: bolder;
+                                font-style: italic;
+                                color: gainsboro;
+                            }
+                        }
                     }
                 }
             }
@@ -111,7 +133,8 @@
     }
     .banner_textBox .banner_text{
         margin-top: 50px;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        letter-spacing: -3.5px;
         color: white;
     }
     
@@ -184,11 +207,24 @@
         height: 120px;
     }
     .solution_title h2{
-        font-size: 32px;
+        font-size: $title;
         font-weight: 700;
     }
     
     /* main - smart */
+    .smart_left {
+        .swiper-container {
+            .swiper-wrapper {
+                .swiper-slide {
+                    p.no {
+                        color: #EBEBEB;
+                        font-weight: bolder;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
     .smart{
         position: relative;
         padding: 30px 0;
@@ -204,9 +240,10 @@
     .smart .smart_left h3{
         font-size: 28px;
         font-weight: 700;
-        margin: 115px 0 55px; 
+        margin: 115px 0 55px;
+        margin-top: 55px;
     }
-    .smart .smart_left p{
+    .smart .smart_left p:not(.no) {
         padding-left: 40px;
         margin-bottom: 25px;
         background: url(./img/check.png) no-repeat;
@@ -228,11 +265,6 @@
     }
     .smart .smart_right .ss2{
         background: url(./img/mindway_slider002.jpg) no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
-    .smart .smart_right .ss3{
-        background: url(./img/mindway_slider003.jpg) no-repeat;
         background-position: center center;
         background-size: cover;
     }
@@ -260,7 +292,7 @@
     .specification .sub_title h3{
         position: relative;
         color: #333;
-        font-size: 28px;
+        font-size: $title;
         font-weight: 500;
     }
     .specification h3:after{
@@ -403,6 +435,26 @@
     }
     
     @media (max-width: 767px){
+        .smart {
+            padding-bottom: 0;
+        }
+        #specification {
+            .inner {
+                .inner_row {
+                    .specification {
+                        ul {
+                            li {
+                                &:before {
+                                    font-size: 1.875rem;
+                                    top: -20px;
+                                    left: -25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         #header{
             height: 60px;
         }
@@ -499,6 +551,9 @@
     }
     
     @media (max-width: 575px){
+        .narrow {
+            letter-spacing: -1px;
+        }
         #main #banner{
             height: 240px;
         }
@@ -554,18 +609,16 @@
             font-size: 12px;
             font-weight: 400;
         }
-        .smart{
-            padding: 0 0 20px 0;
-        }
         .smart .smart_left{
-            padding-left: 15px;
+            padding-left: 30px;
         }
         .smart .smart_left h3{
             margin: 75px 0 15px;
+            margin-top: 15px;
             font-size: 20px;
             font-weight: 500;
         }
-        .smart .smart_left p{
+        .smart .smart_left p:not(.no) {
             padding-left: 20px;
             margin-bottom: 15px;
             font-size: 13px;
@@ -577,7 +630,7 @@
             padding-top: 85px;
         }
         .indicator{
-            top: 36%;
+            top: 45%;
         }
         .specification{
             padding: 40px 0;

@@ -23,6 +23,14 @@
 
 // Portfolios (annexed)
 #portfolios.annexed {
+    #portfolios-header {
+        text-align: left;
+        .container {
+            h3 {
+                font-weight: normal;
+            }
+        }
+    }
     #portfolios-items {
         .container {
             .row {
@@ -63,8 +71,14 @@
     #portfolios.annexed {
         padding: 50px 0;
         #portfolios-header {
-            h3 {
-                text-align: center !important;
+            .container {
+                span.superbar {
+                    display: none;
+                }
+                h3 {
+                    text-align: center !important;
+                    font-size: $subtitle;
+                }
             }
         }
         #portfolios-items {
@@ -73,6 +87,12 @@
                     & > div {
                         .portfolio {
                             margin-bottom: 30px;
+                            p.subtitle {
+                                font-size: $small;
+                            }
+                            p.subdescription {
+                                font-size: $small;
+                            }
                         }
                     }
                 }

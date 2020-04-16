@@ -396,6 +396,11 @@
     padding: 100px 0 165px 0;
     #map-header {
         margin-bottom: 80px;
+        .container {
+            h3 {
+                font-size: $title;
+            }
+        }
     }
     #map-content {
         margin-bottom: 30px;
@@ -431,9 +436,10 @@
                     p.title {
                         font-weight: bolder;
                         margin-bottom: 3px;
+                        font-size: $normal;
                     }
                     p.description {
-    
+                        font-size: $normal;
                     }
                 }
             }
@@ -463,9 +469,10 @@
                     p.title {
                         font-weight: bolder;
                         margin-bottom: 3px;
+                        font-size: $normal;
                     }
                     p.description {
-    
+                        font-size: $normal;
                     }
                 }
             }
@@ -494,9 +501,11 @@
                     color: #3CDBED;
                     font-weight: bold;
                     margin-bottom: 3px;
+                    font-size: $normal;
                 }
                 p.content {
                     margin-bottom: 0;
+                    font-size: $normal;
                 }
             }
         }
@@ -523,16 +532,19 @@
                     color: #3CDBED;
                     font-weight: bold;
                     margin-bottom: 3px;
+                    font-size: $normal;
                 }
                 .map-bus-content {
                     p.title {
                         margin-bottom: -3px;
+                        font-size: $normal;
                     }
                     .map-bus-content-bus {
                         p.content {
                             display: inline-block;
                             vertical-align: middle;
                             margin-bottom: 0;
+                            font-size: $normal;
                             span.blue {
                                 color: #386de8;
                             }
@@ -624,6 +636,40 @@
 
 @media only screen and (max-width: 575px) {
     #map-section {
+        #map-header {
+            .container {
+                h3 {
+                    font-size: $subtitle;
+                }
+            }
+        }
+        #map-detail {
+            .container {
+                #map-detail-address {
+                    #map-detail-address-content {
+                        p.title {
+                            font-size: $small;
+                        }
+                        p.description {
+                            font-size: $small;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                #map-detail-contact {
+                    #map-detail-contact-content {
+                        p.title {
+                            font-size: $small;
+                        }
+                        p.description {
+                            font-size: $small;
+                            width: 80%;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
         #map-subway {
             padding: 30px 30px 15px 30px;
             .container {
@@ -636,7 +682,7 @@
                     }
                 }
                 #map-subway-content {
-                    max-width: calc(100% - 90px);
+                    max-width: calc(100% - 110px);
                     p.title {
                         font-size: .8rem;
                     }
@@ -658,7 +704,7 @@
                     }
                 }
                 #map-bus-content {
-                    max-width: calc(100% - 90px);
+                    max-width: calc(100% - 110px);
                     & > p.title {
                         font-size: .8rem;
                     }

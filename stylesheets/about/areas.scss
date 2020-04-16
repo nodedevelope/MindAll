@@ -4,6 +4,11 @@
     background-color: #F8F8F8;
     #areas-header {
         margin-bottom: 80px;
+        .container {
+            h3 {
+                font-size: $title;
+            }
+        }
     }
     #areas-content {
         .container {
@@ -34,12 +39,12 @@
                     top: 30px;
                     p.supertitle {
                         font-weight: bold;
-                        font-size: .8rem;
+                        font-size: $small;
                         margin-bottom: 0;
                     }
                     p.title {
                         color: #3CDBED;
-                        font-size: 2rem;
+                        font-size: $title;
                         font-weight: bolder;
                         letter-spacing: 3px;
                         margin-bottom: 10px;
@@ -47,10 +52,12 @@
                     p.subtitle {
                         font-weight: bold;
                         margin-bottom: 5px;
+                        font-size: $subtitle;
                     }
                     p.content {
                         font-weight: lighter;
                         margin-bottom: 30px;
+                        font-size: $normal;
                     }
                     a.more-button {
                         color: white;
@@ -79,12 +86,12 @@
                     top: 30px;
                     p.supertitle {
                         font-weight: bold;
-                        font-size: .8rem;
+                        font-size: $small;
                         margin-bottom: 0;
                     }
                     p.title {
                         color: #3CDBED;
-                        font-size: 2rem;
+                        font-size: $title;
                         font-weight: bolder;
                         letter-spacing: 3px;
                         margin-bottom: 10px;
@@ -92,10 +99,12 @@
                     p.subtitle {
                         font-weight: bold;
                         margin-bottom: 5px;
+                        font-size: $subtitle;
                     }
                     p.content {
                         font-weight: lighter;
                         margin-bottom: 30px;
+                        font-size: $normal;
                     }
                     a.more-button {
                         color: white;
@@ -225,5 +234,13 @@
 }
 
 @media only screen and (max-width: 575px) {
-
+    #areas {
+        #areas-header {
+            .container {
+                h3 {
+                    font-size: $subtitle;
+                }
+            }
+        }
+    }
 }

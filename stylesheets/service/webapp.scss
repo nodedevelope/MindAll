@@ -77,15 +77,15 @@
         color: #fff;
     }
     .banner_textBox .banner_title{
-        font-size: 54px;
+        font-size: 3rem;
         font-weight: 900;
         text-transform: uppercase;
         color: white;
     }
     .banner_textBox .banner_text{
         margin-top: 50px;
-        font-size: 24px;
-        letter-spacing: -0.25px;
+        font-size: 1.8rem;
+        letter-spacing: -1.25px;
         color: white;
     }
     
@@ -136,7 +136,7 @@
         float: left;
         width: 23%;
         margin-right: 0%;
-        font-size: 32px;
+        font-size: $title;
         font-weight: 700;
         margin-bottom: 0;
     }
@@ -146,7 +146,7 @@
         width: 77%;
         padding-top: 12px;
         margin: 0;
-        font-size: 1rem;
+        font-size: $subtitle;
     }
     
     /* main - 컨텐츠 web_app */
@@ -167,6 +167,7 @@
     }
     .web_app_bg figure img{
         display: block;
+        width: 100%;
     }
     .web_app_bg figure img.m_bg{
         display: none;
@@ -264,7 +265,7 @@
         width: 90%;
         margin: 0 auto;
         line-height: 48px;
-        font-size: 20px;
+        font-size: $subtitle;
     }
     
     /* main - 서비스 범위 */
@@ -277,7 +278,7 @@
     }
     .service_scope .scope .sub_title h3{
         position: relative;
-        font-size: 28px;
+        font-size: $title;
         font-weight: 500;
     }
     .service_scope .scope .sub_title h3:after{
@@ -354,7 +355,7 @@
     }
     .process .sub_title h3{
         position: relative;
-        font-size: 28px;
+        font-size: $title;
         font-weight: 500;
     }
     .process .sub_title h3:after{

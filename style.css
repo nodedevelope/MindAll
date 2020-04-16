@@ -59,14 +59,17 @@ nav#lnb {
     margin-bottom: 80px; }
     #introduction #introduction-header .container h2 {
       font-weight: bolder;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      font-size: 1.75rem; }
     #introduction #introduction-header .container h3 {
       font-weight: bolder;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-size: 1.5rem; }
     #introduction #introduction-header .container p:first-of-type {
       font-size: 1.1rem; }
     #introduction #introduction-header .container p {
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      font-size: 1rem; }
   #introduction #introduction-subheader {
     background-image: url("./images/introduction_background.jpg");
     background-size: cover;
@@ -91,22 +94,25 @@ nav#lnb {
           margin-bottom: 30px; }
         #introduction #introduction-subheader .container #subheader-box p.title {
           font-weight: bolder;
-          font-size: 2rem;
+          font-size: 1.75rem;
           color: white;
           margin-bottom: 10px; }
         #introduction #introduction-subheader .container #subheader-box p.subtitle {
           font-weight: bolder;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           color: white;
           margin-bottom: 30px; }
         #introduction #introduction-subheader .container #subheader-box p.content {
-          color: white; }
+          color: white;
+          font-size: 1rem; }
 
 #values {
   padding-top: 100px;
   background-color: #F8F8F8; }
   #values #values-header .container {
     margin-bottom: 30px; }
+    #values #values-header .container h3 {
+      font-size: 1.75rem; }
   #values #values-content .value-alpha {
     margin-bottom: 10px; }
     #values #values-content .value-alpha .container {
@@ -133,9 +139,11 @@ nav#lnb {
           margin-bottom: 30px; }
         #values #values-content .value-alpha .container .value-content p.title {
           font-weight: bolder;
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          font-size: 1.2rem; }
         #values #values-content .value-alpha .container .value-content p.description {
-          color: gray; }
+          color: gray;
+          font-size: 1rem; }
   #values #values-content .value-beta {
     margin-bottom: 10px; }
     #values #values-content .value-beta .container {
@@ -155,9 +163,11 @@ nav#lnb {
           margin-bottom: 30px; }
         #values #values-content .value-beta .container .value-content p.title {
           font-weight: bolder;
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          font-size: 1.2rem; }
         #values #values-content .value-beta .container .value-content p.description {
-          color: gray; }
+          color: gray;
+          font-size: 1rem; }
       #values #values-content .value-beta .container .value-image {
         display: inline-block;
         vertical-align: middle;
@@ -170,6 +180,8 @@ nav#lnb {
   padding: 100px 0 50px 0; }
   #stacks #stacks-header .container {
     margin-bottom: 30px; }
+    #stacks #stacks-header .container h3 {
+      font-size: 1.75rem; }
   #stacks #stacks-content .container {
     display: flex;
     flex-wrap: wrap;
@@ -199,18 +211,23 @@ nav#lnb {
         #stacks #stacks-content .container .stack .stack-content p.title {
           font-weight: bold;
           font-size: 1.2rem;
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          font-size: 1.2rem; }
         #stacks #stacks-content .container .stack .stack-content p.subtitle {
           color: #555;
-          font-size: 1.1rem; }
+          font-size: 1.1rem;
+          font-size: 1rem; }
         #stacks #stacks-content .container .stack .stack-content p.description {
-          color: #777; }
+          color: #777;
+          font-size: 0.8rem; }
 
 #certification {
   background-color: #F8F8F8;
   padding: 100px 0 50px 0; }
   #certification #certification-header .container {
     margin-bottom: 30px; }
+    #certification #certification-header .container h3 {
+      font-size: 1.75rem; }
   #certification #certification-content .container .certificate {
     display: inline-block;
     vertical-align: middle;
@@ -318,6 +335,12 @@ nav#lnb {
     #introduction #introduction-header .container {
       width: 90%;
       margin: auto; }
+      #introduction #introduction-header .container h2 {
+        font-size: 1.5rem; }
+      #introduction #introduction-header .container h3 {
+        font-size: 1.2rem; }
+      #introduction #introduction-header .container p {
+        font-size: 0.8rem !important; }
   #introduction #introduction-subheader .container #subheader-box {
     width: 85%;
     left: 7.5%;
@@ -343,19 +366,40 @@ nav#lnb {
         height: 100px; }
   #certification #certification-header .container {
     max-width: 85vw; }
+    #certification #certification-header .container h3 {
+      font-size: 1.2rem; }
   #certification #certification-content .container .certificate {
     display: block;
     width: 60%;
     padding: 0;
     margin: 0 auto 50px auto; }
     #certification #certification-content .container .certificate .certificate-content p {
-      font-size: 1rem; } }
+      font-size: 0.8rem; }
+  #values #values-header .container h3 {
+    font-size: 1.2rem; }
+  #values #values-content .value-alpha .container .value-content p.title {
+    font-size: 0.8rem; }
+  #values #values-content .value-alpha .container .value-content p.description {
+    font-size: 0.8rem; }
+  #values #values-content .value-beta .container .value-content p.title {
+    font-size: 0.8rem; }
+  #values #values-content .value-beta .container .value-content p.description {
+    font-size: 0.8rem; }
+  #stacks #stacks-header .container h3 {
+    font-size: 1.2rem; }
+  #stacks #stacks-content .container .stack .stack-content p.title {
+    font-size: 0.8rem;
+    letter-spacing: 0; }
+  #stacks #stacks-content .container .stack .stack-content p.subtitle {
+    font-size: 0.8rem; } }
 
 #areas {
   padding: 100px 0 144px 0;
   background-color: #F8F8F8; }
   #areas #areas-header {
     margin-bottom: 80px; }
+    #areas #areas-header .container h3 {
+      font-size: 1.75rem; }
   #areas #areas-content .container .area-alpha {
     margin: 80px 0;
     background-color: white;
@@ -381,20 +425,22 @@ nav#lnb {
       top: 30px; }
       #areas #areas-content .container .area-alpha .area-content p.supertitle {
         font-weight: bold;
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-bottom: 0; }
       #areas #areas-content .container .area-alpha .area-content p.title {
         color: #3CDBED;
-        font-size: 2rem;
+        font-size: 1.75rem;
         font-weight: bolder;
         letter-spacing: 3px;
         margin-bottom: 10px; }
       #areas #areas-content .container .area-alpha .area-content p.subtitle {
         font-weight: bold;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        font-size: 1.2rem; }
       #areas #areas-content .container .area-alpha .area-content p.content {
         font-weight: lighter;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        font-size: 1rem; }
       #areas #areas-content .container .area-alpha .area-content a.more-button {
         color: white;
         font-weight: bolder;
@@ -418,20 +464,22 @@ nav#lnb {
       top: 30px; }
       #areas #areas-content .container .area-beta .area-content p.supertitle {
         font-weight: bold;
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-bottom: 0; }
       #areas #areas-content .container .area-beta .area-content p.title {
         color: #3CDBED;
-        font-size: 2rem;
+        font-size: 1.75rem;
         font-weight: bolder;
         letter-spacing: 3px;
         margin-bottom: 10px; }
       #areas #areas-content .container .area-beta .area-content p.subtitle {
         font-weight: bold;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        font-size: 1.2rem; }
       #areas #areas-content .container .area-beta .area-content p.content {
         font-weight: lighter;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        font-size: 1rem; }
       #areas #areas-content .container .area-beta .area-content a.more-button {
         color: white;
         font-weight: bolder;
@@ -516,6 +564,10 @@ nav#lnb {
         font-size: .75rem; }
       #areas #areas-content .container .area-beta .area-content a.more-button {
         font-size: .875rem; } }
+
+@media only screen and (max-width: 575px) {
+  #areas #areas-header .container h3 {
+    font-size: 1.2rem; } }
 
 .info-window {
   padding: 5px 10px;
@@ -819,6 +871,8 @@ nav#lnb {
   padding: 100px 0 165px 0; }
   #map-section #map-header {
     margin-bottom: 80px; }
+    #map-section #map-header .container h3 {
+      font-size: 1.75rem; }
   #map-section #map-content {
     margin-bottom: 30px; }
     #map-section #map-content .container #map {
@@ -845,7 +899,10 @@ nav#lnb {
         vertical-align: middle; }
         #map-section #map-detail .container #map-detail-address #map-detail-address-content p.title {
           font-weight: bolder;
-          margin-bottom: 3px; }
+          margin-bottom: 3px;
+          font-size: 1rem; }
+        #map-section #map-detail .container #map-detail-address #map-detail-address-content p.description {
+          font-size: 1rem; }
     #map-section #map-detail .container #map-detail-contact {
       width: 50%;
       height: 162px;
@@ -869,7 +926,10 @@ nav#lnb {
         vertical-align: middle; }
         #map-section #map-detail .container #map-detail-contact #map-detail-contact-content p.title {
           font-weight: bolder;
-          margin-bottom: 3px; }
+          margin-bottom: 3px;
+          font-size: 1rem; }
+        #map-section #map-detail .container #map-detail-contact #map-detail-contact-content p.description {
+          font-size: 1rem; }
   #map-section #map-subway {
     padding: 30px 0; }
     #map-section #map-subway .container #map-subway-image {
@@ -889,9 +949,11 @@ nav#lnb {
       #map-section #map-subway .container #map-subway-content p.title {
         color: #3CDBED;
         font-weight: bold;
-        margin-bottom: 3px; }
+        margin-bottom: 3px;
+        font-size: 1rem; }
       #map-section #map-subway .container #map-subway-content p.content {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        font-size: 1rem; }
   #map-section #map-bus .container #map-bus-image {
     display: inline-block;
     vertical-align: top;
@@ -909,13 +971,16 @@ nav#lnb {
     #map-section #map-bus .container #map-bus-content > p.title {
       color: #3CDBED;
       font-weight: bold;
-      margin-bottom: 3px; }
+      margin-bottom: 3px;
+      font-size: 1rem; }
     #map-section #map-bus .container #map-bus-content .map-bus-content p.title {
-      margin-bottom: -3px; }
+      margin-bottom: -3px;
+      font-size: 1rem; }
     #map-section #map-bus .container #map-bus-content .map-bus-content .map-bus-content-bus p.content {
       display: inline-block;
       vertical-align: middle;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-size: 1rem; }
       #map-section #map-bus .container #map-bus-content .map-bus-content .map-bus-content-bus p.content span.blue {
         color: #386de8; }
       #map-section #map-bus .container #map-bus-content .map-bus-content .map-bus-content-bus p.content span.green {
@@ -950,6 +1015,19 @@ nav#lnb {
     display: block; } }
 
 @media only screen and (max-width: 575px) {
+  #map-section #map-header .container h3 {
+    font-size: 1.2rem; }
+  #map-section #map-detail .container #map-detail-address #map-detail-address-content p.title {
+    font-size: 0.8rem; }
+  #map-section #map-detail .container #map-detail-address #map-detail-address-content p.description {
+    font-size: 0.8rem;
+    margin-bottom: 0; }
+  #map-section #map-detail .container #map-detail-contact #map-detail-contact-content p.title {
+    font-size: 0.8rem; }
+  #map-section #map-detail .container #map-detail-contact #map-detail-contact-content p.description {
+    font-size: 0.8rem;
+    width: 80%;
+    margin-bottom: 0; }
   #map-section #map-subway {
     padding: 30px 30px 15px 30px; }
     #map-section #map-subway .container {
@@ -960,7 +1038,7 @@ nav#lnb {
           width: 80px;
           height: 80px; }
       #map-section #map-subway .container #map-subway-content {
-        max-width: calc(100% - 90px); }
+        max-width: calc(100% - 110px); }
         #map-section #map-subway .container #map-subway-content p.title {
           font-size: .8rem; }
         #map-section #map-subway .container #map-subway-content p.content {
@@ -975,7 +1053,7 @@ nav#lnb {
           width: 80px;
           height: 80px; }
       #map-section #map-bus .container #map-bus-content {
-        max-width: calc(100% - 90px); }
+        max-width: calc(100% - 110px); }
         #map-section #map-bus .container #map-bus-content > p.title {
           font-size: .8rem; }
         #map-section #map-bus .container #map-bus-content .map-bus-content p.title {
@@ -1368,7 +1446,9 @@ nav#lnb {
       font-weight: bold;
       font-size: 1.2rem; }
   #chronicle .container #chronicle-header {
-    padding-left: 25.5px; } }
+    padding-left: 25.5px; }
+    #chronicle .container #chronicle-header h3 {
+      font-size: 1.2rem; } }
 
 @media only screen and (max-width: 575px) {
   #chronicle .container #chronicle-header {
@@ -1405,6 +1485,11 @@ nav#lnb {
       color: white;
       font-size: 1.5rem; }
 
+#portfolios.annexed #portfolios-header {
+  text-align: left; }
+  #portfolios.annexed #portfolios-header .container h3 {
+    font-weight: normal; }
+
 #portfolios.annexed #portfolios-items .container .row > div {
   display: flex;
   justify-content: center;
@@ -1431,10 +1516,17 @@ nav#lnb {
 @media only screen and (max-width: 575px) {
   #portfolios.annexed {
     padding: 50px 0; }
-    #portfolios.annexed #portfolios-header h3 {
-      text-align: center !important; }
+    #portfolios.annexed #portfolios-header .container span.superbar {
+      display: none; }
+    #portfolios.annexed #portfolios-header .container h3 {
+      text-align: center !important;
+      font-size: 1.2rem; }
     #portfolios.annexed #portfolios-items .container .row > div .portfolio {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+      #portfolios.annexed #portfolios-items .container .row > div .portfolio p.subtitle {
+        font-size: 0.8rem; }
+      #portfolios.annexed #portfolios-items .container .row > div .portfolio p.subdescription {
+        font-size: 0.8rem; } }
 
 /* 레이아웃 */
 #container-contact {
@@ -1467,12 +1559,12 @@ nav#lnb {
     padding: 185px 0 210px;
     text-align: center; }
   #container-contact .title h2 {
-    font-size: 72px;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase; }
   #container-contact .title p {
     margin-top: 30px;
-    font-size: 30px; }
+    font-size: 1.8rem; }
   #container-contact #main #banner {
     height: auto;
     margin-top: 50px; }
@@ -1481,7 +1573,7 @@ nav#lnb {
   #container-contact .banner > p {
     color: white;
     padding-top: 80px;
-    font-size: 28px; }
+    font-size: 1.5rem; }
   #container-contact .banner .help {
     padding: 140px 0 230px; }
   #container-contact .help ul li {
@@ -1507,12 +1599,12 @@ nav#lnb {
     display: block; }
   #container-contact .help span.tit {
     margin-top: 35px;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: white; }
   #container-contact .help span.desc {
     margin-top: 20px;
-    font-size: 32px;
+    font-size: 1.2rem;
     color: white; }
   @media (max-width: 1199px) {
     #container-contact .inner {
@@ -1667,14 +1759,14 @@ nav#lnb {
     text-align: center;
     color: #fff; }
   #container-it .banner_textBox .banner_title {
-    font-size: 54px;
+    font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
     color: white; }
   #container-it .banner_textBox .banner_text {
     margin-top: 50px;
-    font-size: 24px;
-    letter-spacing: -0.25px;
+    font-size: 1.8rem;
+    letter-spacing: -1.25px;
     color: white; }
   #container-it .service_btn ul {
     text-align: center; }
@@ -1712,14 +1804,14 @@ nav#lnb {
     float: left;
     width: 23%;
     margin-right: 0%;
-    font-size: 32px;
+    font-size: 1.75rem;
     font-weight: 700;
     text-align: left; }
   #container-it .it_title p {
     float: left;
     width: 77%;
     padding-top: 4px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: left;
     margin: 0; }
   #container-it .consulting {
@@ -1773,6 +1865,8 @@ nav#lnb {
   #container-it .it_text {
     padding-top: 40px;
     font-size: 20px; }
+  #container-it .it_text p {
+    font-size: 1.2rem; }
   #container-it #footer {
     background-color: #111; }
   #container-it #footer .container {
@@ -2039,14 +2133,14 @@ nav#lnb {
     text-align: center;
     color: #fff; }
   #container-location .banner_textBox .banner_title {
-    font-size: 54px;
+    font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
     color: white; }
   #container-location .banner_textBox .banner_text {
     margin-top: 50px;
-    font-size: 24px;
-    letter-spacing: -0.25px;
+    font-size: 1.8rem;
+    letter-spacing: -1.25px;
     color: white; }
   #container-location .service_btn ul {
     text-align: center; }
@@ -2084,7 +2178,7 @@ nav#lnb {
     float: left;
     width: 23%;
     margin-right: 0%;
-    font-size: 32px;
+    font-size: 1.75rem;
     font-weight: 700;
     text-align: left; }
   #container-location .lc_title p {
@@ -2093,7 +2187,7 @@ nav#lnb {
     padding-top: 5px;
     text-align: left;
     margin: 0;
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   #container-location .desc_box {
     padding: 5% 10%;
     box-sizing: border-box;
@@ -2104,7 +2198,7 @@ nav#lnb {
     background-position: center center;
     background-size: cover; }
   #container-location .desc_box p {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 700;
     color: white; }
   #container-location .desc_box p.m_text {
@@ -2388,14 +2482,14 @@ nav#lnb {
     text-align: center;
     color: #fff; }
   #container-webapp .banner_textBox .banner_title {
-    font-size: 54px;
+    font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
     color: white; }
   #container-webapp .banner_textBox .banner_text {
     margin-top: 50px;
-    font-size: 24px;
-    letter-spacing: -0.25px;
+    font-size: 1.8rem;
+    letter-spacing: -1.25px;
     color: white; }
   #container-webapp .service_btn ul {
     overflow: hidden;
@@ -2435,7 +2529,7 @@ nav#lnb {
     float: left;
     width: 23%;
     margin-right: 0%;
-    font-size: 32px;
+    font-size: 1.75rem;
     font-weight: 700;
     margin-bottom: 0; }
   #container-webapp .web_app_title p {
@@ -2444,7 +2538,7 @@ nav#lnb {
     width: 77%;
     padding-top: 12px;
     margin: 0;
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   #container-webapp .web_app_box {
     position: relative;
     width: 100%;
@@ -2460,7 +2554,8 @@ nav#lnb {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); }
   #container-webapp .web_app_bg figure img {
-    display: block; }
+    display: block;
+    width: 100%; }
   #container-webapp .web_app_bg figure img.m_bg {
     display: none; }
   #container-webapp .web_app_bg .web_app_text {
@@ -2543,7 +2638,7 @@ nav#lnb {
     width: 90%;
     margin: 0 auto;
     line-height: 48px;
-    font-size: 20px; }
+    font-size: 1.2rem; }
   #container-webapp .service_scope .scope {
     padding: 78px 0 80px; }
   #container-webapp .service_scope .scope .sub_title {
@@ -2551,7 +2646,7 @@ nav#lnb {
     margin-bottom: 50px; }
   #container-webapp .service_scope .scope .sub_title h3 {
     position: relative;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500; }
   #container-webapp .service_scope .scope .sub_title h3:after {
     content: '';
@@ -2617,7 +2712,7 @@ nav#lnb {
     margin-bottom: 50px; }
   #container-webapp .process .sub_title h3 {
     position: relative;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500; }
   #container-webapp .process .sub_title h3:after {
     content: '';
@@ -3068,8 +3163,8 @@ nav#lnb {
     color: white; }
   #container-ai .banner_textBox .banner_text {
     margin-top: 50px;
-    font-size: 1.5rem;
-    letter-spacing: -0.25px;
+    font-size: 1.8rem;
+    letter-spacing: -2.5px;
     color: white; }
   #container-ai .solution_btn ul {
     overflow: hidden;
@@ -3127,7 +3222,7 @@ nav#lnb {
     height: 120px; }
   #container-ai .solution_title h2 {
     color: #333;
-    font-size: 32px;
+    font-size: 1.75rem;
     font-weight: 700;
     text-align: left;
     margin-bottom: 0; }
@@ -3138,7 +3233,7 @@ nav#lnb {
     margin-bottom: 50px; }
   #container-ai .system .sub_title h3 {
     position: relative;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500; }
   #container-ai .system h3:after {
     content: '';
@@ -3163,7 +3258,7 @@ nav#lnb {
     margin-bottom: 50px; }
   #container-ai .use .sub_title h3 {
     position: relative;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500; }
   #container-ai .use h3:after {
     content: '';
@@ -3440,8 +3535,27 @@ nav#lnb {
   /* main - 특징 */
   /* footer */
   /* 미디어쿼리 */ }
+  #container-mindway section#smart {
+    background-color: #F8F8F8;
+    padding: 30px 0; }
+  #container-mindway .smart {
+    background-color: white; }
   #container-mindway #specification .inner .inner_row .specification ul {
-    margin-bottom: 0; }
+    list-style: none;
+    counter-reset: specification-counter; }
+    #container-mindway #specification .inner .inner_row .specification ul li {
+      position: relative;
+      counter-increment: specification-counter; }
+      #container-mindway #specification .inner .inner_row .specification ul li:before {
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        z-index: -1;
+        content: "0" counter(specification-counter);
+        font-size: 3rem;
+        font-weight: bolder;
+        font-style: italic;
+        color: gainsboro; }
   #container-mindway #header {
     position: fixed;
     left: 0;
@@ -3529,7 +3643,8 @@ nav#lnb {
     color: white; }
   #container-mindway .banner_textBox .banner_text {
     margin-top: 50px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    letter-spacing: -3.5px;
     color: white; }
   #container-mindway .solution_btn ul {
     overflow: hidden;
@@ -3584,8 +3699,12 @@ nav#lnb {
   #container-mindway .solution_title {
     height: 120px; }
   #container-mindway .solution_title h2 {
-    font-size: 32px;
+    font-size: 1.75rem;
     font-weight: 700; }
+  #container-mindway .smart_left .swiper-container .swiper-wrapper .swiper-slide p.no {
+    color: #EBEBEB;
+    font-weight: bolder;
+    font-size: 2rem; }
   #container-mindway .smart {
     position: relative;
     padding: 30px 0;
@@ -3599,8 +3718,9 @@ nav#lnb {
   #container-mindway .smart .smart_left h3 {
     font-size: 28px;
     font-weight: 700;
-    margin: 115px 0 55px; }
-  #container-mindway .smart .smart_left p {
+    margin: 115px 0 55px;
+    margin-top: 55px; }
+  #container-mindway .smart .smart_left p:not(.no) {
     padding-left: 40px;
     margin-bottom: 25px;
     background: url(./img/check.png) no-repeat;
@@ -3620,10 +3740,6 @@ nav#lnb {
     background: url(./img/mindway_slider002.jpg) no-repeat;
     background-position: center center;
     background-size: cover; }
-  #container-mindway .smart .smart_right .ss3 {
-    background: url(./img/mindway_slider003.jpg) no-repeat;
-    background-position: center center;
-    background-size: cover; }
   #container-mindway .indicator {
     left: 40px;
     bottom: 70px; }
@@ -3641,7 +3757,7 @@ nav#lnb {
   #container-mindway .specification .sub_title h3 {
     position: relative;
     color: #333;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500; }
   #container-mindway .specification h3:after {
     content: '';
@@ -3765,6 +3881,12 @@ nav#lnb {
       width: 100%;
       height: 49px; } }
   @media (max-width: 767px) {
+    #container-mindway .smart {
+      padding-bottom: 0; }
+    #container-mindway #specification .inner .inner_row .specification ul li:before {
+      font-size: 1.875rem;
+      top: -20px;
+      left: -25px; }
     #container-mindway #header {
       height: 60px; }
     #container-mindway nav#gnb {
@@ -3832,6 +3954,8 @@ nav#lnb {
     #container-mindway #footer .container #footer-sitemap {
       display: none; } }
   @media (max-width: 575px) {
+    #container-mindway .narrow {
+      letter-spacing: -1px; }
     #container-mindway #main #banner {
       height: 240px; }
     #container-mindway .banner_textBox {
@@ -3871,15 +3995,14 @@ nav#lnb {
       margin: 0 auto;
       font-size: 12px;
       font-weight: 400; }
-    #container-mindway .smart {
-      padding: 0 0 20px 0; }
     #container-mindway .smart .smart_left {
-      padding-left: 15px; }
+      padding-left: 30px; }
     #container-mindway .smart .smart_left h3 {
       margin: 75px 0 15px;
+      margin-top: 15px;
       font-size: 20px;
       font-weight: 500; }
-    #container-mindway .smart .smart_left p {
+    #container-mindway .smart .smart_left p:not(.no) {
       padding-left: 20px;
       margin-bottom: 15px;
       font-size: 13px;
@@ -3889,7 +4012,7 @@ nav#lnb {
       height: 400px;
       padding-top: 85px; }
     #container-mindway .indicator {
-      top: 36%; }
+      top: 45%; }
     #container-mindway .specification {
       padding: 40px 0; }
     #container-mindway .specification .sub_title {
@@ -4032,10 +4155,11 @@ nav#gnb {
     margin-bottom: 60px; }
     #sectors #sectors-header h3 {
       font-weight: bolder;
+      font-size: 1.75rem;
       margin-bottom: 30px; }
     #sectors #sectors-header p {
       line-height: 150%;
-      font-size: 1.2rem; }
+      font-size: 1.5rem; }
   #sectors #sectors-content .container .sector:nth-of-type(2n+1) {
     display: flex;
     flex-direction: row-reverse;
@@ -4054,9 +4178,11 @@ nav#gnb {
       #sectors #sectors-content .container .sector:nth-of-type(2n+1) .sector-content .sector-content-icon {
         margin-bottom: 30px; }
       #sectors #sectors-content .container .sector:nth-of-type(2n+1) .sector-content h4 {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        font-size: 1.5rem; }
       #sectors #sectors-content .container .sector:nth-of-type(2n+1) .sector-content p {
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        font-size: 1rem; }
       #sectors #sectors-content .container .sector:nth-of-type(2n+1) .sector-content a {
         display: inline-block;
         padding: 10px 40px;
@@ -4084,9 +4210,11 @@ nav#gnb {
       #sectors #sectors-content .container .sector:nth-of-type(2n) .sector-content .sector-content-icon {
         margin-bottom: 30px; }
       #sectors #sectors-content .container .sector:nth-of-type(2n) .sector-content h4 {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        font-size: 1.5rem; }
       #sectors #sectors-content .container .sector:nth-of-type(2n) .sector-content p {
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        font-size: 1rem; }
       #sectors #sectors-content .container .sector:nth-of-type(2n) .sector-content a {
         display: inline-block;
         padding: 10px 40px;
@@ -4108,7 +4236,8 @@ nav#gnb {
     #technologies #technologies-header h3 {
       color: white;
       font-weight: bolder;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      font-size: 1.75rem; }
   #technologies #technologies-content .container {
     position: relative; }
     #technologies #technologies-content .container ul {
@@ -4168,10 +4297,11 @@ nav#gnb {
     margin-bottom: 30px;
     text-align: center; }
     #portfolios #portfolios-header h3 {
-      font-weight: bolder;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      font-size: 1.75rem; }
     #portfolios #portfolios-header h4 {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      font-size: 1.5rem; }
   #portfolios #portfolios-filters {
     padding: 10px 0; }
     #portfolios #portfolios-filters ul {
@@ -4248,7 +4378,8 @@ nav#gnb {
     text-align: center;
     margin-bottom: 50px; }
     #clients #clients-header h3 {
-      font-weight: bolder; }
+      font-weight: bolder;
+      font-size: 1.75rem; }
   #clients #clients-list ul {
     text-align: center;
     white-space: nowrap;
@@ -4299,10 +4430,11 @@ nav#gnb {
         font-weight: bolder;
         margin-bottom: 30px;
         color: #333;
-        font-size: 1.5rem; }
+        font-size: 1.75rem; }
       #contact #contact-container #contact-header p {
         font-size: 1rem;
-        color: #333; }
+        color: #333;
+        font-size: 1.5rem; }
     #contact #contact-container #contact-content {
       text-align: center; }
       #contact #contact-container #contact-content #contact-email {
@@ -4601,11 +4733,31 @@ nav#gnb {
     display: none; } }
 
 @media screen and (max-width: 575px) {
+  #sectors #sectors-header h3 {
+    font-size: 1.5rem; }
+  #sectors #sectors-header p {
+    font-size: 0.8rem; }
+  #sectors #sectors-content .container .sector .sector-content h4 {
+    font-size: 1rem !important; }
+  #sectors #sectors-content .container .sector .sector-content p {
+    font-size: 0.8rem !important; }
+  #sectors #sectors-content .container .sector .sector-content a {
+    font-size: 0.8rem !important; }
+  .carousel-content h2 {
+    font-size: 1.2rem; }
   .carousel-content .carousel-buttons a {
     font-size: .9rem;
     font-weight: normal; }
   #portfolios {
     padding-top: 0; }
+    #portfolios #portfolios-header h3 {
+      font-size: 1.5rem; }
+    #portfolios #portfolios-header h4 {
+      font-size: 0.8rem; }
+    #portfolios #portfolios-filters ul li a {
+      font-size: 0.8rem; }
+    #portfolios #portfolios-items .container .see-more {
+      font-size: 0.8rem; }
     #portfolios #portfolios-items .container .row > div {
       padding-top: 0;
       padding-bottom: 0; }
@@ -4614,20 +4766,36 @@ nav#gnb {
         #portfolios #portfolios-items .container .row > div .portfolio .hovered {
           height: 85%; }
         #portfolios #portfolios-items .container .row > div .portfolio p.subtitle {
-          font-size: 1.5rem; }
+          font-size: 1rem; }
         #portfolios #portfolios-items .container .row > div .portfolio img {
           width: 275px;
           height: 275px; }
+  #clients-slider #clients-slider-header h3 {
+    font-size: 1.5rem; }
   #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item {
     height: 200px; }
     #clients-slider #clients-slider-carousel .container .carousel .carousel-inner .carousel-item img {
       height: 36px;
       width: auto;
       top: 35%; }
+  #technologies-slider #technologies-slider-header h3 {
+    font-size: 1.5rem; }
   #technologies-slider .container .carousel .carousel-inner .carousel-item img {
     width: auto;
     height: 100px;
-    top: 25%; } }
+    top: 25%; }
+  #contact #contact-container #contact-header h3 {
+    font-size: 1.5rem; }
+  #contact #contact-container #contact-header p {
+    font-size: 0.8rem; }
+  #contact #contact-container #contact-content #contact-email p {
+    font-size: 0.8rem; }
+  #contact #contact-container #contact-content #contact-email a {
+    font-size: 0.8rem; }
+  #contact #contact-container #contact-content #contact-phone #contact-phone-title {
+    font-size: 0.8rem !important; }
+  #contact #contact-container #contact-content #contact-phone #contact-phone-number {
+    font-size: 0.8rem !important; } }
 
 /**
  * Swiper 4.5.0

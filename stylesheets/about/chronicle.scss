@@ -4,7 +4,7 @@
     #chronicle-header {
       padding: 100px 0 80px 0;
       h3 {
-        font-size: 1.75rem;
+        font-size: $title;
       }
     }
     .cd-read-more {
@@ -509,6 +509,9 @@
       .container {
         #chronicle-header {
           padding-left: 25.5px;
+          h3 {
+            font-size: $subtitle;
+          }
         }
       }
     }

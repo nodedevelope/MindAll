@@ -81,15 +81,15 @@
         color: #fff;
     }
     .banner_textBox .banner_title{
-        font-size: 54px;
+        font-size: 3rem;
         font-weight: 900;
         text-transform: uppercase;
         color: white;
     }
     .banner_textBox .banner_text{
         margin-top: 50px;
-        font-size: 24px;
-        letter-spacing: -0.25px;
+        font-size: 1.8rem;
+        letter-spacing: -1.25px;
         color: white;
     }
     
@@ -138,7 +138,7 @@
         float: left;
         width: 23%;
         margin-right: 0%;
-        font-size: 32px;
+        font-size: $title;
         font-weight: 700;
         text-align: left;
     }
@@ -146,7 +146,7 @@
         float: left;
         width: 77%;
         padding-top: 4px;
-        font-size: 1rem;
+        font-size: $subtitle;
         text-align: left;
         margin: 0;
     }
@@ -212,6 +212,9 @@
     .it_text{
         padding-top: 40px;
         font-size: 20px;
+    }
+    .it_text p {
+        font-size: $subtitle;
     }
     
     /* footer */
