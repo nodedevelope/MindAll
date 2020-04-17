@@ -37,7 +37,7 @@
                 & > div {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: flex-start;
                     .portfolio {
                         position: static;
                         height: auto;

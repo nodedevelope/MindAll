@@ -139,15 +139,15 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 40px;
-        height: 40px;
+        width: 28px;
+        height: 28px;
         border-radius: 50%;
         box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
       }
       .cd-timeline-img img {
         display: block;
-        width: 32px;
-        height: 32px;
+        width: 25px;
+        height: 25px;
         position: relative;
         left: 50%;
         top: 50%;
@@ -164,10 +164,10 @@
       }
       @media only screen and (min-width: 1170px) {
         .cd-timeline-img {
-          width: 40px;
-          height: 40px;
+          width: 28px;
+          height: 28px;
           left: 50%;
-          margin-left: -20px;
+          margin-left: -13px;
           /* Force Hardware Acceleration in WebKit */
           -webkit-transform: translateZ(0);
           -webkit-backface-visibility: hidden;
@@ -529,6 +529,9 @@
 
 @media only screen and (max-width: 1169px) {
   #chronicle {
+    .cd-timeline-img.cd-picture {
+      left: 7px;
+    }
     .cd-timeline-content {
       position: relative;
       padding-top: 80px;

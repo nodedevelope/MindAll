@@ -244,7 +244,7 @@ $(document).ready(function() {
         var title = $("<p class='portfolio-title'>" + item.title + "</p>");
         var description = $("<p class='portfolio-description'>" + item.description + "</p>");
         var hoverPanel = $("<div class='hovered'></div>").append(title).append(description);
-        var img = $("<img src='images/portfolios/" + item.image + ".jpg' alt='" + item.title + "'/>");
+        var img = $("<div class='" + item.image + "' alt='" + item.title + "'/>");
         var subtitle = $("<p class='subtitle'>" + item.title + "</p>");
         var item;
         if(isAnnexed) {

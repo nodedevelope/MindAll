@@ -1163,14 +1163,14 @@ nav#lnb {
     position: absolute;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
   #chronicle .cd-timeline-img img {
     display: block;
-    width: 32px;
-    height: 32px;
+    width: 25px;
+    height: 25px;
     position: relative;
     left: 50%;
     top: 50%;
@@ -1183,10 +1183,10 @@ nav#lnb {
     background: #f0ca45; }
   @media only screen and (min-width: 1170px) {
     #chronicle .cd-timeline-img {
-      width: 40px;
-      height: 40px;
+      width: 28px;
+      height: 28px;
       left: 50%;
-      margin-left: -20px;
+      margin-left: -13px;
       /* Force Hardware Acceleration in WebKit */
       -webkit-transform: translateZ(0);
       -webkit-backface-visibility: hidden; }
@@ -1455,6 +1455,8 @@ nav#lnb {
     padding-left: 4vw; } }
 
 @media only screen and (max-width: 1169px) {
+  #chronicle .cd-timeline-img.cd-picture {
+    left: 7px; }
   #chronicle .cd-timeline-content {
     position: relative;
     padding-top: 80px; }
@@ -1493,7 +1495,7 @@ nav#lnb {
 #portfolios.annexed #portfolios-items .container .row > div {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: flex-start; }
   #portfolios.annexed #portfolios-items .container .row > div .portfolio {
     position: static;
     height: auto;
@@ -2677,23 +2679,23 @@ nav#lnb {
     color: #fff;
     transform: translate(-50%, -50%); }
   #container-webapp .service_scope .scope ul li:nth-child(1) {
-    background: url(./img/serviceScope001.png) no-repeat;
+    background: url(./img/serviceScope.png) no-repeat;
     background-position: center center;
     background-size: cover; }
   #container-webapp .service_scope .scope ul li:nth-child(2) {
-    background: url(./img/serviceScope002.png) no-repeat;
+    background: url(./img/serviceScope.png) no-repeat;
     background-position: center center;
     background-size: cover; }
   #container-webapp .service_scope .scope ul li:nth-child(3) {
-    background: url(./img/serviceScope003.png) no-repeat;
+    background: url(./img/serviceScope.png) no-repeat;
     background-position: center center;
     background-size: cover; }
   #container-webapp .service_scope .scope ul li:nth-child(4) {
-    background: url(./img/serviceScope004.png) no-repeat;
+    background: url(./img/serviceScope.png) no-repeat;
     background-position: center center;
     background-size: cover; }
   #container-webapp .service_scope .scope ul li:nth-child(5) {
-    background: url(./img/serviceScope005.png) no-repeat;
+    background: url(./img/serviceScope.png) no-repeat;
     background-position: center center;
     background-size: cover; }
   #container-webapp .service_scope .scope ul li:before {
@@ -4338,23 +4340,24 @@ nav#gnb {
   #portfolios #portfolios-items .container .row {
     margin-bottom: 30px; }
     #portfolios #portfolios-items .container .row > div {
-      padding: 30px; }
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       #portfolios #portfolios-items .container .row > div .portfolio {
         position: relative;
         width: 320px;
-        height: 320px; }
-        #portfolios #portfolios-items .container .row > div .portfolio img {
-          width: 320px;
-          height: 320px;
-          position: absolute;
-          width: 100%;
-          height: auto; }
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
         #portfolios #portfolios-items .container .row > div .portfolio > p.subtitle {
           font-size: 1.2rem;
-          position: absolute;
           width: 100%;
           text-align: center;
-          bottom: -50px; }
+          bottom: -50px;
+          margin-bottom: 0; }
         #portfolios #portfolios-items .container .row > div .portfolio .hovered {
           padding: 20px;
           opacity: 0;
@@ -4526,12 +4529,6 @@ nav#gnb {
     height: 850px; }
   #sectors #sectors-content .container .sector:not(:last-of-type) {
     margin-bottom: 10px !important; }
-  #portfolios #portfolios-items .container .row > div .portfolio img {
-    left: 50px; }
-  #portfolios #portfolios-items .container .row > div .portfolio .hovered {
-    left: 50px; }
-  #portfolios #portfolios-items .container .row > div .portfolio p.subtitle {
-    left: 50px; }
   #clients #clients-list ul li:not(:last-child) {
     margin-right: 15px; }
   .carousel-content {
@@ -4653,14 +4650,10 @@ nav#gnb {
     #portfolios #portfolios-items .container .row > div .portfolio p.subtitle {
       font-size: 2rem;
       left: 0;
-      position: static;
-      bottom: 0; }
+      position: relative;
+      bottom: 30px; }
     #portfolios #portfolios-items .container .row > div .portfolio .hovered {
-      position: absolute;
-      width: 100%;
-      height: 660px;
-      left: 0;
-      top: 0; }
+      display: none; }
   #clients {
     display: none; }
   #clients-slider {
@@ -4770,7 +4763,8 @@ nav#gnb {
         #portfolios #portfolios-items .container .row > div .portfolio .hovered {
           height: 85%; }
         #portfolios #portfolios-items .container .row > div .portfolio p.subtitle {
-          font-size: 1rem; }
+          font-size: 1rem;
+          font-weight: bold; }
         #portfolios #portfolios-items .container .row > div .portfolio img {
           width: 275px;
           height: 275px; }
@@ -5021,3 +5015,87 @@ button.swiper-pagination-bullet {
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 4px; }
+
+.ajugps, .ajusavings, .arms, .bis, .exofresh,
+.justice, .mindtrip, .mobileseoul, .news, .pulmuone,
+.seonghwalogistics, .seoulfutureheritage, .seoulmuseums, .seoulpublictransportation, .yuhankimberly {
+  display: inline-block;
+  background: url("./images/portfolios/portfolios.jpg") no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left; }
+
+.ajugps {
+  background-position: -0px -0px;
+  width: 320px;
+  height: 320px; }
+
+.ajusavings {
+  background-position: -320px -0px;
+  width: 320px;
+  height: 320px; }
+
+.arms {
+  background-position: -640px -0px;
+  width: 320px;
+  height: 320px; }
+
+.bis {
+  background-position: -0px -320px;
+  width: 320px;
+  height: 320px; }
+
+.exofresh {
+  background-position: -320px -320px;
+  width: 320px;
+  height: 320px; }
+
+.justice {
+  background-position: -640px -320px;
+  width: 320px;
+  height: 320px; }
+
+.mindtrip {
+  background-position: -0px -640px;
+  width: 320px;
+  height: 320px; }
+
+.mobileseoul {
+  background-position: -320px -640px;
+  width: 320px;
+  height: 320px; }
+
+.news {
+  background-position: -640px -640px;
+  width: 320px;
+  height: 320px; }
+
+.pulmuone {
+  background-position: -0px -960px;
+  width: 320px;
+  height: 320px; }
+
+.seonghwalogistics {
+  background-position: -320px -960px;
+  width: 320px;
+  height: 320px; }
+
+.seoulfutureheritage {
+  background-position: -640px -960px;
+  width: 320px;
+  height: 320px; }
+
+.seoulmuseums {
+  background-position: -0px -1280px;
+  width: 320px;
+  height: 320px; }
+
+.seoulpublictransportation {
+  background-position: -320px -1280px;
+  width: 320px;
+  height: 320px; }
+
+.yuhankimberly {
+  background-position: -640px -1280px;
+  width: 320px;
+  height: 320px; }
