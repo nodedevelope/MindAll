@@ -122,7 +122,7 @@ $(document).ready(function() {
     // Portfolio filters
     $("#portfolios-filters > ul > li").click(function(event) {
         event.preventDefault();
-        var moreButton = $("<a class='see-more' href='" + null + "'>더 보기</a>").css({
+        var moreButton = $("<a class='see-more' href='views/portfolio/portfolio.html'>더 보기</a>").css({
             color: "inherit",
             display: "block",
             width: "200px",
@@ -298,7 +298,6 @@ $(document).ready(function() {
 
     // LNB (Local Navigation Bar)
     $("#lnb > .container > ul > li > a").click(function(event) {
-        event.preventDefault();
         $("#lnb > .container > ul > li").removeClass("active");
         $(this).parent().addClass("active");
         var category = $(this).text();
