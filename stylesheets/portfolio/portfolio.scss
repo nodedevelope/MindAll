@@ -23,6 +23,7 @@
 
 // Portfolios (annexed)
 #portfolios.annexed {
+    padding-bottom: 165px;
     #portfolios-header {
         text-align: left;
         .container {
@@ -51,6 +52,7 @@
                         p.subtitle {
                             position: static;
                             bottom: auto;
+                            margin-top: -32px;
                         }
                         p.subdescription {
                             position: static;

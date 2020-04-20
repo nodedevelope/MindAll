@@ -189,7 +189,7 @@ nav#lnb {
     #stacks #stacks-content .container .stack {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       width: 33.33%;
       padding: 30px; }
@@ -223,7 +223,7 @@ nav#lnb {
 
 #certification {
   background-color: #F8F8F8;
-  padding: 100px 0 50px 0; }
+  padding: 100px 0 165px 0; }
   #certification #certification-header .container {
     margin-bottom: 30px; }
     #certification #certification-header .container h3 {
@@ -250,7 +250,7 @@ nav#lnb {
   #stacks #stacks-content .container .stack {
     width: 50%;
     position: relative;
-    height: 550px; }
+    height: 350px; }
     #stacks #stacks-content .container .stack .stack-image {
       margin-bottom: 0;
       position: absolute;
@@ -263,7 +263,7 @@ nav#lnb {
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
-      top: 410px; } }
+      top: 260px; } }
 
 @media only screen and (max-width: 991px) {
   nav#lnb .container ul li {
@@ -394,7 +394,7 @@ nav#lnb {
     font-size: 0.8rem; } }
 
 #areas {
-  padding: 100px 0 144px 0;
+  padding: 100px 0 165px 0;
   background-color: #F8F8F8; }
   #areas #areas-header {
     margin-bottom: 80px; }
@@ -406,6 +406,8 @@ nav#lnb {
     box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.3);
     position: relative;
     height: 333px; }
+    #areas #areas-content .container .area-alpha:last-of-type {
+      margin-bottom: 0; }
     #areas #areas-content .container .area-alpha .area-image {
       position: absolute;
       display: inline-block;
@@ -1127,7 +1129,8 @@ nav#lnb {
   #chronicle #cd-timeline {
     position: relative;
     padding: 2em 0;
-    padding-top: 0; }
+    padding-top: 0;
+    padding-bottom: 165px; }
   #chronicle #cd-timeline::before {
     /* this is the vertical line */
     content: '';
@@ -1487,33 +1490,35 @@ nav#lnb {
       color: white;
       font-size: 1.5rem; }
 
-#portfolios.annexed #portfolios-header {
-  text-align: left; }
-  #portfolios.annexed #portfolios-header .container h3 {
-    font-weight: normal; }
-
-#portfolios.annexed #portfolios-items .container .row > div {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; }
-  #portfolios.annexed #portfolios-items .container .row > div .portfolio {
-    position: static;
-    height: auto;
+#portfolios.annexed {
+  padding-bottom: 165px; }
+  #portfolios.annexed #portfolios-header {
+    text-align: left; }
+    #portfolios.annexed #portfolios-header .container h3 {
+      font-weight: normal; }
+  #portfolios.annexed #portfolios-items .container .row > div {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    #portfolios.annexed #portfolios-items .container .row > div .portfolio img {
-      position: static; }
-    #portfolios.annexed #portfolios-items .container .row > div .portfolio p.subtitle {
+    align-items: flex-start; }
+    #portfolios.annexed #portfolios-items .container .row > div .portfolio {
       position: static;
-      bottom: auto; }
-    #portfolios.annexed #portfolios-items .container .row > div .portfolio p.subdescription {
-      position: static;
-      margin-bottom: 0;
-      text-align: center; }
-    #portfolios.annexed #portfolios-items .container .row > div .portfolio .hovered {
-      display: none; }
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #portfolios.annexed #portfolios-items .container .row > div .portfolio img {
+        position: static; }
+      #portfolios.annexed #portfolios-items .container .row > div .portfolio p.subtitle {
+        position: static;
+        bottom: auto;
+        margin-top: -32px; }
+      #portfolios.annexed #portfolios-items .container .row > div .portfolio p.subdescription {
+        position: static;
+        margin-bottom: 0;
+        text-align: center; }
+      #portfolios.annexed #portfolios-items .container .row > div .portfolio .hovered {
+        display: none; }
 
 @media only screen and (max-width: 575px) {
   #portfolios.annexed {
@@ -1820,7 +1825,7 @@ nav#lnb {
     /*    padding: 65px 0;*/ }
   #container-it .consulting_box ul {
     overflow: hidden;
-    padding: 34px 0; }
+    padding: 50px 0; }
   #container-it .consulting_box ul li {
     float: left;
     position: relative;
@@ -1914,9 +1919,13 @@ nav#lnb {
     #container-it .inner {
       width: 100%; }
     #container-it .it_title h2 {
-      width: 28%; }
+      width: 100%;
+      float: none;
+      margin-bottom: 20px; }
     #container-it .it_title p {
-      width: 72%; }
+      width: 100%;
+      float: none;
+      margin-bottom: 30px; }
     #container-it #contact #contact-container {
       width: 80%; }
     #container-it #footer .container #footer-sitemap {
@@ -2252,10 +2261,16 @@ nav#lnb {
   @media (max-width: 1199px) {
     #container-location .inner {
       width: 100%; }
-    #container-location .it_title h2 {
-      width: 28%; }
-    #container-location .it_title p {
-      width: 72%; }
+    #container-location .lc_title {
+      height: auto; }
+    #container-location .lc_title h2 {
+      width: 100%;
+      float: none;
+      margin-bottom: 20px; }
+    #container-location .lc_title p {
+      width: 100%;
+      float: none;
+      margin-bottom: 30px; }
     #container-location #contact #contact-container {
       width: 80%; }
     #container-location #footer .container #footer-sitemap {
@@ -2806,10 +2821,17 @@ nav#lnb {
   @media (max-width: 1199px) {
     #container-webapp .inner {
       width: 100%; }
+    #container-webapp .web_app_title {
+      height: auto; }
     #container-webapp .web_app_title h2 {
-      width: 28%; }
+      float: none;
+      margin-bottom: 20px;
+      width: 100%; }
     #container-webapp .web_app_title p {
-      width: 72%; }
+      float: none;
+      margin-bottom: 30px;
+      padding-top: 0;
+      width: 100%; }
     #container-webapp #contact #contact-container {
       width: 80%; }
     #container-webapp #footer .container #footer-sitemap {
@@ -2854,11 +2876,12 @@ nav#lnb {
       text-decoration: none;
       border-bottom: 1px solid white; }
     #container-webapp .web_app_bg .web_app_text {
-      transform: translate(-50%, -105%); }
+      transform: translate(-50%, -75%); }
     #container-webapp .web_app_info {
-      margin-top: -160px; }
+      margin-top: -110px; }
     #container-webapp .process ul {
-      padding: 30px 0; } }
+      padding: 30px 0;
+      padding-bottom: 0; } }
   @media (max-width: 767px) {
     #container-webapp #header {
       height: 60px; }
@@ -3229,7 +3252,7 @@ nav#lnb {
     text-align: left;
     margin-bottom: 0; }
   #container-ai .system {
-    padding: 80px 0 120px 0; }
+    padding: 80px 0 0 0; }
   #container-ai .system .sub_title {
     padding-left: 15px;
     margin-bottom: 50px; }
@@ -3254,7 +3277,8 @@ nav#lnb {
     display: block;
     width: 100%; }
   #container-ai .use {
-    padding: 160px 0 85px; }
+    padding: 100px 0 165px 0;
+    padding-bottom: 165px; }
   #container-ai .use .sub_title {
     padding-left: 15px;
     margin-bottom: 50px; }
@@ -3272,7 +3296,9 @@ nav#lnb {
     background: #000; }
   #container-ai .use ul {
     overflow: hidden;
-    padding: 40px 0; }
+    padding: 40px 0;
+    padding-bottom: 0;
+    margin-bottom: 0; }
   #container-ai .use ul li {
     float: left;
     width: 32%;
@@ -3752,7 +3778,7 @@ nav#lnb {
   to {
     transform: scaleX(1); } }
   #container-mindway .specification {
-    padding: 80px 0 120px 0; }
+    padding: 80px 0 0 0; }
   #container-mindway .specification .sub_title {
     padding-left: 15px;
     margin-bottom: 50px; }
@@ -3770,7 +3796,7 @@ nav#lnb {
     height: 1px;
     background: #000; }
   #container-mindway .specification ul {
-    padding: 55px 0 50px 49px; }
+    padding: 55px 0 0 49px; }
   #container-mindway .specification ul li {
     margin-bottom: 45px; }
   #container-mindway .specification ul li:last-child {
@@ -3879,7 +3905,7 @@ nav#lnb {
       padding-top: 113px; }
     #container-mindway .indicator {
       left: 0;
-      top: 400px;
+      top: 500px;
       width: 100%;
       height: 49px; } }
   @media (max-width: 767px) {

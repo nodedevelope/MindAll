@@ -231,11 +231,18 @@
         .inner{
             width: 100%;
         }
-        .it_title h2{
-            width: 28%;
+        .lc_title {
+            height: auto;
         }
-        .it_title p{
-            width: 72%;
+        .lc_title h2{
+            width: 100%;
+            float: none;
+            margin-bottom: 20px;
+        }
+        .lc_title p{
+            width: 100%;
+            float: none;
+            margin-bottom: 30px;
         }
         
         #contact #contact-container {

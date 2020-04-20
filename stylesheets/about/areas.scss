@@ -1,6 +1,6 @@
 // Business areas
 #areas {
-    padding: 100px 0 144px 0;
+    padding: 100px 0 165px 0;
     background-color: #F8F8F8;
     #areas-header {
         margin-bottom: 80px;
@@ -18,6 +18,9 @@
                 box-shadow: 3px 3px 30px rgba(0, 0, 0, .3);
                 position: relative;
                 height: 333px;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
                 .area-image {
                     position: absolute;
                     display: inline-block;

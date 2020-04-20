@@ -157,7 +157,7 @@
     }
     .consulting_box ul{
         overflow: hidden;
-        padding: 34px 0;
+        padding: 50px 0;
     }
     .consulting_box ul li{
         float: left;
@@ -267,10 +267,14 @@
             width: 100%;
         }
         .it_title h2{
-            width: 28%;
+            width: 100%;
+            float: none;
+            margin-bottom: 20px;
         }
         .it_title p{
-            width: 72%;
+            width: 100%;
+            float: none;
+            margin-bottom: 30px;
         }
         
         #contact #contact-container {
