@@ -249,7 +249,7 @@ $(document).ready(function() {
         var item;
         if(isAnnexed) {
             var subDescription = $("<p class='subdescription'>" + item.description + "</p>");
-            item = $("<div class='portfolio'></div>").append(img).append(subtitle).append(subDescription);
+            item = $("<a class='portfolio' data-fancybox data-src='#" + item.image + "' href='javascript:;'></a>").append(img).append(subtitle).append(subDescription);
         }
         else {
             item = $("<div class='portfolio'></div>").append(img).append(subtitle);

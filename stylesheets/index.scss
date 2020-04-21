@@ -53,6 +53,9 @@ html, body {
     overflow-x: hidden;
     font-size: 18px;
 }
+.compensate-for-scrollbar {
+    margin-right: 0 !important;
+}
 
 // Header
 header#header {
@@ -1514,3 +1517,83 @@ button.swiper-pagination-bullet {
 .seoulmuseums { background-position: -0px -1280px; width: 320px; height: 320px; }
 .seoulpublictransportation { background-position: -320px -1280px; width: 320px; height: 320px; }
 .yuhankimberly { background-position: -640px -1280px; width: 320px; height: 320px; }
+
+// Modal
+.fancybox-content {
+    padding: 100px;
+}
+figure {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > div {
+        transform: scale(1.2);
+    }
+}
+.scope {
+    margin-bottom: 50px;
+}
+.portpolio_name {
+    display: flex;
+    flex-direction: row;
+}
+.portpolio_left{
+    margin-right: 100px;
+}
+.portpolio_left .scope strong{
+    font-size: 18px;
+    font-weight: 500;
+}
+.portpolio_left .scope .info{
+    padding-left: 10px;
+    font-size: 14px;
+}
+.portpolio_left h3{
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.portpolio_left .portpolio_desc p{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.portpolio_left .portpolio_desc p.bar{
+    padding-left: 10px;
+    font-size: 14px;
+}
+.portpolio_right{
+    text-align: left;
+}
+
+/* 미디어쿼리 */
+@media (max-width: 1199px){
+    
+}
+
+@media (max-width: 991px){
+    .portpolio_name {
+        flex-direction: column-reverse;
+    }
+    .portpolio_left {
+        margin-right: 0;
+    }
+    .portpolio_left .scope .info {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .fancybox-content {
+        padding: 75px;
+    }
+}
+
+@media (max-width: 575px) {
+    figure {
+        & > div {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
