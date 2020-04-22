@@ -1538,6 +1538,9 @@ figure {
 .scope {
     margin-bottom: 50px;
 }
+.scope p {
+    margin-bottom: 0;
+}
 .portpolio_name {
     display: flex;
     flex-direction: row;
@@ -1551,7 +1554,6 @@ figure {
     font-weight: 500;
 }
 .portpolio_left .scope .info{
-    padding-left: 10px;
     font-size: 14px;
 }
 .portpolio_left h3{
