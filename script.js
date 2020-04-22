@@ -23,27 +23,27 @@ $(document).ready(function() {
     // Portfolio DB
     var portfolios = [
         {
-            title: "MindTrip",
-            description: "AI 분석 이미지 IOT",
-            image: "mindtrip",
-            category: "solution"
+            title: "서울시 보도지원시스템",
+            description: "시정 관련 보도 자료 검색 및 활용을 위한 반응형 웹사이트 구축",
+            image: "news",
+            category: "web"
         },
         {
-            title: "모바일서울",
-            description: "버스/지하철 지도 기반 교통정보",
-            image: "mobileseoul",
-            category: "app"
+            title: "서울시 BIS 버스정보시스템",
+            description: "서울시 버스정보시스템의 안정적인 유지 관리",
+            image: "bis",
+            category: "web"
+        },
+        {
+            title: "국방아키텍처(ARMS) 성능 개량",
+            description: "ARMS 성능 개선을 통해, 업무에 직접 활용할 수 있는 아키텍처 정보를 제공하여 상호운용성 업무의 효율성 향상",
+            image: "arms",
+            category: "web"
         },
         {
             title: "서울대중교통",
             description: "웹 기반 실시간 버스 관제 서비스",
             image: "seoulpublictransportation",
-            category: "app"
-        },
-        {
-            title: "서울미래유산",
-            description: "미래 유산 DB 구축",
-            image: "seoulfutureheritage",
             category: "web"
         },
         {
@@ -53,33 +53,21 @@ $(document).ready(function() {
             category: "web"
         },
         {
-            title: "차세대 법무포털 앱",
-            description: "법무부 내부 업무용 업무 관리 시스템",
-            image: "justice",
+            title: "서울미래유산",
+            description: "미래 유산 DB 구축",
+            image: "seoulfutureheritage",
+            category: "web"
+        },
+        {
+            title: "모바일서울",
+            description: "버스/지하철 지도 기반 교통정보",
+            image: "mobileseoul",
             category: "app"
         },
         {
-            title: "유한킴벌리",
-            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
-            image: "yuhankimberly",
-            category: "app"
-        },
-        {
-            title: "풀무원",
-            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
-            image: "pulmuone",
-            category: "app"
-        },
-        {
-            title: "엑소후레쉬",
-            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
-            image: "exofresh",
-            category: "app"
-        },
-        {
-            title: "성화기업택배",
-            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
-            image: "seonghwalogistics",
+            title: "연합뉴스",
+            description: "연합뉴스 관련 모바일앱 서비스 개발",
+            image: "yonhapnews",
             category: "app"
         },
         {
@@ -95,22 +83,46 @@ $(document).ready(function() {
             category: "app"
         },
         {
-            title: "서울시 보도지원시스템",
-            description: "시정 관련 보도 자료 검색 및 활용을 위한 반응형 웹사이트 구축",
-            image: "news",
-            category: "web"
+            title: "차세대 법무포털 앱",
+            description: "법무부 내부 업무용 업무 관리 시스템",
+            image: "justice",
+            category: "app"
         },
         {
-            title: "국방아키텍처(ARMS) 성능 개량",
-            description: "ARMS 성능 개선을 통해, 업무에 직접 활용할 수 있는 아키텍처 정보를 제공하여 상호운용성 업무의 효율성 향상",
-            image: "arms",
-            category: "web"
+            title: "유한킴벌리",
+            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
+            image: "yuhankimberly",
+            category: "app"
         },
         {
-            title: "서울시 BIS 버스정보시스템",
-            description: "서울시 버스정보시스템의 안정적인 유지 관리",
-            image: "bis",
-            category: "web"
+            title: "엑소후레쉬",
+            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
+            image: "exofresh",
+            category: "app"
+        },
+        {
+            title: "성화기업택배",
+            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
+            image: "seonghwalogistics",
+            category: "app"
+        },
+        {
+            title: "풀무원",
+            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
+            image: "pulmuone",
+            category: "app"
+        },
+        {
+            title: "MindWay",
+            description: "글로벌 웹 기반 노선도 개발 플랫폼",
+            image: "mindway",
+            category: "solution"
+        },
+        {
+            title: "MindTrip",
+            description: "AI 분석 이미지 IOT",
+            image: "mindtrip",
+            category: "solution"
         }
     ];
 
@@ -135,7 +147,7 @@ $(document).ready(function() {
         $(".see-more").remove();
         $(this).addClass("active");
         emptyPortfolios();
-        var maxNum = 15;
+        var maxNum = portfolios.length;
         var extended = false;
         var limit = $("#portfolios").hasClass("annexed") ? 9 : 6;
         if(limit === 9) {
