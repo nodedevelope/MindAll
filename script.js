@@ -337,7 +337,7 @@ $(document).ready(function() {
     var offset = 800;
     var speed = "slow";
     var hiddenHeight = 80;
-    var waypointed = $("section").not("#contact").not("#clients");
+    var waypointed = $("section").not("#contact").not("#clients").not("#banner");
     waypointed.css({
         opacity: 0,
         position: "relative",

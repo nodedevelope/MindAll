@@ -491,7 +491,7 @@ nav#lnb {
         .container {
             height: 360px;
             p {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 letter-spacing: -3px;
             }
         }
@@ -526,6 +526,9 @@ nav#lnb {
     #header-about {
         .container {
             height: 240px;
+            h1 {
+                font-size: 2.5rem;
+            }
             p {
                 display: none;
             }
