@@ -126,49 +126,52 @@
         font-weight: 700;
         text-transform: uppercase;
         color: white;
+        margin-bottom: 30px;
     }
     .banner_textBox .banner_text{
-        margin-top: 50px;
         font-size: 1.8rem;
         letter-spacing: -2.5px;
         color: white;
+        margin-bottom: 0;
     }
     
     /* main - 서비스 버튼 */
+    .solution_btn {
+        padding: 25px 0;
+    }
     .solution_btn ul{
-        overflow: hidden;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0;
     }
     .solution_btn ul li{
-        position: relative;
         display: inline-block;
-        width: 178px;
-        margin-right: 20px;
-    }
-    .solution_btn ul li:last-child{
-        margin-right: 0;
-    }
-    .solution_btn ul li.lines:after{
-        content: '';
-        position:  absolute; right: -10px; top: 32px;
-        width: 1px; height: 20px;
-        background: #000;
-    }
-    .solution_btn ul li a{
-        display: block;
-        padding: 25px 0;
+        width: 20%;
         text-align: center;
-    }
-    .solution_btn ul li span{
-        font-size: 20px;
-        font-weight: 700;
-    }
-    .solution_btn ul li.active a{
-        color: #3cd6ed;
-    }
-    .solution_btn ul li.active a span{
-        border-bottom: 1px solid #3cd6ed;
-        color: #3cd6ed;
+        height: 20px;
+        a {
+            position: relative;
+            top: -3px;
+            line-height: 20px;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            padding-bottom: 3px;
+            transition: all .3s;
+            border-bottom: 1px solid transparent;
+            &:hover {
+                color: inherit;
+            }
+        }
+        &:not(:last-child) {
+            border-right: 1px solid #333;
+        }
+        &.active {
+            a span {
+                color: #3CDBED;
+                border-bottom: 1px solid #3CDBED;
+            }
+        }
     }
     
     /* main - Ai_banner */
@@ -366,6 +369,16 @@
     }
     
     @media (max-width: 991px){
+        .solution_btn {
+            ul {
+                li {
+                    width: 30%;
+                    a {
+                        width: 80%;
+                    }
+                }
+            }
+        }
         nav#gnb .container #gnb-nav {
         display: none; }
       nav#gnb .container #gnb-hamburger {
@@ -396,6 +409,20 @@
                 border-bottom: 1px solid white; }
     }
     @media (max-width: 767px){
+        .solution_btn {
+            ul {
+                li {
+                    height: 20px;
+                    width: 35%;
+                    a {
+                        position: relative;
+                        top: -5px;
+                        width: 90%;
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
         #system {
             .inner {
                 .inner_row {
@@ -501,6 +528,15 @@
     }
     
     @media (max-width: 575px){
+        .solution_btn {
+            ul {
+                li {
+                    a span {
+                        font-size: .8rem !important;
+                    }
+                }
+            }
+        }
         #main #banner{
             height: 240px;
         }

@@ -3,7 +3,7 @@
     background-image: url("./images/about_background.jpg");
     background-size: cover;
     .container {
-        height: 500px;
+        height: 490px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -16,7 +16,7 @@
         }
         p {
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
     }
 }
@@ -70,9 +70,21 @@
     }
 }
 
+@media only screen and (max-width: 767px) {
+    #header-portfolio {
+        .container {
+            height: 360px;
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 575px) {
     #header-portfolio {
         .container {
+            height: 240px;
             p {
                 display: none;
             }

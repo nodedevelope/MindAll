@@ -13,7 +13,7 @@ span.superbar {
     background-image: url("images/about_background.jpg");
     background-size: cover;
     .container {
-        height: 500px;
+        height: 490px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -439,9 +439,6 @@ nav#lnb {
     #header-about {
         .container {
             padding-top: 100px;
-            p {
-                font-size: 1.2rem;
-            }
         }
     }
 }
@@ -492,8 +489,10 @@ nav#lnb {
     }
     #header-about {
         .container {
+            height: 360px;
             p {
-                display: none;
+                font-size: 1.5rem;
+                letter-spacing: -3px;
             }
         }
     }
@@ -521,6 +520,14 @@ nav#lnb {
                         font-size: .8rem;
                     }
                 }
+            }
+        }
+    }
+    #header-about {
+        .container {
+            height: 240px;
+            p {
+                display: none;
             }
         }
     }

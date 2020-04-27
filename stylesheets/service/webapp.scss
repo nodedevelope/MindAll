@@ -12,7 +12,7 @@
         position: relative;
         width: 100%;
         height: 490px;
-        background: url(./img/serviceIT_banner.jpg) no-repeat;
+        background: url(./images/service_background.jpg) no-repeat;
         background-position: center center;
         background-size: cover;
     }
@@ -72,7 +72,7 @@
     .banner_textBox{
         max-width: 1200px; 
         margin: 0 auto;
-        padding-top: 195px;
+        padding-top: 170px;
         text-align: center;
         color: #fff;
     }
@@ -81,49 +81,57 @@
         font-weight: 900;
         text-transform: uppercase;
         color: white;
+        margin-bottom: 30px;
     }
     .banner_textBox .banner_text{
-        margin-top: 50px;
         font-size: 1.8rem;
         letter-spacing: -1.25px;
         color: white;
+        margin-bottom: 0;
     }
     
     /* main - 서비스 버튼 */
+    .service_btn {
+        padding: 25px 0;
+    }
     .service_btn ul{
-        overflow: hidden;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0;
     }
     .service_btn ul li{
-        position: relative;
         display: inline-block;
-        width: 178px;
-        margin-right: 20px;
-    }
-    .service_btn ul li:last-child{
-        margin-right: 0;
-    }
-    .service_btn ul li.lines:after{
-        content: '';
-        position:  absolute; right: -10px; top: 32px;
-        width: 1px; height: 20px;
-        background: #000;
-    }
-    .service_btn ul li a{
-        display: block;
-        padding: 25px 0;
+        width: 20%;
         text-align: center;
+        height: 20px;
+        &:not(:last-child) {
+            a span {
+
+            }
+            border-right: 1px solid #333;
+        }
+        &.active {
+            a span {
+                color: #3CDBED;
+                border-bottom: 1px solid #3CDBED;
+            }
+        }
     }
-    .service_btn ul li span{
-        font-size: 20px;
-        font-weight: 700;
-    }
-    .service_btn ul li.active a{
-        color: #3cd6ed;
-    }
-    .service_btn ul li.active a span{
-        border-bottom: 1px solid #3cd6ed;
-        color: #3cd6ed;
+    .service_btn ul li {
+        a {
+            position: relative;
+            top: -3px;
+            line-height: 20px;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            padding-bottom: 3px;
+            transition: all .3s;
+            border-bottom: 1px solid transparent;
+            &:hover {
+                color: inherit;
+            }
+        }
     }
     
     /* main - 컨텐츠 제목 */
@@ -475,6 +483,20 @@
     }
     
     @media (max-width: 991px){
+        .service_btn {
+            .inner {
+                .inner_row {
+                    ul {
+                        li {
+                            width: 25%;
+                            a {
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         nav#gnb .container #gnb-nav {
         display: none; }
       nav#gnb .container #gnb-hamburger {
@@ -520,6 +542,24 @@
     }
     
     @media (max-width: 767px){
+        .service_btn {
+            .inner {
+                .inner_row {
+                    ul {
+                        li {
+                            height: 20px;
+                            width: 30%;
+                            a {
+                                position: relative;
+                                top: -5px;
+                                width: 90%;
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         #header{
             height: 60px;
         }
@@ -638,6 +678,19 @@
     }
     
     @media (max-width: 575px){
+        .service_btn {
+            .inner {
+                .inner_row {
+                    ul {
+                        li {
+                            a {
+                                font-size: .8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         #contents {
             .title {
                 .inner {

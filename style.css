@@ -9,7 +9,7 @@ span.superbar {
   background-image: url("images/about_background.jpg");
   background-size: cover; }
   #header-about .container {
-    height: 500px;
+    height: 490px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -293,9 +293,7 @@ nav#lnb {
       width: 100%;
       margin-right: 0; }
   #header-about .container {
-    padding-top: 100px; }
-    #header-about .container p {
-      font-size: 1.2rem; } }
+    padding-top: 100px; } }
 
 @media only screen and (max-width: 767px) {
   nav#lnb .container ul li {
@@ -318,8 +316,11 @@ nav#lnb {
         height: 200px; }
       #stacks #stacks-content .container .stack .stack-content {
         top: 285px; }
-  #header-about .container p {
-    display: none; }
+  #header-about .container {
+    height: 360px; }
+    #header-about .container p {
+      font-size: 1.5rem;
+      letter-spacing: -3px; }
   #certification #certification-content .container .certificate {
     display: block;
     width: 100%;
@@ -330,6 +331,10 @@ nav#lnb {
   nav#lnb .container ul li a {
     width: 90%;
     font-size: .8rem; }
+  #header-about .container {
+    height: 240px; }
+    #header-about .container p {
+      display: none; }
   #introduction #introduction-header {
     margin-bottom: 100px; }
     #introduction #introduction-header .container {
@@ -1476,7 +1481,7 @@ nav#lnb {
   background-image: url("./images/about_background.jpg");
   background-size: cover; }
   #header-portfolio .container {
-    height: 500px;
+    height: 490px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1488,7 +1493,7 @@ nav#lnb {
       margin-bottom: 30px; }
     #header-portfolio .container p {
       color: white;
-      font-size: 1.5rem; }
+      font-size: 1.8rem; }
 
 #portfolios.annexed {
   padding-bottom: 165px; }
@@ -1521,9 +1526,17 @@ nav#lnb {
       #portfolios.annexed #portfolios-items .container .row > div .portfolio .hovered {
         display: none; }
 
+@media only screen and (max-width: 767px) {
+  #header-portfolio .container {
+    height: 360px; }
+    #header-portfolio .container p {
+      font-size: 1.5rem; } }
+
 @media only screen and (max-width: 575px) {
-  #header-portfolio .container p {
-    display: none; }
+  #header-portfolio .container {
+    height: 240px; }
+    #header-portfolio .container p {
+      display: none; }
   #portfolios.annexed {
     padding: 50px 0; }
     #portfolios.annexed #portfolios-header .container span.superbar {
@@ -1571,10 +1584,11 @@ nav#lnb {
   #container-contact .title h2 {
     font-size: 3rem;
     font-weight: 700;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 30px; }
   #container-contact .title p {
-    margin-top: 30px;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    margin-bottom: 0; }
   #container-contact #main #banner {
     height: auto;
     margin-top: 50px; }
@@ -1717,7 +1731,7 @@ nav#lnb {
     position: relative;
     width: 100%;
     height: 490px;
-    background: url(./img/serviceIT_banner.jpg) no-repeat;
+    background: url(./images/service_background.jpg) no-repeat;
     background-position: center center;
     background-size: cover; }
   #container-it #main #banner:before {
@@ -1765,19 +1779,20 @@ nav#lnb {
   #container-it nav#gnb .container #gnb-hamburger {
     display: none; }
   #container-it .banner_textBox {
-    padding-top: 195px;
+    padding-top: 170px;
     text-align: center;
     color: #fff; }
   #container-it .banner_textBox .banner_title {
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: white; }
+    color: white;
+    margin-bottom: 30px; }
   #container-it .banner_textBox .banner_text {
-    margin-top: 50px;
     font-size: 1.8rem;
     letter-spacing: -1.25px;
-    color: white; }
+    color: white;
+    margin-bottom: 0; }
   #container-it .service_btn ul {
     text-align: center; }
   #container-it .service_btn ul li {
@@ -2095,7 +2110,7 @@ nav#lnb {
     position: relative;
     width: 100%;
     height: 490px;
-    background: url(./img/serviceIT_banner.jpg) no-repeat;
+    background: url(./images/service_background.jpg) no-repeat;
     background-position: center center;
     background-size: cover; }
   #container-location #main #banner:before {
@@ -2143,19 +2158,20 @@ nav#lnb {
   #container-location nav#gnb .container #gnb-hamburger {
     display: none; }
   #container-location .banner_textBox {
-    padding-top: 195px;
+    padding-top: 170px;
     text-align: center;
     color: #fff; }
   #container-location .banner_textBox .banner_title {
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: white; }
+    color: white;
+    margin-bottom: 30px; }
   #container-location .banner_textBox .banner_text {
-    margin-top: 50px;
     font-size: 1.8rem;
     letter-spacing: -1.25px;
-    color: white; }
+    color: white;
+    margin-bottom: 0; }
   #container-location .service_btn ul {
     text-align: center; }
   #container-location .service_btn ul li {
@@ -2447,7 +2463,7 @@ nav#lnb {
     position: relative;
     width: 100%;
     height: 490px;
-    background: url(./img/serviceIT_banner.jpg) no-repeat;
+    background: url(./images/service_background.jpg) no-repeat;
     background-position: center center;
     background-size: cover; }
   #container-webapp #main #banner:before {
@@ -2497,49 +2513,48 @@ nav#lnb {
   #container-webapp .banner_textBox {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 195px;
+    padding-top: 170px;
     text-align: center;
     color: #fff; }
   #container-webapp .banner_textBox .banner_title {
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: white; }
+    color: white;
+    margin-bottom: 30px; }
   #container-webapp .banner_textBox .banner_text {
-    margin-top: 50px;
     font-size: 1.8rem;
     letter-spacing: -1.25px;
-    color: white; }
+    color: white;
+    margin-bottom: 0; }
+  #container-webapp .service_btn {
+    padding: 25px 0; }
   #container-webapp .service_btn ul {
-    overflow: hidden;
-    text-align: center; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0; }
   #container-webapp .service_btn ul li {
-    position: relative;
     display: inline-block;
-    width: 178px;
-    margin-right: 20px; }
-  #container-webapp .service_btn ul li:last-child {
-    margin-right: 0; }
-  #container-webapp .service_btn ul li.lines:after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 32px;
-    width: 1px;
-    height: 20px;
-    background: #000; }
+    width: 20%;
+    text-align: center;
+    height: 20px; }
+    #container-webapp .service_btn ul li:not(:last-child) {
+      border-right: 1px solid #333; }
+    #container-webapp .service_btn ul li.active a span {
+      color: #3CDBED;
+      border-bottom: 1px solid #3CDBED; }
   #container-webapp .service_btn ul li a {
-    display: block;
-    padding: 25px 0;
-    text-align: center; }
-  #container-webapp .service_btn ul li span {
-    font-size: 20px;
-    font-weight: 700; }
-  #container-webapp .service_btn ul li.active a {
-    color: #3cd6ed; }
-  #container-webapp .service_btn ul li.active a span {
-    border-bottom: 1px solid #3cd6ed;
-    color: #3cd6ed; }
+    position: relative;
+    top: -3px;
+    line-height: 20px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding-bottom: 3px;
+    transition: all .3s;
+    border-bottom: 1px solid transparent; }
+    #container-webapp .service_btn ul li a:hover {
+      color: inherit; }
   #container-webapp .web_app_title {
     overflow: hidden;
     height: 120px; }
@@ -2833,6 +2848,10 @@ nav#lnb {
     #container-webapp #footer .container #footer-brand #footer-brand-address p {
       text-align: center; } }
   @media (max-width: 991px) {
+    #container-webapp .service_btn .inner .inner_row ul li {
+      width: 25%; }
+      #container-webapp .service_btn .inner .inner_row ul li a {
+        width: 80%; }
     #container-webapp nav#gnb .container #gnb-nav {
       display: none; }
     #container-webapp nav#gnb .container #gnb-hamburger {
@@ -2871,6 +2890,14 @@ nav#lnb {
     #container-webapp .service_scope .scope .sub_title h3 {
       text-align: left; } }
   @media (max-width: 767px) {
+    #container-webapp .service_btn .inner .inner_row ul li {
+      height: 20px;
+      width: 30%; }
+      #container-webapp .service_btn .inner .inner_row ul li a {
+        position: relative;
+        top: -5px;
+        width: 90%;
+        font-size: .9rem; }
     #container-webapp #header {
       height: 60px; }
     #container-webapp nav#gnb {
@@ -2955,6 +2982,8 @@ nav#lnb {
     #container-webapp #footer .container #footer-sitemap {
       display: none; } }
   @media (max-width: 575px) {
+    #container-webapp .service_btn .inner .inner_row ul li a {
+      font-size: .8rem; }
     #container-webapp #contents .title .inner .inner_row .web_app_title p {
       display: block;
       max-width: 100%; }
@@ -3178,42 +3207,41 @@ nav#lnb {
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: white; }
+    color: white;
+    margin-bottom: 30px; }
   #container-ai .banner_textBox .banner_text {
-    margin-top: 50px;
     font-size: 1.8rem;
     letter-spacing: -2.5px;
-    color: white; }
+    color: white;
+    margin-bottom: 0; }
+  #container-ai .solution_btn {
+    padding: 25px 0; }
   #container-ai .solution_btn ul {
-    overflow: hidden;
-    text-align: center; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0; }
   #container-ai .solution_btn ul li {
-    position: relative;
     display: inline-block;
-    width: 178px;
-    margin-right: 20px; }
-  #container-ai .solution_btn ul li:last-child {
-    margin-right: 0; }
-  #container-ai .solution_btn ul li.lines:after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 32px;
-    width: 1px;
-    height: 20px;
-    background: #000; }
-  #container-ai .solution_btn ul li a {
-    display: block;
-    padding: 25px 0;
-    text-align: center; }
-  #container-ai .solution_btn ul li span {
-    font-size: 20px;
-    font-weight: 700; }
-  #container-ai .solution_btn ul li.active a {
-    color: #3cd6ed; }
-  #container-ai .solution_btn ul li.active a span {
-    border-bottom: 1px solid #3cd6ed;
-    color: #3cd6ed; }
+    width: 20%;
+    text-align: center;
+    height: 20px; }
+    #container-ai .solution_btn ul li a {
+      position: relative;
+      top: -3px;
+      line-height: 20px;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      padding-bottom: 3px;
+      transition: all .3s;
+      border-bottom: 1px solid transparent; }
+      #container-ai .solution_btn ul li a:hover {
+        color: inherit; }
+    #container-ai .solution_btn ul li:not(:last-child) {
+      border-right: 1px solid #333; }
+    #container-ai .solution_btn ul li.active a span {
+      color: #3CDBED;
+      border-bottom: 1px solid #3CDBED; }
   #container-ai .Ai_banner {
     padding-top: 90px;
     text-align: center;
@@ -3372,6 +3400,10 @@ nav#lnb {
     #container-ai #footer .container #footer-brand #footer-brand-address p {
       text-align: center; } }
   @media (max-width: 991px) {
+    #container-ai .solution_btn ul li {
+      width: 30%; }
+      #container-ai .solution_btn ul li a {
+        width: 80%; }
     #container-ai nav#gnb .container #gnb-nav {
       display: none; }
     #container-ai nav#gnb .container #gnb-hamburger {
@@ -3401,6 +3433,14 @@ nav#lnb {
       text-decoration: none;
       border-bottom: 1px solid white; } }
   @media (max-width: 767px) {
+    #container-ai .solution_btn ul li {
+      height: 20px;
+      width: 35%; }
+      #container-ai .solution_btn ul li a {
+        position: relative;
+        top: -5px;
+        width: 90%;
+        font-size: .9rem; }
     #container-ai #system .inner .inner_row .system ul li:before {
       font-size: 1.875rem;
       top: -20px;
@@ -3465,6 +3505,8 @@ nav#lnb {
     #container-ai #footer .container #footer-sitemap {
       display: none; } }
   @media (max-width: 575px) {
+    #container-ai .solution_btn ul li a span {
+      font-size: .8rem !important; }
     #container-ai #main #banner {
       height: 240px; }
     #container-ai .banner_textBox {
@@ -3661,42 +3703,41 @@ nav#lnb {
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: white; }
+    color: white;
+    margin-bottom: 30px; }
   #container-mindway .banner_textBox .banner_text {
-    margin-top: 50px;
     font-size: 1.8rem;
     letter-spacing: -3.5px;
-    color: white; }
+    color: white;
+    margin-bottom: 0; }
+  #container-mindway .solution_btn {
+    padding: 25px 0; }
   #container-mindway .solution_btn ul {
-    overflow: hidden;
-    text-align: center; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0; }
   #container-mindway .solution_btn ul li {
-    position: relative;
     display: inline-block;
-    width: 178px;
-    margin-right: 20px; }
-  #container-mindway .solution_btn ul li:last-child {
-    margin-right: 0; }
-  #container-mindway .solution_btn ul li.lines:after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 32px;
-    width: 1px;
-    height: 20px;
-    background: #000; }
-  #container-mindway .solution_btn ul li a {
-    display: block;
-    padding: 25px 0;
-    text-align: center; }
-  #container-mindway .solution_btn ul li span {
-    font-size: 20px;
-    font-weight: 700; }
-  #container-mindway .solution_btn ul li.active a {
-    color: #3cd6ed; }
-  #container-mindway .solution_btn ul li.active a span {
-    border-bottom: 1px solid #3cd6ed;
-    color: #3cd6ed; }
+    width: 20%;
+    text-align: center;
+    height: 20px; }
+    #container-mindway .solution_btn ul li a {
+      position: relative;
+      top: -3px;
+      line-height: 20px;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      padding-bottom: 3px;
+      transition: all .3s;
+      border-bottom: 1px solid transparent; }
+      #container-mindway .solution_btn ul li a:hover {
+        color: inherit; }
+    #container-mindway .solution_btn ul li:not(:last-child) {
+      border-right: 1px solid #333; }
+    #container-mindway .solution_btn ul li.active a span {
+      color: #3CDBED;
+      border-bottom: 1px solid #3CDBED; }
   #container-mindway .mindway_banner {
     padding-top: 90px;
     text-align: center;
@@ -3857,6 +3898,10 @@ nav#lnb {
     #container-mindway #footer .container #footer-brand #footer-brand-address p {
       text-align: center; } }
   @media (max-width: 991px) {
+    #container-mindway .solution_btn ul li {
+      width: 30%; }
+      #container-mindway .solution_btn ul li a {
+        width: 80%; }
     #container-mindway nav#gnb .container #gnb-nav {
       display: none; }
     #container-mindway nav#gnb .container #gnb-hamburger {
@@ -3902,6 +3947,14 @@ nav#lnb {
       width: 100%;
       height: 49px; } }
   @media (max-width: 767px) {
+    #container-mindway .solution_btn ul li {
+      height: 20px;
+      width: 35%; }
+      #container-mindway .solution_btn ul li a {
+        position: relative;
+        top: -5px;
+        width: 90%;
+        font-size: .9rem; }
     #container-mindway .smart {
       padding-bottom: 0; }
     #container-mindway #specification .inner .inner_row .specification ul li:before {
@@ -3975,6 +4028,8 @@ nav#lnb {
     #container-mindway #footer .container #footer-sitemap {
       display: none; } }
   @media (max-width: 575px) {
+    #container-mindway .solution_btn ul li a span {
+      font-size: .8rem !important; }
     #container-mindway .narrow {
       letter-spacing: -1px; }
     #container-mindway #main #banner {
