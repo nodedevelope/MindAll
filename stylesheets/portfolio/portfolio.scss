@@ -71,6 +71,13 @@
 }
 
 @media only screen and (max-width: 575px) {
+    #header-portfolio {
+        .container {
+            p {
+                display: none;
+            }
+        }
+    }
     #portfolios.annexed {
         padding: 50px 0;
         #portfolios-header {

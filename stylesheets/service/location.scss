@@ -160,7 +160,6 @@
     /* main - 위치기반 서비스 상세설명 */
     .desc_box{
         padding: 5% 10%;
-        box-sizing: border-box;
         position: relative;
         text-align: center;
         color: #fff;
@@ -179,6 +178,9 @@
     .desc_box figure{
         margin-top: 60px;
         background: rgba(255, 255, 255, 0.8);
+    }
+    .desc_box figure img {
+        transform: none !important;
     }
     
     /* footer */
@@ -339,7 +341,7 @@
         }
         .lc_title{
             overflow: visible;
-            height: 84px;
+            height: 120px;
             padding-bottom: 22px;
         }
         .lc_title h2{
@@ -429,22 +431,23 @@
         }
         .desc_box{
             position: relative;
-            padding: 4% 12%;
+            padding: 0;
+            padding-bottom: 25px;
         }
         .desc_box p.m_text{
             font-size: 12px;
             font-weight: 400;
+            padding: 15px;
+            padding-top: 25px;
+            margin-bottom: 0;
         }
         .desc_box figure{
-            position: absolute; left: 0; top: 100%;
+            left: 0; top: 100%;
             width: 100%;
-            padding: 24px 14px;
             margin-top: 0px;
-            background: gainsboro;
-            box-sizing: border-box;
         }
         .desc_box figure img{
-            background: #929292c4;
+            
         }
     }
 }

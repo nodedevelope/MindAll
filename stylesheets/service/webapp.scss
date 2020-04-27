@@ -144,7 +144,6 @@
         text-align: left;
         float: left;
         width: 77%;
-        padding-top: 12px;
         margin: 0;
         font-size: $subtitle;
     }
@@ -311,29 +310,9 @@
         transform: translate(-50%, -50%);
     }
     
-    .service_scope .scope ul li:nth-child(1){
-        background: url(./img/serviceScope.png) no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
-    .service_scope .scope ul li:nth-child(2){
-        background: url(./img/serviceScope.png) no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
-    .service_scope .scope ul li:nth-child(3){
-        background: url(./img/serviceScope.png) no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
-    .service_scope .scope ul li:nth-child(4){
-        background: url(./img/serviceScope.png) no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
-    .service_scope .scope ul li:nth-child(5){
-        background: url(./img/serviceScope.png) no-repeat;
-        background-position: center center;
+    .service_scope .scope ul li {
+        background-image: url("./images/servicescope.jpg");
+        background-attachment: fixed;
         background-size: cover;
     }
     .service_scope .scope ul li:before{
@@ -465,6 +444,7 @@
         }
         .web_app_title {
             height: auto;
+            margin-bottom: 50px;
         }
         .web_app_title h2{
             float: none;
@@ -533,6 +513,9 @@
         .process ul{
             padding: 30px 0;
             padding-bottom: 0;
+        }
+        .service_scope .scope .sub_title h3 {
+            text-align: left;
         }
     }
     
@@ -604,7 +587,7 @@
             display: block;
         }
         .web_app_bg .web_app_text{
-            transform: translate(-50%, -135%);
+            transform: translate(-50%, -110%);
         }
         .web_app_bg .web_app_text p.underlines{
             font-size: 19px;
@@ -669,6 +652,12 @@
                 }
             }
         }
+        .inner_row {
+            padding: 0;
+        }
+        .web_app_bg figure img.m_bg {
+            transform: none !important;
+        }
         #main #banner{
             height: 240px;
         }
@@ -689,7 +678,7 @@
             top: 19px;
         } 
         .service_btn ul li span{
-            font-size: 11px;
+            font-size: .8rem;
         }
         #main #contents{
             padding: 40px 0;
@@ -697,6 +686,7 @@
         .web_app_title{
             height: 84px;
             padding: 0 0 22px 15px;
+            margin-bottom: 30px;
         }
         .web_app_title h2{
             font-size: 24px;

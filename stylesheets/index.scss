@@ -1526,8 +1526,20 @@ button.swiper-pagination-bullet {
 .fancybox-content {
     padding: 100px;
 }
+@media screen and (max-width: 1199px) {
+    .fancybox-content {
+        padding: 50px !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    .fancybox-content {
+        padding: 30px !important;
+    }
+}
+
 figure {
     margin: 0;
+    margin-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1535,11 +1547,56 @@ figure {
         transform: scale(1.2);
     }
 }
+@media screen and (max-width: 767px) {
+    figure {
+        margin-bottom: 0;
+        & > div, & > img {
+            transform: scale(1.0);
+        }
+    }
+    .portpolio_left h3 {
+        font-size: 1.5rem !important;
+    }
+    .portpolio_left h4 {
+        font-size: 1.2rem !important;
+    }
+    .portpolio_left .portpolio_desc p {
+        font-size: .8rem !important;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    figure {
+        & > div, & > img {
+            transform: scale(.8);
+        }
+    }
+    .portpolio_left h3 {
+        font-size: 1.2rem !important;
+    }
+    .portpolio_left h4 {
+        font-size: 1.0rem !important;
+    }
+    .portpolio_left .portpolio_desc p {
+        font-size: .8rem !important;
+    }
+}
+
 .scope {
     margin-bottom: 50px;
 }
 .scope p {
     margin-bottom: 0;
+}
+.scope p:not(:first-of-type) {
+    padding-left: 15px;
+}
+.scope p:first-of-type {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.scope p {
+    font-size: .8rem !important;
 }
 .portpolio_name {
     display: flex;
@@ -1550,7 +1607,6 @@ figure {
     margin-right: 100px;
 }
 .portpolio_left .scope strong{
-    font-size: 18px;
     font-weight: 500;
 }
 .portpolio_left .scope .info{
@@ -1564,6 +1620,12 @@ figure {
 .portpolio_left .portpolio_desc p{
     font-size: 16px;
     margin-bottom: 5px;
+}
+.portpolio_left .portpolio_desc p:not(.non-bullet):before {
+    content: "• ";
+}
+.portpolio_left .portpolio_desc p.non-bullet {
+    padding-left: 10px;
 }
 .portpolio_left .portpolio_desc p.bar{
     padding-left: 10px;
@@ -1585,8 +1647,40 @@ figure {
     .portpolio_left {
         margin-right: 0;
     }
+    .portpolio_left h3 {
+        text-align: center;
+    }
+    .portpolio_left h4 {
+        text-align: center;
+    }
     .portpolio_left .scope .info {
         padding-left: 0;
+    }
+    .portpolio_left .portpolio_desc p {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .portpolio_left .portpolio_desc p:not(.non-bullet):before {
+        content: "";
+    }
+    .scope p:not(:first-of-type) {
+        padding-left: 0;
+    }
+    .scope {
+        margin-bottom: 30px;
+        padding-top: 20px;
+        text-align: center;
+        padding-left: 0;
+    }
+    .subdesc {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .subdesc .non-bullet {
+        text-align: left !important;
     }
 }
 

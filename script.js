@@ -24,103 +24,103 @@ $(document).ready(function() {
     var portfolios = [
         {
             title: "서울시 보도지원시스템",
-            description: "시정 관련 보도 자료 검색 및 활용을 위한 반응형 웹사이트 구축",
+            description: "보도 자료 검색 및 활용을 위한 기자용 반응형 웹 서비스 개발",
             image: "news",
             category: "web"
         },
         {
             title: "서울시 BIS 버스정보시스템",
-            description: "서울시 버스정보시스템의 안정적인 유지 관리",
+            description: "서울시 BIS 버스정보시스템 유지 보수",
             image: "bis",
             category: "web"
         },
         {
             title: "국방아키텍처(ARMS) 성능 개량",
-            description: "ARMS 성능 개선을 통해, 업무에 직접 활용할 수 있는 아키텍처 정보를 제공하여 상호운용성 업무의 효율성 향상",
+            description: "국방아키텍처(ARMS 2.0) 시스템 성능 개선",
             image: "arms",
             category: "web"
         },
         {
             title: "서울대중교통",
-            description: "웹 기반 실시간 버스 관제 서비스",
+            description: "서울대중교통 서비스 고도화",
             image: "seoulpublictransportation",
             category: "web"
         },
         {
             title: "서울시 박물관, 미술관",
-            description: "박물관 미술관 DB 구축 및 관리 페이지 개발",
+            description: "서울시 박물관, 미술관 반응형 웹 서비스 개발",
             image: "seoulmuseums",
             category: "web"
         },
         {
             title: "서울미래유산",
-            description: "미래 유산 DB 구축",
+            description: "서울미래유산 반응형 웹 서비스 개발",
             image: "seoulfutureheritage",
             category: "web"
         },
         {
             title: "모바일서울",
-            description: "버스/지하철 지도 기반 교통정보",
+            description: "모바일 서울 서비스 유지 관리",
             image: "mobileseoul",
             category: "app"
         },
         {
             title: "연합뉴스",
-            description: "연합뉴스 관련 모바일앱 서비스 개발",
+            description: "연합뉴스 관련 모바일 앱 서비스 개발",
             image: "yonhapnews",
             category: "app"
         },
         {
             title: "아주저축은행 대출 앱",
-            description: "모바일 대출 신청 및 확인",
+            description: "아주저축은행 대출 앱 서비스 개발",
             image: "ajusavings",
             category: "app"
         },
         {
             title: "아주산업 GPS 관제",
-            description: "지도 기반 레미콘 차량 위치 관제 시스템 개발",
+            description: "아주산업 GPS 관제 시스템 개발",
             image: "ajugps",
             category: "app"
         },
         {
             title: "차세대 법무포털 앱",
-            description: "법무부 내부 업무용 업무 관리 시스템",
+            description: "법무부 업무 관리 시스템 개발",
             image: "justice",
             category: "app"
         },
         {
             title: "유한킴벌리",
-            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
+            description: "유한킴벌리 입출고 관리 시스템 개발",
             image: "yuhankimberly",
             category: "app"
         },
         {
             title: "엑소후레쉬",
-            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
+            description: "엑소후레쉬 입출고 관리 시스템 개발",
             image: "exofresh",
             category: "app"
         },
         {
             title: "성화기업택배",
-            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
+            description: "성화기업택배 입출고 관리 시스템 개발",
             image: "seonghwalogistics",
             category: "app"
         },
         {
             title: "풀무원",
-            description: "바코드 리더기를 활용한 입고/출고 관리 시스템 개발",
+            description: "풀무원 운송 자원 관리 시스템 개발",
             image: "pulmuone",
             category: "app"
         },
         {
             title: "MindWay",
-            description: "글로벌 웹 기반 노선도 개발 플랫폼",
+            description: "자체 노선도 개발 솔루션(M3Maker)을 활용한 오픈형 플랫폼 서비스",
             image: "mindway",
             category: "solution"
         },
         {
             title: "MindTrip",
-            description: "AI 분석 이미지 IOT",
+            description: "딥러닝 기반의 인공지능 영상 분석, 처리 시스템",
             image: "mindtrip",
             category: "solution"
         }
