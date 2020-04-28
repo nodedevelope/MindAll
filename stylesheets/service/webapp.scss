@@ -175,6 +175,7 @@
     .web_app_bg figure img{
         display: block;
         width: 100%;
+        transform: none;
     }
     .web_app_bg figure img.m_bg{
         display: none;
@@ -754,7 +755,6 @@
             transform: translate(-50%, -87%);
         }
         .web_app_bg .web_app_text p{
-            max-width: 215px;
             margin: 0 auto;
         }
         .web_app_bg .web_app_text p.underlines span{
@@ -767,11 +767,12 @@
             margin-top: -106px;
         }
         .web_app_bg .web_app_text p.underlines{
-            font-size: 14px;
-            margin-bottom: 10px;
+            font-size: 1rem;
+            margin-bottom: 0;
         }
         .web_app_bg .web_app_text p:last-child{
             font-size: 12px;
+            margin-bottom: 0;
             margin-top: 10px;
         }
         .web_app_info > div{

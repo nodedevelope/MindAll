@@ -230,7 +230,7 @@ nav#lnb {
       font-size: 1.75rem; }
   #certification #certification-content .container .certificate {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     width: 33.33%;
     padding: 30px; }
     #certification #certification-content .container .certificate .certificate-image {
@@ -2592,7 +2592,8 @@ nav#lnb {
     background: rgba(0, 0, 0, 0.5); }
   #container-webapp .web_app_bg figure img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    transform: none; }
   #container-webapp .web_app_bg figure img.m_bg {
     display: none; }
   #container-webapp .web_app_bg .web_app_text {
@@ -3025,7 +3026,6 @@ nav#lnb {
     #container-webapp .web_app_bg .web_app_text {
       transform: translate(-50%, -87%); }
     #container-webapp .web_app_bg .web_app_text p {
-      max-width: 215px;
       margin: 0 auto; }
     #container-webapp .web_app_bg .web_app_text p.underlines span {
       display: none; }
@@ -3034,10 +3034,11 @@ nav#lnb {
     #container-webapp .web_app_info {
       margin-top: -106px; }
     #container-webapp .web_app_bg .web_app_text p.underlines {
-      font-size: 14px;
-      margin-bottom: 10px; }
+      font-size: 1rem;
+      margin-bottom: 0; }
     #container-webapp .web_app_bg .web_app_text p:last-child {
       font-size: 12px;
+      margin-bottom: 0;
       margin-top: 10px; }
     #container-webapp .web_app_info > div {
       padding: 0 34px; }
@@ -5277,9 +5278,6 @@ figure {
 
 .portpolio_left .portpolio_desc p:not(.non-bullet):before {
   content: "• "; }
-
-.portpolio_left .portpolio_desc p.non-bullet {
-  padding-left: 10px; }
 
 .portpolio_left .portpolio_desc p.bar {
   padding-left: 10px;
