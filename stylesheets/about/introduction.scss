@@ -19,12 +19,15 @@ span.superbar {
         justify-content: center;
         align-items: center;
         h1 {
+            width: 100%;
             font-size: 3rem;
             font-weight: bolder;
             color: white;
+            text-align: center;
             margin-bottom: 30px;
         }
         p {
+            width: 100%;
             text-align: center;
             font-size: 1.8rem;
             color: white;
@@ -164,6 +167,7 @@ nav#lnb {
                     display: inline-block;
                     vertical-align: middle;
                     width: 47.5%;
+                    height: 460px;
                     margin-right: 2.5%;
                     img {
                         width: 100%;
@@ -183,11 +187,13 @@ nav#lnb {
                         margin-bottom: 30px;
                     }
                     p.title {
+                        width: 100%;
                         font-weight: bolder;
                         margin-bottom: 10px;
                         font-size: $subtitle;
                     }
                     p.description {
+                        width: 100%;
                         color: gray;
                         font-size: $normal;
                     }
@@ -213,11 +219,13 @@ nav#lnb {
                         margin-bottom: 30px;
                     }
                     p.title {
+                        width: 100%;
                         font-weight: bolder;
                         margin-bottom: 10px;
                         font-size: $subtitle;
                     }
                     p.description {
+                        width: 100%;
                         color: gray;
                         font-size: $normal;
                     }
@@ -226,6 +234,7 @@ nav#lnb {
                     display: inline-block;
                     vertical-align: middle;
                     width: 50%;
+                    height: 460px;
                     img {
                         width: 100%;
                         height: auto;
@@ -275,19 +284,23 @@ nav#lnb {
                     }
                 }
                 .stack-content {
+                    width: 100%;
                     text-align: center;
                     p.title {
+                        width: 100%;
                         font-weight: bold;
                         font-size: 1.2rem;
                         margin-bottom: 10px;
                         font-size: $subtitle;
                     }
                     p.subtitle {
+                        width: 100%;
                         color: #555;
                         font-size: 1.1rem;
                         font-size: $normal;
                     }
                     p.description {
+                        width: 100%;
                         color: #777;
                         font-size: $small;
                     }
