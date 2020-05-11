@@ -167,7 +167,6 @@ nav#lnb {
                     display: inline-block;
                     vertical-align: middle;
                     width: 47.5%;
-                    height: 460px;
                     margin-right: 2.5%;
                     img {
                         width: 100%;
@@ -234,7 +233,6 @@ nav#lnb {
                     display: inline-block;
                     vertical-align: middle;
                     width: 50%;
-                    height: 460px;
                     img {
                         width: 100%;
                         height: auto;
@@ -349,6 +347,15 @@ nav#lnb {
 }
 
 @media only screen and (max-width: 1199px) {
+    #introduction {
+        #introduction-subheader {
+            .container {
+                #subheader-box {
+                    height: 430px;
+                }
+            }
+        }
+    }
     #stacks {
         #stacks-header {
             .container {

@@ -106,9 +106,6 @@
         text-align: center;
         height: 20px;
         &:not(:last-child) {
-            a span {
-
-            }
             border-right: 1px solid #333;
         }
         &.active {

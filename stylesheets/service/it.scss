@@ -110,9 +110,6 @@
         text-align: center;
         height: 20px;
         &:not(:last-child) {
-            a span {
-
-            }
             border-right: 1px solid #333;
         }
         &.active {
@@ -302,6 +299,20 @@
     }
     
     @media (max-width: 991px){
+        .service_btn {
+            .inner {
+                .inner_row {
+                    ul {
+                        li {
+                            width: 25%;
+                            a {
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         nav#gnb .container #gnb-nav {
         display: none; }
       nav#gnb .container #gnb-hamburger {
@@ -337,6 +348,24 @@
     }
     
     @media (max-width: 767px){
+        .service_btn {
+            .inner {
+                .inner_row {
+                    ul {
+                        li {
+                            height: 20px;
+                            width: 30%;
+                            a {
+                                position: relative;
+                                top: -5px;
+                                width: 90%;
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         #header{
             height: 60px;
         }
@@ -417,6 +446,19 @@
     }
     
     @media (max-width: 575px){
+        .service_btn {
+            .inner {
+                .inner_row {
+                    ul {
+                        li {
+                            a {
+                                font-size: .8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         #main #banner{
             height: 240px;
         }

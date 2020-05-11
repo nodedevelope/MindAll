@@ -430,7 +430,9 @@
                     }
                 }
                 #map-detail-address-content {
-                    width: calc(100% - 90px);
+                    width: -webkit-calc(99% - 90px);
+                    width: -moz-calc(99% - 90px);
+                    width: calc(99% - 90px);
                     display: inline-block;
                     vertical-align: middle;
                     p.title {
@@ -463,7 +465,9 @@
                     }
                 }
                 #map-detail-contact-content {
-                    width: calc(100% - 90px);
+                    width: -webkit-calc(99% - 90px);
+                    width: -moz-calc(99% - 90px);
+                    width: calc(99% - 90px);
                     display: inline-block;
                     vertical-align: middle;
                     p.title {
@@ -496,7 +500,9 @@
             #map-subway-content {
                 display: inline-block;
                 vertical-align: middle;
-                max-width: calc(100% - 106px);
+                max-width: -webkit-calc(99% - 106px);
+                max-width: -moz-calc(99% - 106px);
+                max-width: calc(99% - 106px);
                 p.title {
                     color: #3CDBED;
                     font-weight: bold;
@@ -527,7 +533,9 @@
             #map-bus-content {
                 display: inline-block;
                 vertical-align: top;
-                max-width: calc(100% - 106px);
+                max-width: -webkit-calc(99% - 106px);
+                max-width: -moz-calc(99% - 106px);
+                max-width: calc(99% - 106px);
                 & > p.title {
                     color: #3CDBED;
                     font-weight: bold;
@@ -682,7 +690,9 @@
                     }
                 }
                 #map-subway-content {
-                    max-width: calc(100% - 110px);
+                    max-width: -webkit-calc(99% - 110px);
+                    max-width: -moz-calc(99% - 110px);
+                    max-width: calc(99% - 110px);
                     p.title {
                         font-size: .8rem;
                     }
@@ -704,7 +714,9 @@
                     }
                 }
                 #map-bus-content {
-                    max-width: calc(100% - 110px);
+                    max-width: -webkit-calc(99% - 110px);
+                    max-width: -moz-calc(99% - 110px);
+                    max-width: calc(99% - 110px);
                     & > p.title {
                         font-size: .8rem;
                     }

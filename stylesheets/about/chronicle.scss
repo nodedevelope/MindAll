@@ -7,14 +7,10 @@
         font-size: $title;
       }
     }
-    .cd-read-more {
-        transition: all .3s;
-        &:hover {
-            background-color: #bac4cb !important;
-        }
-    }
     .cd-date {
       font-style: italic !important;
+      color: #333 !important;
+      opacity: 0.7 !important;
     }
     .cd-timeline-content {
       .cd-date {
@@ -100,9 +96,6 @@
         background: #d7e4ed;
       }
       @media only screen and (min-width: 1170px) {
-        #cd-timeline {
-
-        }
         #cd-timeline::before {
           left: 50%;
           margin-left: -2px;
